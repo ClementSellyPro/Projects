@@ -2,16 +2,14 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='md:pl-20 lg:pr-20px pr-5px px-5 py-8  bg-slate-50'>
-        <div className='flex justify-between relative'>
-          <h1 className='text-4xl font-semibold'>Contacter <strong className='text-kalipro'>KALIPRO</strong></h1>
+    <div className='md:pl-20 lg:pr-20px pr-5px px-5 py-8  bg-slate-50 relative'>
+        
+        <div className='flex justify-between items-center pb-8 mb-6 border-b bg-slate-50 sticky top-0'>
+          <h1 className='md:text-4xl text-2xl font-semibold'>Contacter <strong className='text-kalipro'>KALIPRO</strong></h1>
 
-          <div className='flex flex-col justify-center items-center text-center font-semibold p-5 rounded-xl w-64 border sticky top-10 bg-white shadow-xl'>
-            N&apos;hesiter a nous contacter directement par telephone
-            <button className='mt-5 py-2 px-8 rounded-full border border-kalipro hover:bg-kalipro text-kalipro hover:text-black w-fit'>Nous appeler</button>
-          </div>
+
+          <button className='py-2 px-6 rounded-full border border-kalipro hover:bg-kalipro text-kalipro hover:text-white w-fit'>Nous appeler</button>
         </div>
-
 
         <form className='flex flex-col md:gap-10 gap-8 md:w-7/12 w-full'>
 
