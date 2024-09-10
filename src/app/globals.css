@@ -1,33 +1,222 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import "./style/SearchSecteur.css";
+
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary: #ffbb44;
+  --text-color: 0, 0, 0;
+  --background-color: #f7f7f7;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --primary: #ffbb44;
+    --text-color: 255, 255, 255;
+    --background-color: 0, 0, 0;
   }
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(var(--text-color));
+  background: rgb(var(--background-color));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+
+/* -------------------- THeader - nav -------------------- */
+.nav-link-secteur{
+  position: relative;
+}
+
+.nav-links-secteur{
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  flex-direction: column;
+  gap: 15px;
+  width: 200px;
+  padding: 5px 10px;
+  border-top: 1px solid #ffbb44;
+  background-color: white;
+  z-index: 3;
+  transition: all 0.3s;
+}
+.nav-links-secteur-item{
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.nav-links-secteur-item:last-child{
+  border: none;
+}
+
+
+/* metier dropdown menu */
+.nav-link-metier{
+  position: relative;
+}
+
+.nav-links-metier{
+  position: absolute;
+  top: 80px;
+  left: -340px;
+  justify-content: space-between;
+  width: 850px;
+  padding: 10px 15px;
+  border-top: 1px solid #ffbb44;
+  background-color: white;
+  z-index: 3;
+}
+.nav-links-metier-group{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+}
+.nav-links-metier-item{
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.nav-links-metier-item:last-child{
+  border: none;
+}
+
+
+.hidden{
+  display: none;
+}
+.nav-link-metier:hover .hidden, .nav-link-secteur:hover .nav-links-secteur{
+  display: flex;
+}
+/* -------------------- Hero style -------------------- */
+.hero-main{
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+
+.hero-message{
+  text-shadow: #000 1px 0 10px;
+}
+
+.hero-images-section{
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(0.5);
+  height: 100%;
+  width: 100%;
+}
+
+.hero-message, .hero-input-section{
+  z-index: 1;
+}
+.image-artisan{
+  width: 33%;
+}
+
+
+/* -------------------- Marquee style -------------------- */
+.Marquee{
+  padding: 0rem 1.5rem;
+  color: #FFBB44;
+  font-size: 1rem;
+}
+
+.marquee-text{
+  overflow: clip;
+}
+
+.marquee-text-track{
+  display: flex;
+  align-items: center;
+  padding-left: 4rem;
+  gap: 4rem;
+  width: max-content;
+  animation: marquee-movement 25s linear infinite;
+}
+
+.fadeout-horizontal{
+  mask-image: linear-gradient(
+      to right,
+      transparent,
+      rgb(255, 255, 255) 10rem,
+      rgb(255, 255, 255) calc(100% - 10rem),
+      transparent
+  );
+}
+
+.marquee-text p{
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  border: 1px solid #FFBB44;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 40px;
+  padding: 0.5em 1rem;
+  height: max-content;
+  width: max-content;
+}
+
+@keyframes marquee-movement {
+  to {
+      transform: translateX(-50%)
   }
+}
+
+
+/* -------------------- Testimonial card -------------------- */
+.TestimonialCard{
+  transition: all 0.2s;
+}
+
+.TestimonialCard:hover{
+  transform: translateY(-3px);
+}
+
+
+/* ------------------------------ max-width: 1024px ------------------------------ */
+@media screen and (max-width: 1024px){
+  /* -------------------- Hero style -------------------- */
+  .hero-main{
+    height: 500px;
+    width: 100%;
+  }
+
+  
+  .nav-links-metier{
+    width: 650px;
+  }
+  .nav-links-metier-group{
+    width: 300px;
+  }
+}
+
+
+/* ------------------------------ max-width: 768px ------------------------------ */
+@media screen and (max-width: 768px){
+  /* -------------------- Hero style -------------------- */
+  .hero-main{
+    height: 250px;
+    width: 100%;
+  }
+}
+
+
+/* ------------------------------ max-width: 640px ------------------------------ */
+@media screen and (max-width: 640px){
+  /* -------------------- Hero style -------------------- */
+  .hero-main{
+    height: 250px;
+    width: 100%;
+  }
+
 }

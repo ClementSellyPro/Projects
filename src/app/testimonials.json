@@ -1,0 +1,50 @@
+[
+    {
+        "_id": 0,
+        "client": "Martine",
+        "secteur": "Saint Philipe",
+        "avis": "Le travail realisé est d’une grande qualitée. Kalipro m’a permis de trouver un artisan de qualité à proximité de chez moi.",
+        "artisan": "Electrika",
+        "secteur_artisan": "Electricien"
+    },
+    {
+        "_id": 1,
+        "client": "Jean Paul",
+        "secteur": "Saint Denis",
+        "avis": "Trés satisfait du travail réalisé.",
+        "artisan": "Maison Réunionnaise",
+        "secteur_artisan": "Maçonnerie"
+    },
+    {
+        "_id": 2,
+        "client": "Edouardo",
+        "secteur": "Saint Philipe",
+        "avis": "Le travail realise est d’une grande qualitée. Kalipro m’a permis de trouver un artisan de qualité à proximité de chez moi. C’était la première fois que je passais par kalipro, je ne regrette pas mon choix.",
+        "artisan": "Architectura",
+        "secteur_artisan": "Design intérieur"
+    },
+    {
+        "_id": 3,
+        "client": "Marcus",
+        "secteur": "Sainte Marie",
+        "avis": "Beau travail réalisé par l'entreprise La Menuiserie.",
+        "artisan": "La Menuiserie",
+        "secteur_artisan": "Menuiserie"
+    },
+    {
+        "_id": 4,
+        "client": "Marcel Dufour",
+        "secteur": "Sainte André",
+        "avis": " Travail impeccable. Rien à redire à propos de aPlomb.",
+        "artisan": "aPlomb",
+        "secteur_artisan": "Plombier"
+    },
+    {
+        "_id": 5,
+        "client": "Alfredo",
+        "secteur": "Saint Pierre",
+        "avis": "Le travail realise est d’une grande qualitée. Kalipro m’a permis de trouver un artisan de qualite. Je ne regrette pas mon choix.",
+        "artisan": "Electrika",
+        "secteur_artisan": "Electricien"
+    }
+]
