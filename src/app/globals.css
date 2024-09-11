@@ -33,7 +33,7 @@ body {
 }
 
 
-/* -------------------- THeader - nav -------------------- */
+/* -------------------- Header - nav -------------------- */
 .nav-link-secteur{
   position: relative;
 }
@@ -41,18 +41,21 @@ body {
 .nav-links-secteur{
   display: none;
   position: absolute;
-  top: 80px;
+  top: 75px;
   left: 0px;
   flex-direction: column;
-  gap: 15px;
-  width: 200px;
-  padding: 5px 10px;
-  border-top: 1px solid #ffbb44;
+  gap: 5px;
+  width: 220px;
+  padding: 10px 15px;
+  border-top: 2px solid #ffbb44;
+  border-radius: 5px;
   background-color: white;
   z-index: 3;
   transition: all 0.3s;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .nav-links-secteur-item{
+  padding: 6px 0px;
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 .nav-links-secteur-item:last-child{
@@ -67,28 +70,33 @@ body {
 
 .nav-links-metier{
   position: absolute;
-  top: 80px;
+  top: 75px;
   left: -340px;
   justify-content: space-between;
-  width: 850px;
+  width: 750px;
   padding: 10px 15px;
   border-top: 1px solid #ffbb44;
+  border-radius: 5px;
   background-color: white;
   z-index: 3;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .nav-links-metier-group{
-  display: flex;
+  display: flex; 
   flex-direction: column;
-  gap: 15px;
-  width: 400px;
+  gap: 5px;
+  width: 250px;
 }
 .nav-links-metier-item{
+  margin-right: 15px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 .nav-links-metier-item:last-child{
   border: none;
 }
-
 
 .hidden{
   display: none;
@@ -97,6 +105,9 @@ body {
   display: flex;
 }
 /* -------------------- Hero style -------------------- */
+.Hero{
+  transform: scale(1);
+}
 .hero-main{
   position: relative;
   height: 600px;
@@ -193,10 +204,10 @@ body {
 
   
   .nav-links-metier{
-    width: 650px;
+    width: 680px;
   }
   .nav-links-metier-group{
-    width: 300px;
+    width: 290px;
   }
 }
 
