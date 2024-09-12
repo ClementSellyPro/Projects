@@ -73,7 +73,7 @@ body {
   top: 75px;
   left: -340px;
   justify-content: space-between;
-  width: 750px;
+  width: 800px;
   padding: 10px 15px;
   border-top: 1px solid #ffbb44;
   border-radius: 5px;
@@ -212,7 +212,7 @@ textarea{
 
   
   .nav-links-metier{
-    width: 680px;
+    width: 740px;
   }
   .nav-links-metier-group{
     width: 290px;
