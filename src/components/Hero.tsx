@@ -41,7 +41,7 @@ const Hero = () => {
         <div className='hero-input-section flex flex-col justify-items-end gap-3 md:hidden w-full h-44 py-2 mt-5'>
             <input className='bg-white rounded-lg w-full h-20 pl-4 outline-none border' type='text' placeholder='Que recherchez-vous?' />
             <select className='bg-white rounded-lg w-full h-20 pl-4 outline-none border'>
-                <option value="" className='opacity-50'>Où?</option>
+                <option value="" className='opacity-50'>Dans quel secteur?</option>
                 <option value="nord">Nord</option>
                 <option value="est">Est</option>
                 <option value="sud">Sud</option>
@@ -49,7 +49,7 @@ const Hero = () => {
             </select>
             
             <Link href='/result'>
-            <button className='group flex items-center bg-blueKalipro hover:opacity-80 w-44 h-16 
+            <button className='group flex items-center bg-blueKalipro hover:opacity-80 w-44 lg:h-16 h-12 
                             text-white text-l lg:text-xl font-semibold py-2 px-7 rounded-full' 
                     type='button'>
                 <Image  src='/icon/search-icon.png' 

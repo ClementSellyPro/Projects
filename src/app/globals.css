@@ -190,8 +190,16 @@ body {
 }
 
 .TestimonialCard:hover{
-  transform: translateY(-3px);
+  /* transform: translateY(-3px); */
 }
+
+
+/* -------------------- Contact mail -------------------- */
+textarea{
+  height: 200px;
+}
+
+
 
 
 /* ------------------------------ max-width: 1024px ------------------------------ */

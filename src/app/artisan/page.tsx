@@ -3,6 +3,7 @@ import React from 'react'
 import TestimonialCard from '@/components/TestimonialCard'
 import Link from 'next/link'
 
+/* Page artisan detail */
 const page = () => {
   return (
     <div className='bg-slate-50 md:px-20 py-10 px-5 relative'>
@@ -23,10 +24,10 @@ const page = () => {
             </div>
         </div>
 
-        <div className='md:flex block justify-between py-14 border-b'>
-            <div>
+        <div className='md:flex block justify-between py-14'>
+            <div className='flex flex-col gap-5'>
                 {/* Competence */}
-                <div className='pb-10 border-b'>
+                <div className='hover:bg-subtleKalipro p-7 border rounded-xl'>
                     <h2 className='font-semibold md:text-2xl text-3xl mb-5'>Compétences</h2>
                     <p>
                         <span className='font-semibold'>Spécialiste des réseaux électriques </span> <br />
@@ -38,30 +39,29 @@ const page = () => {
                     </p>
                 </div>
                 {/* Presentation */}
-                <div className='py-10 border-b'>
+                <div className='hover:bg-subtleKalipro p-7 border rounded-xl'>
                     <h2 className='font-semibold md:text-2xl text-3xl mb-5'>Présentation</h2>
-                    <p>Electrika est une entreprise failiale et indépendante. </p>
+                    <p className='max-w-md'>Electrika est une entreprise familiale et indépendante. Nous aimons ce que noua faisons, c&apos;est pourquoi nous appliquons au mieux nos compétence, afin de satisfaire le client. Nous avons un gout pour le details qui nous permet d&apos;accomplir notre tache de maniere irréprochable.</p>
                 </div>
                 {/* Assurance */}
-                <div className='py-10'>
+                <div className='hover:bg-subtleKalipro p-7 border rounded-xl'>
                     <h2 className='font-semibold md:text-2xl text-3xl mb-5'>Qualifications assurances*</h2>
                     <ul>
                         <li>Certification AAA</li>
                         <li>Assurance RCP et décennale</li>
                     </ul>
                     <p className='mt-2 text-sm'>* A charge pour vous de vérifier ces informations en le demandant directement au professionels. </p>
-                
                 </div>
             </div>
             {/* zone intervention */}
-            <div>
+            <div className='hover:bg-subtleKalipro p-7 border rounded-xl md:mt-0 mt-5 md:ml-5 ml-0'>
                 <h2 className='font-semibold md:text-2xl text-3xl mb-5'>Zone d&apos;intervention</h2>
                 <Image src='/intervention.png' alt='Carte' width={400} height={400} />
             </div>
         </div>
 
         {/* photos */}
-        <div className='mt-10'>
+        <div className='mt-10 pb-10 border-b'>
             <h2 className='font-semibold text-3xl mb-5'>Photos</h2>
 
             <div className='flex flex-wrap gap-5'>

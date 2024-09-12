@@ -40,12 +40,12 @@ const page = () => {
           
           <div className='flex flex-col gap-1'>
             <label className='font-semibold text-xl'>Votre message</label>
-            <textarea className='px-4 py-2 rounded-lg border resize-none' placeholder='Bonjour, ' />
+            <textarea className='px-4 py-2 rounded-lg border resize-none' placeholder='Bonjour, nous recherchons un artisan afin de realiser ...' />
           </div>
 
           <div className='flex gap-1'>
             <input type='checkbox' />
-            <p className='ml-2'>J&apos;accepte les <span className='underline cursor-pointer'>conditions generale d&apos;utilisation</span></p>
+            <p className='ml-2'>J&apos;accepte les <span className='underline cursor-pointer'>conditions générale d&apos;utilisation</span></p>
           </div>
 
           <button className='w-fit py-3 px-10 font-semibold rounded-full bg-blueKalipro hover:opacity-80 text-white' type='submit'>Envoyer</button>

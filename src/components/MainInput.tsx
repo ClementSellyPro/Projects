@@ -19,7 +19,7 @@ const MainInput = () => {
                     <input onClick={displaySecteur} className='seach-input pl-4 xl:w-80 lg:w-64 w-40 text-sm h-full outline-none border-l-2' type="text" placeholder='Dans quel secteur?' defaultValue={secteurSelection}  />
 
                     {/* secteur menu display */}
-                    <div className='fixed lg:top-96 md:top'>
+                    <div className='fixed lg:top-96 md:top-80'>
                         <SearchSecteur setIsSecteurActive={setIsSecteurActive} setSecteurSelection={setSecteurSelection} isActive={isSecteurActive} />
                     </div>
                 </div>

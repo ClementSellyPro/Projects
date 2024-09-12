@@ -1,0 +1,202 @@
+[
+    {
+        "_id": 123456,
+        "name": "Electrika",
+        "domaine_artisan": "Electricien",
+        "phone": "0692123456",
+        "mail": "electrika@gmail.com",
+        "location": "Saint André",
+        "secteur": "Est, Nord",
+        "intervention_img": "",
+        "disponibilite": true,
+        "temps_disponibilite": 0,
+        "competences": [
+            "Spécialiste des réseaux électriques",
+            "Raccordement et dérivation du flux électrique",
+            "Câblage depuis la source d'énergie",
+            "Localisation des dysfonctionnements",
+            "Réalisation d'une phase de test et de mesure",
+            "Force de proposition sur des solutions alternatives innovantes"
+        ],
+        "presentation": "Electrika est une entreprise familiale et indépendante. Nous aimons ce que noua faisons, c'est pourquoi nous appliquons au mieux nos compétence, afin de satisfaire le client. Nous avons un gout pour le details qui nous permet d'accomplir notre tache de maniere irréprochable.",
+        "qualifications_assurances": [
+            "Certification AAA",
+            "Assurance RCP et décennale"
+        ],
+        "photo": [],
+        "avis": [
+            {
+                "_id": 0,
+                "client": "Pierre",
+                "secteur": "Saint André",
+                "avis": "Merci Electrika pour les travaux réalisés. Le travail a été fait rapidement et proprement.",
+                "artisan": "Electrika",
+                "domaine_artisan": "Electricien"
+            },
+            {
+                "_id": 1,
+                "client": "Martine",
+                "secteur": "Saint Benoit",
+                "avis": "Le travail realisé est d’une grande qualitée. Kalipro m’a permis de trouver un artisan de qualité à proximité de chez moi.",
+                "artisan": "Electrika",
+                "domaine_artisan": "Electricien"
+            },
+            {
+                "_id": 2,
+                "client": "Josie",
+                "secteur": "Saint André",
+                "avis": "Merci, je suis tombé sur un électricien qui connait son travail et qui a su s'adapter. Travail rapide et efficace.",
+                "artisan": "Electrika",
+                "domaine_artisan": "Electricien"
+            },
+            {
+                "_id": 3,
+                "client": "Brice",
+                "secteur": "Saint André",
+                "avis": "Travail de professionel. Je recommande Electrika pour vos travaux. Rien a redire, au top.",
+                "artisan": "Electrika",
+                "domaine_artisan": "Electricien"
+            },
+            {
+                "_id": 4,
+                "client": "Nino",
+                "secteur": "Saint Benoit",
+                "avis": "Le travail realisé est d’une grande qualitée. Kalipro m’a permis de trouver un artisan de qualité à proximité de chez moi.",
+                "artisan": "Electrika",
+                "domaine_artisan": "Electricien"
+            }
+        ]
+    },
+    {
+        "_id": 223456,
+        "name": "Maison Réunionnaise",
+        "domaine_artisan": "Maçonnerie",
+        "phone": "0692123457",
+        "mail": "maisonreunionnaise@gmail.com",
+        "location": "Saint Denis",
+        "secteur": "Nord",
+        "intervention_img": "",
+        "disponibilite": false,
+        "temps_disponibilite": 3,
+        "competences": [
+            "Spécialiste pour la construction de maison",
+            "Lecture de plan",
+            "Sous bassement",
+            "Gros oueuvre"
+        ],
+        "presentation": "Nous sommes Maison Réunionnaise et nous avons des années d'expériences derriere nous. La maitrise de la réalisation d'une maison fait partie de nos compétences.",
+        "qualifications_assurances": [
+            "Certification AAA",
+            "Assurance RCP et décennale"
+        ],
+        "photo": [],
+        "avis": [
+            {
+                "_id": 0,
+                "client": "Gérard",
+                "secteur": "Saint Denis",
+                "avis": "Je suis extrêmement satisfait de la réalisation de ma maison, qui correspond exactement à mes attentes. Le travail a été effectué avec soin et professionnalisme, dans les délais prévus.",
+                "artisan": "Maison Réunionnaise",
+                "domaine_artisan": "Maçonnerie"
+            },
+            {
+                "_id": 1,
+                "client": "Ronaldo",
+                "secteur": "Saint Marie",
+                "avis": "Je suis ravi de la qualité de la maçonnerie, tout a été réalisé avec précision et attention aux détails. Le chantier s'est déroulé sans accroc et le résultat final est impeccable.",
+                "artisan": "Maison Réunionnaise",
+                "domaine_artisan": "Maçonnerie"
+            },
+            {
+                "_id": 2,
+                "client": "Martine",
+                "secteur": "Saint Denis",
+                "avis": "Le travail réalisé sur ma maison est d'une grande qualité, avec un souci du détail remarquable. Toute l'équipe a été professionnelle et le résultat dépasse mes attentes.",
+                "artisan": "Maison Réunionnaise",
+                "domaine_artisan": "Maçonnerie"
+            },
+            {
+                "_id": 3,
+                "client": "Martine",
+                "secteur": "Saint Denis",
+                "avis": "Le travail realisé est d’une grande qualitée. Kalipro m’a permis de trouver un artisan de qualité à proximité de chez moi.",
+                "artisan": "Maison Réunionnaise",
+                "domaine_artisan": "Maçonnerie"
+            },
+            {
+                "_id": 4,
+                "client": "Martine",
+                "secteur": "Saint Marie",
+                "avis": "Le travail réalisé sur ma maison est d'une grande qualité, avec un souci du détail remarquable. Toute l'équipe a été professionnelle et le résultat dépasse mes attentes.",
+                "artisan": "Maison Réunionnaise",
+                "domaine_artisan": "Maçonnerie"
+            }
+        ]
+    },
+    {
+        "_id": 323456,
+        "name": "La Menuiserie",
+        "domaine_artisan": "Menuiserie",
+        "phone": "0692123458",
+        "mail": "lamenuiserie@gmail.com",
+        "location": "Saint Paul",
+        "secteur": "Nord, Ouest",
+        "intervention_img": "",
+        "disponibilite": true,
+        "temps_disponibilite": 0,
+        "competences": [
+            "Spécialiste pour la réalisation en menuiserie",
+            "Lecture de plan",
+            "Rénovation",
+            "Réalisation sur-mesure"
+        ],
+        "presentation": "Notre entreprise de menuiserie est spécialisée dans la conception et la réalisation de projets sur mesure, alliant savoir-faire artisanal et matériaux de qualité. Que ce soit pour des portes, fenêtres, escaliers ou aménagements intérieurs, nous mettons notre expertise au service de vos envies. Nous garantissons un travail soigné, durable et personnalisé pour répondre à toutes vos attentes.",
+        "qualifications_assurances": [
+            "Certification AAA",
+            "Assurance RCP et décennale"
+        ],
+        "photo": [],
+        "avis": [
+            {
+                "_id": 0,
+                "client": "Josie",
+                "secteur": "Saint Paul",
+                "avis": "Je suis extrêmement satisfait du travail réalisé par cette entreprise de menuiserie. Les finitions sont impeccables, et tout a été fait sur mesure selon mes demandes. L'équipe est professionnelle et a su respecter les délais tout en fournissant un travail de grande qualité.",
+                "artisan": "La Menuiserie",
+                "domaine_artisan": "Menuiserie"
+            },
+            {
+                "_id": 1,
+                "client": "Rivaldo",
+                "secteur": "Saint Gilles",
+                "avis": "Un travail de menuiserie sur mesure impeccable, réalisé avec soin et professionnalisme. Le résultat dépasse mes attentes, je recommande vivement cette entreprise.",
+                "artisan": "La Menuiserie",
+                "domaine_artisan": "Menuiserie"
+            },
+            {
+                "_id": 2,
+                "client": "Martine",
+                "secteur": "Saint Denis",
+                "avis": "Très satisfait du travail réalisé, les finitions sont parfaites et tout a été fait dans les délais. Une équipe professionnelle et à l’écoute de mes besoins.",
+                "artisan": "La Menuiserie",
+                "domaine_artisan": "Menuiserie"
+            },
+            {
+                "_id": 3,
+                "client": "Edouardo",
+                "secteur": "Saint Pierre",
+                "avis": "Le service était excellent, avec un travail sur mesure de grande qualité. Les matériaux et les finitions sont impeccables, je ne pouvais pas demander mieux.",
+                "artisan": "La Menuiserie",
+                "domaine_artisan": "Menuiserie"
+            },
+            {
+                "_id": 4,
+                "client": "Ginette",
+                "secteur": "Saint Paul",
+                "avis": "Le travail réalisé sur ma maison est d'une grande qualité, avec un souci du détail remarquable. Toute l'équipe a été professionnelle et le résultat dépasse mes attentes.",
+                "artisan": "La Menuiserie",
+                "domaine_artisan": "Menuiserie"
+            }
+        ]
+    }
+]

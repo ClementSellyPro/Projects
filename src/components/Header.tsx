@@ -20,7 +20,8 @@ const Header = () => {
         {/* navigation bar */}
         <nav className='ml-10 h-18 md:block hidden'>
             <ul className='nav-links flex gap-5 text-xl h-20'>
-                <li className='hover:border-b-2 border-kalipro cursor-pointer font-semibold flex items-center'><Link href={'/'}> Accueil </Link></li>
+                <Link className='flex items-center hover:border-b-2 border-kalipro cursor-pointer' href={'/'}><li className='font-semibold'> Accueil </li></Link>
+
                 <li className='nav-link-metier hover:border-b-2 border-kalipro cursor-pointer font-semibold flex items-center'>
                   Metiers 
                   {/* Metiers dropdown menu */}
@@ -32,7 +33,8 @@ const Header = () => {
                   {/* Secteurs dropdown menu */}
                   <MenuSecteur hidden={true} />
                 </li>
-                <li className='hover:border-b-2 border-kalipro cursor-pointer font-semibold flex items-center'><Link href={'/contact'}>Contact </Link></li>
+
+                <Link className='flex items-center hover:border-b-2 border-kalipro cursor-pointer ' href={'/contact'}><li className='font-semibold'>Contact </li></Link>
             </ul>
         </nav>
         <Link className='md:hidden font-semibold hover:border-b-2 border-kalipro absolute right-5' href='/contact'>Contact</Link>
