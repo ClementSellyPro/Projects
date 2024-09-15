@@ -1,14 +1,14 @@
 "use client"
 
-import React from 'react'
+import React, { useContext } from 'react'
 import MiniInput from '@/components/resultPage/MiniInput'
 import SearchResult from '@/components/SearchResult'
-import { useFilterContext } from '@/context/FilterContext';
+import FilterContext from '@/context/FilterContext';
 
 /* Result Page */
-const Page =  () => {
+const Page = () => {
   
-  const { filterSecteur, filterMetier } = useFilterContext();
+  const { filterSecteur, filterMetier } = useContext(FilterContext);
 
   return (
     <div className='Result bg-gradient-to-tr from-subtleKalipro to-slate-50 pb-20 pt-10'>
@@ -20,10 +20,10 @@ const Page =  () => {
         <p className='md:mx-20 mx-5 md:mt-10 mt-6 py-2 px-10 rounded-lg bg-slate-200 text-slate-500 '>Tous les professionels présents sur notre site ont été selectionnés par nos soins.</p>
 
         <div className='results-section flex justify-between flex-wrap gap-10 md:px-20 px-5 mt-10'>
-            <SearchResult filterSecteur={filterSecteur} filterMetier={filterMetier}  />
+            <SearchResult filterSecteur={filterSecteur} filterMetier={filterMetier} />
         </div>
     </div>
   )
 }
 
-export default Page
+export default Page;

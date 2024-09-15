@@ -1,3 +1,5 @@
+"use client"
+
 import { createContext, useContext, useState, Dispatch, SetStateAction } from "react";
 
 interface ContextType {

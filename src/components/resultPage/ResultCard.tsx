@@ -10,7 +10,7 @@ type Props = {
     phone: string,
     mail: string,
     location: string,
-    secteur: string,
+    secteur: Array<string>,
     intervention_img: string,
     disponibilite: boolean,
     temps_disponibilite: number,
@@ -35,7 +35,7 @@ const ResultCard = ({_id, name, domaine_artisan, phone, mail, location, secteur,
             <div className='info-section ml-5'>
                 <p className='text-xl font-semibold'>{name}</p>
                 <p className='text-xs text-slate-500'>{domaine_artisan}</p>
-                <p className='mt-6 text-base'>Zone intervention: {secteur}</p>
+                <p className='mt-6 text-base'>Zone intervention: {secteur.map(secteur => secteur + ', ')}</p>
             </div>
         </div>
 

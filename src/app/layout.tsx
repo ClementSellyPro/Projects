@@ -1,12 +1,10 @@
-import type { Metadata } from "next";
+"use client"
+
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { FilterContextProvider } from "@/context/FilterContext";
 
-export const metadata: Metadata = {
-  title: "Kalipro",
-  description: "Des artisans de qualité à proximité de chez vous.",
-};
 
 export default function RootLayout({
   children,
@@ -16,11 +14,13 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body>
-        <Header />
-        <main>
-          {children}
-        </main>
-        <Footer />
+        <FilterContextProvider>
+          <Header />
+          <main>
+            {children}
+          </main>
+          <Footer />
+        </FilterContextProvider>
       </body>
     </html>
   );
