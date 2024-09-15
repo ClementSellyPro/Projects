@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 // style in the global.css
 import MainInput from './MainInput';
@@ -8,6 +8,7 @@ import Link from 'next/link';
 
 const Hero = () => {
 
+    const [secteurSelected, setSecteurSelected] = useState('');
     
 
   return (

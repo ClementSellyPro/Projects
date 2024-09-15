@@ -5,6 +5,7 @@ import MenuSecteur from './MenuSecteur';
 import MenuMetier from './MenuMetier';
 
 const Header = () => {
+
   return (
     <div className='Header flex items-center md:px-20 px-5 py-5 static bg-slate-50'>
       {/* Logo */}

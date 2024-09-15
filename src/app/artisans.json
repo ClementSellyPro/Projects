@@ -6,7 +6,7 @@
         "phone": "0692123456",
         "mail": "electrika@gmail.com",
         "location": "Saint André",
-        "secteur": "Est, Nord",
+        "secteur": ["Est", "Nord"],
         "intervention_img": "",
         "disponibilite": true,
         "temps_disponibilite": 0,
@@ -74,7 +74,7 @@
         "phone": "0692123457",
         "mail": "maisonreunionnaise@gmail.com",
         "location": "Saint Denis",
-        "secteur": "Nord",
+        "secteur": ["Nord"],
         "intervention_img": "",
         "disponibilite": false,
         "temps_disponibilite": 3,
@@ -102,7 +102,7 @@
             {
                 "_id": 1,
                 "client": "Ronaldo",
-                "secteur": "Saint Marie",
+                "secteur": "Sainte Marie",
                 "avis": "Je suis ravi de la qualité de la maçonnerie, tout a été réalisé avec précision et attention aux détails. Le chantier s'est déroulé sans accroc et le résultat final est impeccable.",
                 "artisan": "Maison Réunionnaise",
                 "domaine_artisan": "Maçonnerie"
@@ -126,7 +126,7 @@
             {
                 "_id": 4,
                 "client": "Martine",
-                "secteur": "Saint Marie",
+                "secteur": "Sainte Marie",
                 "avis": "Le travail réalisé sur ma maison est d'une grande qualité, avec un souci du détail remarquable. Toute l'équipe a été professionnelle et le résultat dépasse mes attentes.",
                 "artisan": "Maison Réunionnaise",
                 "domaine_artisan": "Maçonnerie"
@@ -140,7 +140,7 @@
         "phone": "0692123458",
         "mail": "lamenuiserie@gmail.com",
         "location": "Saint Paul",
-        "secteur": "Nord, Ouest",
+        "secteur": ["Nord", "Ouest"],
         "intervention_img": "",
         "disponibilite": true,
         "temps_disponibilite": 0,
@@ -196,6 +196,787 @@
                 "avis": "Le travail réalisé sur ma maison est d'une grande qualité, avec un souci du détail remarquable. Toute l'équipe a été professionnelle et le résultat dépasse mes attentes.",
                 "artisan": "La Menuiserie",
                 "domaine_artisan": "Menuiserie"
+            }
+        ]
+    },
+    {
+        "_id": 423456,
+        "name": "CreuseTout",
+        "domaine_artisan": "Aménagement extérieur",
+        "phone": "0692123457",
+        "mail": "creusetout@gmail.com",
+        "location": "Saint Benoit",
+        "secteur": ["Est", "Nord", "Sud"],
+        "intervention_img": "",
+        "disponibilite": true,
+        "temps_disponibilite": 0,
+        "competences": [
+            "Spécialiste pour l'aménagement extérieur'",
+            "Terassement",
+            "Gros engin"
+        ],
+        "presentation": "Notre entreprise est spécialisée dans l'aménagement extérieur, créant des espaces personnalisés et harmonieux pour sublimer votre jardin ou terrasse. Nous concevons et réalisons des projets sur mesure tels que des terrasses, allées et terrassement.",
+        "qualifications_assurances": [
+            "Certification AAA",
+            "Assurance RCP et décennale"
+        ],
+        "photo": [],
+        "avis": [
+            {
+                "_id": 0,
+                "client": "Gérard",
+                "secteur": "Saint Denis",
+                "avis": "Le terrassement a été réalisé rapidement et avec précision. Mon terrain est parfaitement nivelé, prêt pour la construction, je suis vraiment satisfait du résultat.",
+                "artisan": "CreuseTout",
+                "domaine_artisan": "Aménagement extérieur"
+            },
+            {
+                "_id": 1,
+                "client": "Maxime",
+                "secteur": "Sainte Marie",
+                "avis": "Une équipe professionnelle qui a su répondre à mes attentes. Le terrassement a été fait proprement, et le chantier a été laissé en ordre. Je recommande vivement !",
+                "artisan": "CreuseTout",
+                "domaine_artisan": "Aménagement extérieur"
+            },
+            {
+                "_id": 2,
+                "client": "Homer",
+                "secteur": "Saint Suzanne",
+                "avis": "Travail impeccable, mon terrain a été parfaitement aplanit et tout s'est déroulé dans les délais annoncés. Un service fiable et de qualité.",
+                "artisan": "CreuseTout",
+                "domaine_artisan": "Aménagement extérieur"
+            },
+            {
+                "_id": 3,
+                "client": "Marge",
+                "secteur": "Saint Denis",
+                "avis": "Très satisfait du terrassement de mon terrain. L'équipe a su gérer les contraintes du terrain difficile et le résultat est au-delà de mes espérances.",
+                "artisan": "CreuseTout",
+                "domaine_artisan": "Aménagement extérieur"
+            },
+            {
+                "_id": 4,
+                "client": "Martine",
+                "secteur": "Sainte Marie",
+                "avis": "Le terrassement a été réalisé avec soin et efficacité. Tout a été fait comme convenu, terrain prêt et chantier propre. Excellent service !",
+                "artisan": "CreuseTout",
+                "domaine_artisan": "Aménagement extérieur"
+            }
+        ]
+    },
+    {
+        "_id": 523456,
+        "name": "Architectura",
+        "domaine_artisan": "Architecte",
+        "phone": "0692123467",
+        "mail": "architectura@gmail.com",
+        "location": "Saint Denis",
+        "secteur": ["Est", "Nord", "Ouest", "Sud"],
+        "intervention_img": "",
+        "disponibilite": true,
+        "temps_disponibilite": 0,
+        "competences": [
+            "Spécialiste dans l'architecture de maison",
+            "Plan de maison",
+            "Design sur mesure"
+        ],
+        "presentation": "Notre cabinet d'architecture conçoit des projets innovants et sur mesure, alliant esthétisme, fonctionnalité et respect de l'environnement. Nous accompagnons nos clients de la conception à la réalisation, pour donner vie à leurs espaces.",
+        "qualifications_assurances": [
+            "Certification AAA",
+            "Assurance RCP et décennale"
+        ],
+        "photo": [],
+        "avis": [
+            {
+                "_id": 0,
+                "client": "Nicolas Lefevre",
+                "secteur": "Saint Denis",
+                "avis": "Un travail remarquable du début à la fin, le cabinet a parfaitement compris mes attentes et a su les transformer en un projet architectural unique.",
+                "artisan": "Architectura",
+                "domaine_artisan": "Architecte"
+            },
+            {
+                "_id": 1,
+                "client": "Jean Dupuis",
+                "secteur": "Sainte Marie",
+                "avis": "Excellente collaboration, les architectes ont su allier créativité et respect des contraintes techniques. Le résultat est tout simplement magnifique.",
+                "artisan": "Architectura",
+                "domaine_artisan": "Architecte"
+            },
+            {
+                "_id": 2,
+                "client": "Claire Martin",
+                "secteur": "Saint Suzanne",
+                "avis": "Je suis très satisfait du projet réalisé, le cabinet a été à l'écoute tout au long du processus et le résultat final est à la hauteur de mes espérances.",
+                "artisan": "Architectura",
+                "domaine_artisan": "Architecte"
+            },
+            {
+                "_id": 3,
+                "client": "Sophie Bernard",
+                "secteur": "Saint Denis",
+                "avis": "Une équipe professionnelle et réactive. Leurs idées innovantes ont complètement transformé mon espace, je recommande sans hésitation.",
+                "artisan": "Architectura",
+                "domaine_artisan": "Architecte"
+            },
+            {
+                "_id": 4,
+                "client": "Thomas Girault",
+                "secteur": "Sainte Marie",
+                "avis": "Le cabinet d'architecture a su créer un design fonctionnel et esthétique, tout en respectant mon budget. Je ne pouvais pas espérer mieux !",
+                "artisan": "Architectura",
+                "domaine_artisan": "Architecte"
+            }
+        ]
+    },
+    {
+        "_id": 623456,
+        "name": "Atelier Caro",
+        "domaine_artisan": "Carreleur",
+        "phone": "0692123468",
+        "mail": "ateliercaro@gmail.com",
+        "location": "Le Port",
+        "secteur": ["Nord", "Ouest", "Sud"],
+        "intervention_img": "",
+        "disponibilite": false,
+        "temps_disponibilite": 1,
+        "competences": [
+            "Spécialiste dans le carrelage",
+            "Lecture plan de maison",
+            "Design sur mesure"
+        ],
+        "presentation": "Notre cabinet d'architecture conçoit des projets innovants et sur mesure, alliant esthétisme, fonctionnalité et respect de l'environnement. Nous accompagnons nos clients de la conception à la réalisation, pour donner vie à leurs espaces.",
+        "qualifications_assurances": [
+            "Certification AAA",
+            "Assurance RCP et décennale"
+        ],
+        "photo": [],
+        "avis": [
+            {
+                "_id": 0,
+                "client": "Jean",
+                "secteur": "Saint Denis",
+                "avis": "Travail impeccable ! Les carreaux ont été posés avec une grande précision et le résultat est magnifique. Je recommande vivement cette entreprise de carreleur.",
+                "artisan": "Atelier Caro",
+                "domaine_artisan": "Carreleur"
+            },
+            {
+                "_id": 1,
+                "client": "Martine Marchand",
+                "secteur": "Saint Pierre",
+                "avis": "Très satisfaite du service, les finitions sont parfaites et l'équipe a été très professionnelle tout au long du projet. Mon sol est superbe !",
+                "artisan": "Atelier Caro",
+                "domaine_artisan": "Carreleur"
+            },
+            {
+                "_id": 2,
+                "client": "Marc Dufour",
+                "secteur": "Saint Paul",
+                "avis": "Le travail a été réalisé rapidement et avec soin. Le carrelage est posé de manière impeccable, et le rendu est à la hauteur de mes attentes.",
+                "artisan": "Atelier Caro",
+                "domaine_artisan": "Carreleur"
+            },
+            {
+                "_id": 3,
+                "client": "Isabelle",
+                "secteur": "Saint Denis",
+                "avis": "Un service de qualité, les carreleurs ont su me conseiller et réaliser un travail propre et soigné. Je suis ravie du résultat.",
+                "artisan": "Atelier Caro",
+                "domaine_artisan": "Carreleur"
+            },
+            {
+                "_id": 4,
+                "client": "Pierre Durand",
+                "secteur": "Saint Philipe",
+                "avis": "Excellente prestation ! Le carrelage a été posé avec beaucoup de précision, et le chantier a été laissé propre. Je ne peux que recommander cette entreprise.",
+                "artisan": "Atelier Caro",
+                "domaine_artisan": "Carreleur"
+            }
+        ]
+    },
+    {
+        "_id": 823456,
+        "name": "Charpente974",
+        "domaine_artisan": "Charpentier",
+        "phone": "0692123568",
+        "mail": "charpentier974@gmail.com",
+        "location": "Sainte Marie",
+        "secteur": ["Est", "Nord"],
+        "intervention_img": "",
+        "disponibilite": true,
+        "temps_disponibilite": 0,
+        "competences": [
+            "Spécialiste dans la charpente",
+            "Lecture plan de maison",
+            "Design sur mesure"
+        ],
+        "presentation": "Notre entreprise de charpenterie est spécialisée dans la conception, la fabrication et la pose de structures en bois pour tous types de projets, du neuf à la rénovation. Forts d'une expertise artisanale et d'un savoir-faire reconnu, nous garantissons des travaux durables et de qualité, en respectant les normes et vos exigences spécifiques.",
+        "qualifications_assurances": [
+            "Certification AAA",
+            "Assurance RCP et décennale"
+        ],
+        "photo": [],
+        "avis": [
+            {
+                "_id": 0,
+                "client": "Luc",
+                "secteur": "Saint Denis",
+                "avis": "Un travail exceptionnel ! Ma charpente a été réalisée avec un grand soin et dans les délais prévus. L'équipe est vraiment professionnelle.",
+                "artisan": "Charpente974",
+                "domaine_artisan": "Charpentier"
+            },
+            {
+                "_id": 1,
+                "client": "Marie Dubois",
+                "secteur": "Saint André",
+                "avis": "Très contente du résultat, la charpente est solide et esthétique. Les charpentiers ont été à l'écoute de mes demandes tout au long du projet.",
+                "artisan": "Charpente974",
+                "domaine_artisan": "Charpentier"
+            },
+            {
+                "_id": 2,
+                "client": "Antoine Girard",
+                "secteur": "Sainte Marie",
+                "avis": "Le chantier a été mené à bien avec sérieux et précision. L'entreprise a fait preuve d'un grand professionnalisme, je recommande vivement.",
+                "artisan": "Charpente974",
+                "domaine_artisan": "Charpentier"
+            },
+            {
+                "_id": 3,
+                "client": "Claire Thomas",
+                "secteur": "Saint Denis",
+                "avis": "Je suis ravie de la charpente réalisée pour notre extension. Le travail est soigné et l’équipe est intervenue avec beaucoup de rigueur et de ponctualité.",
+                "artisan": "Charpente974",
+                "domaine_artisan": "Charpentier"
+            },
+            {
+                "_id": 4,
+                "client": "Pauline",
+                "secteur": "Saint Suzanne",
+                "avis": "Excellente prestation, la charpente de ma maison est parfaitement réalisée. Une équipe compétente, ponctuelle et respectueuse des délais.",
+                "artisan": "Charpente974",
+                "domaine_artisan": "Charpentier"
+            }
+        ]
+    },
+    {
+        "_id": 923456,
+        "name": "FrigoClim",
+        "domaine_artisan": "Climatisation",
+        "phone": "0692133568",
+        "mail": "frigoclim@gmail.com",
+        "location": "Saint Denis",
+        "secteur": ["Est", "Nord"],
+        "intervention_img": "",
+        "disponibilite": true,
+        "temps_disponibilite": 0,
+        "competences": [
+            "Spécialiste dans la climatisation",
+            "Installation climatiseur",
+            "Réparation",
+            "Révision de climatiseur"
+        ],
+        "presentation": "Notre entreprise est spécialisée dans l'installation, l'entretien et la réparation de systèmes de climatisation pour particuliers et professionnels. Nous proposons des solutions sur mesure adaptées à vos besoins, garantissant confort, performance énergétique et respect des normes en vigueur. Avec une équipe expérimentée, nous assurons un service de qualité et un suivi personnalisé.",
+        "qualifications_assurances": [
+            "Certification AAA",
+            "Assurance RCP et décennale"
+        ],
+        "photo": [],
+        "avis": [
+            {
+                "_id": 0,
+                "client": "Marc",
+                "secteur": "Saint Denis",
+                "avis": "Installation impeccable de ma climatisation, le service a été rapide et efficace. Je suis très satisfait du confort que cela apporte.",
+                "artisan": "FrigoClim",
+                "domaine_artisan": "Climatisation"
+            },
+            {
+                "_id": 1,
+                "client": "Marie Dubois",
+                "secteur": "Saint André",
+                "avis": "Très bonne expérience, l'équipe a su me conseiller sur le meilleur système pour ma maison. L’installation s’est faite sans problème et dans les délais.",
+                "artisan": "FrigoClim",
+                "domaine_artisan": "Climatisation"
+            },
+            {
+                "_id": 2,
+                "client": "Antoine",
+                "secteur": "Sainte Marie",
+                "avis": "Un service de qualité avec des techniciens compétents. Le système est performant et l'entretien est toujours bien réalisé.",
+                "artisan": "FrigoClim",
+                "domaine_artisan": "Climatisation"
+            },
+            {
+                "_id": 3,
+                "client": "Lucas Fontaine",
+                "secteur": "Saint Denis",
+                "avis": "Excellente prestation, mon climatiseur a été installé rapidement et fonctionne parfaitement. Une équipe très professionnelle et sympathique.",
+                "artisan": "FrigoClim",
+                "domaine_artisan": "Climatisation"
+            },
+            {
+                "_id": 4,
+                "client": "Chantal",
+                "secteur": "Saint Suzanne",
+                "avis": "Rien à redire, le travail a été fait avec soin et le climatiseur est très efficace. Je recommande vivement cette entreprise pour son sérieux",
+                "artisan": "FrigoClim",
+                "domaine_artisan": "Climatisation"
+            }
+        ]
+    },
+    {
+        "_id": 133456,
+        "name": "MaCuisine",
+        "domaine_artisan": "Cuisiniste",
+        "phone": "0692233568",
+        "mail": "macuisine@gmail.com",
+        "location": "Saint Leu",
+        "secteur": ["Nord", "Ouest"],
+        "intervention_img": "",
+        "disponibilite": false,
+        "temps_disponibilite": 2,
+        "competences": [
+            "Spécialiste dans l'installation de cuisine",
+            "Installation de cuisine",
+            "Cuisine sur mesure"
+        ],
+        "presentation": "Notre entreprise de cuisiniste est spécialisée dans la conception et l'aménagement de cuisines sur mesure, alliant fonctionnalité, esthétique et innovation. Nous travaillons en étroite collaboration avec vous pour créer une cuisine qui correspond parfaitement à vos besoins et à votre style, en utilisant des matériaux de qualité et des équipements modernes.",
+        "qualifications_assurances": [
+            "Certification AAA",
+            "Assurance RCP et décennale"
+        ],
+        "photo": [],
+        "avis": [
+            {
+                "_id": 0,
+                "client": "Élodie Bernard",
+                "secteur": "Saint Denis",
+                "avis": "Ma nouvelle cuisine est tout simplement magnifique ! Le cuisiniste a parfaitement compris mes envies et le résultat est à la hauteur de mes attentes.",
+                "artisan": "MaCuisine",
+                "domaine_artisan": "Cuisiniste"
+            },
+            {
+                "_id": 1,
+                "client": "Jean Marc",
+                "secteur": "Saint Leu",
+                "avis": "Service exceptionnel du début à la fin. La conception, la qualité des matériaux et la pose ont été réalisées avec beaucoup de professionnalisme. Je suis ravi.",
+                "artisan": "MaCuisine",
+                "domaine_artisan": "Cuisiniste"
+            },
+            {
+                "_id": 2,
+                "client": "Antoine",
+                "secteur": "Saint Pierre",
+                "avis": "Très satisfait de la transformation de ma cuisine. L’équipe a été attentive à chaque détail et le projet a été réalisé dans les délais impartis.",
+                "artisan": "MaCuisine",
+                "domaine_artisan": "Cuisiniste"
+            },
+            {
+                "_id": 3,
+                "client": "Lucas Fontaine",
+                "secteur": "Saint Pierre",
+                "avis": "Une expérience très positive avec ce cuisiniste. Les conseils étaient pertinents et la cuisine a été installée avec soin et précision. Je recommande vivement.",
+                "artisan": "MaCuisine",
+                "domaine_artisan": "Cuisiniste"
+            },
+            {
+                "_id": 4,
+                "client": "Nathalie Lefèvre",
+                "secteur": "Saint Denis",
+                "avis": "Un travail impeccable ! La cuisine est fonctionnelle et élégante, exactement comme je l’avais imaginée. L’équipe a été professionnelle et à l’écoute de mes besoins.",
+                "artisan": "MaCuisine",
+                "domaine_artisan": "Cuisiniste"
+            }
+        ]
+    },
+    {
+        "_id": 233456,
+        "name": "Maitrise & Projet",
+        "domaine_artisan": "Maitre d'oeuvre",
+        "phone": "0692233568",
+        "mail": "maitriseprojet@gmail.com",
+        "location": "Saint Denis",
+        "secteur": ["Est", "Nord", "Ouest", "Sud"],
+        "intervention_img": "",
+        "disponibilite": true,
+        "temps_disponibilite": 0,
+        "competences": [
+            "Spécialiste dans la gestion de projet",
+            "Gestion de projet de construction",
+            "Respect budget, délai"
+        ],
+        "presentation": "Maitrise & Projet est une entreprise spécialisée dans la gestion de projets de construction et de rénovation. Nous coordonnons toutes les étapes de votre projet, de la conception à la réalisation, en veillant à respecter vos délais, votre budget et vos exigences. Avec une expertise reconnue et une gestion rigoureuse, nous garantissons un suivi complet et un résultat à la hauteur de vos attentes",
+        "qualifications_assurances": [
+            "Certification AAA",
+            "Assurance RCP et décennale"
+        ],
+        "photo": [],
+        "avis": [
+            {
+                "_id": 0,
+                "client": "Jean-Paul Simon",
+                "secteur": "Saint Denis",
+                "avis": "Un maître d'œuvre exceptionnel ! La gestion de mon projet a été impeccable, tout a été réalisé dans les délais et selon les spécifications. Très satisfait.",
+                "artisan": "Maitrise & Projet",
+                "domaine_artisan": "Maitre d'oeuvre"
+            },
+            {
+                "_id": 1,
+                "client": "Claire",
+                "secteur": "Saint Leu",
+                "avis": "Maitrise & Projet a superbement orchestré la rénovation de ma maison. Leur expertise et leur organisation ont fait toute la différence. Je recommande sans réserve.",
+                "artisan": "Maitrise & Projet",
+                "domaine_artisan": "Maitre d'oeuvre"
+            },
+            {
+                "_id": 2,
+                "client": "Thomas",
+                "secteur": "Saint André",
+                "avis": "Excellent service ! Le maître d'œuvre a su gérer tous les aspects du chantier avec professionnalisme et efficacité. Le résultat final est parfait.",
+                "artisan": "Maitrise & Projet",
+                "domaine_artisan": "Maitre d'oeuvre"
+            },
+            {
+                "_id": 3,
+                "client": "Lucas Martin ",
+                "secteur": "Saint Pierre",
+                "avis": "Une coordination sans faille et un suivi constant. Mon projet de construction a été mené à bien avec beaucoup de sérieux et de compétence. Très contente du résultat.",
+                "artisan": "Maitrise & Projet",
+                "domaine_artisan": "Maitre d'oeuvre"
+            },
+            {
+                "_id": 4,
+                "client": "David Garnier",
+                "secteur": "Saint Denis",
+                "avis": "Très satisfait du travail réalisé par Maitrise & Projet. Le maître d'œuvre a su gérer toutes les étapes avec soin et respect des délais. Une entreprise fiable et professionnelle.",
+                "artisan": "Maitrise & Projet",
+                "domaine_artisan": "Maitre d'oeuvre"
+            }
+        ]
+    },
+    {
+        "_id": 333456,
+        "name": "Palette & Couleurs",
+        "domaine_artisan": "Peintre",
+        "phone": "0692433568",
+        "mail": "palettecouleur@gmail.com",
+        "location": "Saint Denis",
+        "secteur": ["Est", "Nord", "Ouest", "Sud"],
+        "intervention_img": "",
+        "disponibilite": true,
+        "temps_disponibilite": 0,
+        "competences": [
+            "Spécialiste dans la peinture",
+            "Peinture maison entière",
+            "Peinture grande surface"
+        ],
+        "presentation": "Palette & Couleurs est spécialisée dans les travaux de peinture intérieure et extérieure, offrant des solutions personnalisées pour transformer vos espaces. Nous utilisons des produits de haute qualité et des techniques avancées pour garantir des finitions impeccables et durables. Notre équipe de peintres professionnels met son expertise au service de vos projets pour un résultat esthétique et soigné.",
+        "qualifications_assurances": [
+            "Certification AAA",
+            "Assurance RCP et décennale"
+        ],
+        "photo": [],
+        "avis": [
+            {
+                "_id": 0,
+                "client": "Jean-Paul",
+                "secteur": "Saint Denis",
+                "avis": "Le travail de peinture réalisé par Palette & Couleurs est exceptionnel. Les finitions sont parfaites et l’équipe a été rapide et professionnelle. Je suis enchantée du résultat.",
+                "artisan": "Palette & Couleurs",
+                "domaine_artisan": "Peintre"
+            },
+            {
+                "_id": 1,
+                "client": "Martin",
+                "secteur": "Saint Leu",
+                "avis": "Excellente prestation ! La peinture de ma maison est maintenant impeccable et le chantier a été laissé propre. Je recommande vivement cette entreprise de peintre.",
+                "artisan": "Palette & Couleurs",
+                "domaine_artisan": "Peintre"
+            },
+            {
+                "_id": 2,
+                "client": "Nathalie Lefèvre ",
+                "secteur": "Saint André",
+                "avis": "Très satisfaite du travail de peinture, les couleurs sont exactement comme je les avais imaginées. L’équipe a été très professionnelle et attentive aux détails.",
+                "artisan": "Palette & Couleurs",
+                "domaine_artisan": "Peintre"
+            },
+            {
+                "_id": 3,
+                "client": "Paul Dubois",
+                "secteur": "Saint Pierre",
+                "avis": "Palette & Couleurs a fait un travail remarquable pour la rénovation de mes bureaux. Les murs sont maintenant parfaits, avec une finition impeccable. Service très professionnel.",
+                "artisan": "Palette & Couleurs",
+                "domaine_artisan": "Peintre"
+            },
+            {
+                "_id": 4,
+                "client": "David Dupont",
+                "secteur": "Saint Denis",
+                "avis": "Le peintre a su réaliser un travail de qualité avec des conseils précieux sur les choix de couleurs et de techniques. Le résultat est à la hauteur de mes attentes.",
+                "artisan": "Palette & Couleurs",
+                "domaine_artisan": "Peintre"
+            }
+        ]
+    },
+    {
+        "_id": 433456,
+        "name": "Plomberie Excellence",
+        "domaine_artisan": "Plombier",
+        "phone": "0692433568",
+        "mail": "palettecouleur@gmail.com",
+        "location": "Saint André",
+        "secteur": ["Est", "Nord"],
+        "intervention_img": "",
+        "disponibilite": true,
+        "temps_disponibilite": 0,
+        "competences": [
+            "Spécialiste dans la plomberie",
+            "Réparation plomberie",
+            "Raccordement et dérivation de la plomberie"
+        ],
+        "presentation": "Plomberie Excellence est spécialisée dans tous les aspects de la plomberie résidentielle et commerciale, offrant des solutions fiables pour l'installation, la réparation et l'entretien de systèmes de plomberie. Nous nous engageons à fournir un service rapide et de qualité, en utilisant des équipements modernes et des techniques éprouvées pour assurer un fonctionnement optimal et durable de vos installations.",
+        "qualifications_assurances": [
+            "Certification AAA",
+            "Assurance RCP et décennale"
+        ],
+        "photo": [],
+        "avis": [
+            {
+                "_id": 0,
+                "client": "Jean-Paul",
+                "secteur": "Saint Denis",
+                "avis": "Service impeccable de la part de Plomberie Excellence. Le problème de fuite a été réparé rapidement et efficacement. Très satisfait du travail réalisé.",
+                "artisan": "Plomberie Excellence",
+                "domaine_artisan": "Plombier"
+            },
+            {
+                "_id": 1,
+                "client": "Pauline",
+                "secteur": "Saint André",
+                "avis": "Excellente expérience avec cette entreprise. Le plombier a été professionnel, ponctuel et a résolu le problème de canalisation avec beaucoup de compétence.",
+                "artisan": "Plomberie Excellence",
+                "domaine_artisan": "Plombier"
+            },
+            {
+                "_id": 2,
+                "client": "Nathalie",
+                "secteur": "Saint Benoit",
+                "avis": "Plomberie Excellence a fait un excellent travail lors de la rénovation de ma salle de bain. Les installations sont parfaites et le service a été irréprochable.",
+                "artisan": "Plomberie Excellence",
+                "domaine_artisan": "Plombier"
+            },
+            {
+                "_id": 3,
+                "client": "Marc Renault",
+                "secteur": "Saint André",
+                "avis": "Très content de l'intervention pour le débouchage de mes canalisations. Le plombier a été rapide et efficace, avec un service client très à l'écoute.",
+                "artisan": "Plomberie Excellence",
+                "domaine_artisan": "Plombier"
+            },
+            {
+                "_id": 4,
+                "client": "Julie Bernard",
+                "secteur": "Saint Denis",
+                "avis": "Une entreprise de plomberie vraiment professionnelle. Le plombier a résolu notre problème de chauffe-eau en un rien de temps et a laissé le chantier propre. Je recommande fortement.",
+                "artisan": "Plomberie Excellence",
+                "domaine_artisan": "Plombier"
+            }
+        ]
+    },
+    {
+        "_id": 533456,
+        "name": "Automatik",
+        "domaine_artisan": "Portail et automatisme",
+        "phone": "0692533568",
+        "mail": "automatik@gmail.com",
+        "location": "Sainte Marie",
+        "secteur": ["Est", "Nord", "Ouest"],
+        "intervention_img": "",
+        "disponibilite": false,
+        "temps_disponibilite": 1,
+        "competences": [
+            "Spécialiste dans l'installation de portail automatique",
+            "Installation de portail",
+            "Réparation de portail automatique"
+        ],
+        "presentation": "Notre entreprise se spécialise dans l'installation et la maintenance de portails automatiques pour les propriétés résidentielles et commerciales. Nous offrons des solutions personnalisées et modernes pour améliorer la sécurité et le confort de vos accès, en utilisant des technologies avancées et des équipements de haute qualité. Notre équipe assure un service rapide et professionnel pour un fonctionnement optimal et durable de vos installations",
+        "qualifications_assurances": [
+            "Certification AAA",
+            "Assurance RCP et décennale"
+        ],
+        "photo": [],
+        "avis": [
+            {
+                "_id": 0,
+                "client": "Pauline Girard",
+                "secteur": "Saint Denis",
+                "avis": "Installation de notre portail automatique effectuée avec un grand professionnalisme. Le travail est impeccable et le portail fonctionne parfaitement. Très satisfaite du service.",
+                "artisan": "Automatik",
+                "domaine_artisan": "Portail et automatisme"
+            },
+            {
+                "_id": 1,
+                "client": "Nicolas",
+                "secteur": "Saint André",
+                "avis": "Excellente prestation de Portail & Automatisme. L’équipe a installé notre portail rapidement et avec précision. Le résultat est à la hauteur de nos attentes.",
+                "artisan": "Automatik",
+                "domaine_artisan": "Portail et automatisme"
+            },
+            {
+                "_id": 2,
+                "client": "Éric",
+                "secteur": "Saint Benoit",
+                "avis": "Le portail automatique a été installé sans aucun problème. Le service a été rapide et l'équipe très professionnelle. Je recommande vivement cette entreprise.",
+                "artisan": "Automatik",
+                "domaine_artisan": "Portail et automatisme"
+            },
+            {
+                "_id": 3,
+                "client": "Marc Renault",
+                "secteur": "Saint André",
+                "avis": "Très heureuse de l’installation de notre nouveau portail automatique. La qualité du travail est excellente et le portail fonctionne parfaitement. Service efficace et soigné.",
+                "artisan": "Automatik",
+                "domaine_artisan": "Portail et automatisme"
+            },
+            {
+                "_id": 4,
+                "client": "Isabelle Bernard",
+                "secteur": "Saint Denis",
+                "avis": "Une entreprise sérieuse et compétente. Le portail automatique a été installé avec soin, et les explications sur son utilisation ont été très claires. Travail impeccable.",
+                "artisan": "Automatik",
+                "domaine_artisan": "Portail et automatisme"
+            }
+        ]
+    },
+    {
+        "_id": 633456,
+        "name": "Maçon & Tradition",
+        "domaine_artisan": "Maçonnerie",
+        "phone": "0692643568",
+        "mail": "maconettradition@gmail.com",
+        "location": "Sainte Pierre",
+        "secteur": ["Nord", "Ouest", "Sud"],
+        "intervention_img": "",
+        "disponibilite": true,
+        "temps_disponibilite": 0,
+        "competences": [
+            "Spécialiste dans la maçonnerie",
+            "Installation de portail",
+            "Réparation de portail automatique"
+        ],
+        "presentation": "Maçon & Tradition est spécialisée dans tous les aspects de la maçonnerie, offrant des services de construction, de rénovation et de restauration. Nous allions savoir-faire traditionnel et techniques modernes pour garantir des ouvrages solides, esthétiques et durables. Notre équipe de maçons expérimentés s'engage à réaliser chaque projet avec précision et professionnalisme, en respectant vos exigences et les délais impartis.",
+        "qualifications_assurances": [
+            "Certification AAA",
+            "Assurance RCP et décennale"
+        ],
+        "photo": [],
+        "avis": [
+            {
+                "_id": 0,
+                "client": "Claire Moreau",
+                "secteur": "Saint Denis",
+                "avis": "Le travail de maçonnerie réalisé par Maçon & Tradition est exceptionnel. Les finitions sont impeccables et le chantier a été mené avec un grand soin. Très satisfait du résultat.",
+                "artisan": "Maçon & Tradition",
+                "domaine_artisan": "Maçonnerie"
+            },
+            {
+                "_id": 1,
+                "client": "Nicolas",
+                "secteur": "Saint Pierre",
+                "avis": "Une entreprise de maçonnerie très professionnelle. Le projet de rénovation a été géré de manière efficace, avec des matériaux de qualité et une attention aux détails.",
+                "artisan": "Maçon & Tradition",
+                "domaine_artisan": "Maçonnerie"
+            },
+            {
+                "_id": 2,
+                "client": "David Roussel",
+                "secteur": "Saint Denis",
+                "avis": "Maçon & Tradition a fait un travail remarquable sur notre extension de maison. Les maçons ont été ponctuels, soigneux et le résultat est à la hauteur de nos attentes.",
+                "artisan": "Maçon & Tradition",
+                "domaine_artisan": "Maçonnerie"
+            },
+            {
+                "_id": 3,
+                "client": "Renault",
+                "secteur": "Saint Louis",
+                "avis": "Très heureuse du service fourni par cette entreprise. Le mur de soutènement a été construit avec une grande précision et le chantier a été nettoyé parfaitement.",
+                "artisan": "Maçon & Tradition",
+                "domaine_artisan": "Maçonnerie"
+            },
+            {
+                "_id": 4,
+                "client": "Isabelle Bernard",
+                "secteur": "Etang Salé",
+                "avis": "Le service a été excellent du début à la fin. Les travaux de maçonnerie ont été réalisés dans les délais et avec une qualité de finition remarquable. Je recommande cette entreprise sans réserve.",
+                "artisan": "Maçon & Tradition",
+                "domaine_artisan": "Maçonnerie"
+            }
+        ]
+    },
+    {
+        "_id": 733456,
+        "name": "Tradition Construction",
+        "domaine_artisan": "Maçonnerie",
+        "phone": "0692643568",
+        "mail": "traditionconstruction@gmail.com",
+        "location": "Sainte Denis",
+        "secteur": ["Nord", "Ouest"],
+        "intervention_img": "",
+        "disponibilite": true,
+        "temps_disponibilite": 0,
+        "competences": [
+            "Spécialiste dans la maçonnerie",
+            "Installation de portail",
+            "Réparation de portail automatique"
+        ],
+        "presentation": "Maçon & Tradition est spécialisée dans tous les aspects de la maçonnerie, offrant des services de construction, de rénovation et de restauration. Nous allions savoir-faire traditionnel et techniques modernes pour garantir des ouvrages solides, esthétiques et durables. Notre équipe de maçons expérimentés s'engage à réaliser chaque projet avec précision et professionnalisme, en respectant vos exigences et les délais impartis.",
+        "qualifications_assurances": [
+            "Certification AAA",
+            "Assurance RCP et décennale"
+        ],
+        "photo": [],
+        "avis": [
+            {
+                "_id": 0,
+                "client": "Claire Moreau",
+                "secteur": "Saint Denis",
+                "avis": "Le travail de maçonnerie réalisé par Maçon & Tradition est exceptionnel. Les finitions sont impeccables et le chantier a été mené avec un grand soin. Très satisfait du résultat.",
+                "artisan": "Maçon & Tradition",
+                "domaine_artisan": "Maçonnerie"
+            },
+            {
+                "_id": 1,
+                "client": "Nicolas",
+                "secteur": "Saint Pierre",
+                "avis": "Une entreprise de maçonnerie très professionnelle. Le projet de rénovation a été géré de manière efficace, avec des matériaux de qualité et une attention aux détails.",
+                "artisan": "Maçon & Tradition",
+                "domaine_artisan": "Maçonnerie"
+            },
+            {
+                "_id": 2,
+                "client": "David Roussel",
+                "secteur": "Saint Denis",
+                "avis": "Maçon & Tradition a fait un travail remarquable sur notre extension de maison. Les maçons ont été ponctuels, soigneux et le résultat est à la hauteur de nos attentes.",
+                "artisan": "Maçon & Tradition",
+                "domaine_artisan": "Maçonnerie"
+            },
+            {
+                "_id": 3,
+                "client": "Renault",
+                "secteur": "Saint Louis",
+                "avis": "Très heureuse du service fourni par cette entreprise. Le mur de soutènement a été construit avec une grande précision et le chantier a été nettoyé parfaitement.",
+                "artisan": "Maçon & Tradition",
+                "domaine_artisan": "Maçonnerie"
+            },
+            {
+                "_id": 4,
+                "client": "Isabelle Bernard",
+                "secteur": "Etang Salé",
+                "avis": "Le service a été excellent du début à la fin. Les travaux de maçonnerie ont été réalisés dans les délais et avec une qualité de finition remarquable. Je recommande cette entreprise sans réserve.",
+                "artisan": "Maçon & Tradition",
+                "domaine_artisan": "Maçonnerie"
             }
         ]
     }

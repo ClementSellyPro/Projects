@@ -20,10 +20,18 @@ type dataType = {
     avis: Array<string>
 }
 
-const SearchResult = async () => {
+type propsType = {
+  filterSecteur: string,
+  filterMetier: string
+}
+
+const SearchResult = async ({filterSecteur, filterMetier}: propsType) => {
 
     const file = await fs.readFile(process.cwd() + '/src/app/artisans.json', 'utf8');
     const data = JSON.parse(file);
+
+
+    // const dataToDisplay = data.filter((data: dataType) => data.secteur.contains(filterSecteur))
 
   return (
     <>
