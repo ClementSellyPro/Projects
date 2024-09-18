@@ -1,37 +1,48 @@
 "use client"
 
-import Image from 'next/image'
-import React, { useContext } from 'react'
-import TestimonialCard from '@/components/TestimonialCard'
+import TestimonialCard from '@/components/TestimonialCard';
+import DataContext from '@/context/DataContext';
+import Image from 'next/image';
+import React, { useContext, useState } from 'react'
 import Link from 'next/link'
-import { useParams } from 'next/navigation'
-import DataContext from '@/context/DataContext'
+import { Artisan } from '@/type/ArtisanType';
 
-/* Page artisan detail */
-const Artisan = () => {
 
-    const params = useParams();
+type avisType = {
+    _id: number,
+    client: string,
+    secteur: string,
+    avis: string,
+    artisan: string,
+    secteur_artisan: string
+}
+
+const ArtisanDetail = ({ params }: any) => {
+
+    const id = Number(params.id);
 
     const { data } = useContext(DataContext);
 
-    // const dataToDisplay = data.filter(data => data._id === params.id);
+    const dataToDisplay = data.filter(data => data._id === id);
+    const competences = dataToDisplay[0].competences.slice(1, dataToDisplay[0].competences.length);
+    const avisClient = dataToDisplay[0].avis.map(avis => avis);
 
     return (
         <div className='bg-slate-50 md:px-20 py-10 px-5 relative'>
             {/* header artisan */}
             <div className='md:flex block justify-between items-center py-6 bg-slate-50 border-b border-t sticky top-0'>
                 <div>
-                    <h1 className='font-semibold text-blueKalipro lg:text-5xl md:text-3xl text-2xl'>Electrika</h1>
-                    <p className='flex items-center gap-1 text-sm'><Image src='/icon/location.png' alt='location icon' width={20} height={20} /> Saint-André</p>
+                    <h1 className='font-semibold text-blueKalipro xl:text-5xl lg:text-4xl md:text-3xl text-2xl'>{dataToDisplay[0].name}</h1>
+                    <p className='flex items-center gap-1 text-sm'><Image src='/icon/location.png' alt='location icon' width={20} height={20} /> {dataToDisplay[0].location}</p>
                 </div>
 
                 {/* header artisan contact */}
                 <div className='flex items-center gap-5 mt-5'>
                     {/* change for image */}
                     <div className='lg:h-20 md:h-16 h-10 lg:w-20 md:w-16 w-10 bg-slate-200 rounded-full'></div> 
-                    <p className='lg:text-base md:text-sm'>John de Electrika<br/>
-                    <span className='lg:text-xl md:text-lg'>0692 12 34 56</span></p>
-                    <Link href='/artisanMail'><button className='flex items-center gap-2 border border-kalipro font-semibold py-2 px-5 rounded-full bg-kalipro text-white hover:opacity-80'><Image src='/icon/mail-icon.png' alt='mail icon' width={20} height={20} />Envoyer un mail</button></Link>
+                    <p className='lg:text-base md:text-sm'>Maxime de {dataToDisplay[0].name}<br/>
+                    <span className='lg:text-xl md:text-lg'>{dataToDisplay[0].phone}</span></p>
+                    <Link href='/artisanMail'><button className='flex items-center gap-2 border border-kalipro font-semibold py-2 px-5 rounded-full bg-kalipro text-white hover:opacity-80 md:text-base text-sm'><Image src='/icon/mail-icon.png' alt='mail icon' width={20} height={20} />Envoyer un mail</button></Link>
                 </div>
             </div>
 
@@ -40,19 +51,17 @@ const Artisan = () => {
                     {/* Competence */}
                     <div className='hover:bg-subtleKalipro p-7 border rounded-xl'>
                         <h2 className='font-semibold md:text-2xl text-3xl mb-5'>Compétences</h2>
-                        <p>
-                            <span className='font-semibold'>Spécialiste des réseaux électriques </span> <br />
-                            Raccordement et dérivation du flux électrique <br />
-                            Câblage depuis la source d&apos;énergie <br />
-                            Localisation des dysfonctionnements <br />
-                            Réalisation d&apos;une phase de test et de mesure <br />
-                            Force de proposition sur des solutions alternatives innovantes <br />
-                        </p>
+                        <div>
+                            <span className='font-semibold'>{dataToDisplay[0].competences[0]} </span> <br />
+                            {
+                                competences.map((competence, index) => <p key={index}>{competence}</p>)
+                            }
+                        </div>
                     </div>
                     {/* Presentation */}
                     <div className='hover:bg-subtleKalipro p-7 border rounded-xl'>
                         <h2 className='font-semibold md:text-2xl text-3xl mb-5'>Présentation</h2>
-                        <p className='max-w-md'>Electrika est une entreprise familiale et indépendante. Nous aimons ce que noua faisons, c&apos;est pourquoi nous appliquons au mieux nos compétence, afin de satisfaire le client. Nous avons un gout pour le details qui nous permet d&apos;accomplir notre tache de maniere irréprochable.</p>
+                        <p className='max-w-md'>{dataToDisplay[0].presentation}</p>
                     </div>
                     {/* Assurance */}
                     <div className='hover:bg-subtleKalipro p-7 border rounded-xl'>
@@ -67,7 +76,7 @@ const Artisan = () => {
                 {/* zone intervention */}
                 <div className='hover:bg-subtleKalipro p-7 border rounded-xl md:mt-0 mt-5 md:ml-5 ml-0'>
                     <h2 className='font-semibold md:text-2xl text-3xl mb-5'>Zone d&apos;intervention</h2>
-                    <Image src='/intervention.png' alt='Carte' width={400} height={400} />
+                    <Image src='/map-est-nord.png' alt='Carte' width={400} height={400} />
                 </div>
             </div>
 
@@ -90,11 +99,12 @@ const Artisan = () => {
                 <h2 className='font-semibold text-3xl mb-5'>Avis clients</h2>
 
                 <div className='flex md:justify-between justify-center flex-wrap gap-5'>
-                    {/* <TestimonialCard client='Johnny' secteur='Saint Denis' avis='Excellent boulot de la part de Electrika' artisan='Electrika' secteur_artisan='Est, Nord' />
-                    <TestimonialCard client='Johnny' secteur='Saint Denis' avis='Excellent boulot de la part de Electrika' artisan='Electrika' secteur_artisan='Est, Nord' />
-                    <TestimonialCard client='Johnny' secteur='Saint Denis' avis='Excellent boulot de la part de Electrika' artisan='Electrika' secteur_artisan='Est, Nord' />
-                    <TestimonialCard client='Johnny' secteur='Saint Denis' avis='Excellent boulot de la part de Electrika' artisan='Electrika' secteur_artisan='Est, Nord' />
-                    <TestimonialCard client='Johnny' secteur='Saint Denis' avis='Excellent boulot de la part de Electrika' artisan='Electrika' secteur_artisan='Est, Nord' /> */}
+                    {
+                        avisClient.map((avis: avisType) => {
+                        return <TestimonialCard key={avis._id} client={avis.client} secteur={avis.secteur} avis={avis.avis} artisan={avis.artisan} secteur_artisan={avis.secteur_artisan} />})
+                    }
+                    
+                    {/* <TestimonialCard client='Johnny' secteur='Saint Denis' avis='Excellent boulot de la part de Electrika' artisan='Electrika' secteur_artisan='Est, Nord' /> */}
                 </div>
 
                 <button className='mt-10 border border-kalipro font-semibold py-2 px-5 rounded-full bg-white text-kalipro hover:bg-subtleKalipro'>Voir plus d&apos;avis</button>
@@ -103,4 +113,4 @@ const Artisan = () => {
     )
 }
 
-export default Artisan
+export default ArtisanDetail

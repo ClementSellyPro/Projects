@@ -2,33 +2,15 @@
 
 import React from 'react'
 import { useRouter } from 'next/navigation'
+import { Artisan } from '@/type/ArtisanType'
 
-type Props = {
-    _id: number,
-    name: string,
-    domaine_artisan: string,
-    phone: string,
-    mail: string,
-    location: string,
-    secteur: Array<string>,
-    intervention_img: string,
-    disponibilite: boolean,
-    temps_disponibilite: number,
-    competences: Array<string>,
-    presentation: string,
-    qualifications_assurances: Array<string>,
-    photo: Array<string>,
-    avis: Array<string>
-}
 
-const ResultCard = ({_id, name, domaine_artisan, phone, mail, location, secteur, intervention_img, disponibilite, temps_disponibilite, competences, presentation, qualifications_assurances, photo, avis}: Props) => {
+const ResultCard = ({_id, name, domaine_artisan, phone, mail, location, secteur, intervention_img, disponibilite, temps_disponibilite, competences, presentation, qualifications_assurances, photo, avis}: Artisan) => {
     
   const router = useRouter();
-  {console.log(temps_disponibilite)}
-
 
   return (
-    <div onClick={() => router.push('/artisan')} className='ResultCard bg-white cursor-pointer border rounded-lg lg:w-wResultCardLg  w-full p-4 shadow-md hover:shadow-xl'>
+    <div onClick={() => router.push(`/artisan/${_id}`)} className='ResultCard bg-white cursor-pointer border rounded-lg lg:w-wResultCardLg  w-full p-4 shadow-md hover:shadow-xl'>
         <div className='flex'>
             <div className='w-24 h-24 flex items-center justify-center rounded-full bg-slate-500'>logo</div>
 

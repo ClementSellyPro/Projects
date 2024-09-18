@@ -1,10 +1,26 @@
+"use client"
+
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import MenuSecteur from './MenuSecteur';
 import MenuMetier from './MenuMetier';
+import DataContext from '@/context/DataContext';
 
 const Header = () => {
+
+  const { setData } = useContext(DataContext);
+ 
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch('/artisans.json');
+      const data = await response.json();
+      setData(data);
+    }
+
+    fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <div className='Header flex items-center md:px-20 px-5 py-5 static bg-slate-50'>

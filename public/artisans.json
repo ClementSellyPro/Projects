@@ -924,6 +924,71 @@
         "location": "Sainte Denis",
         "secteur": ["Nord", "Ouest"],
         "intervention_img": "",
+        "disponibilite": false,
+        "temps_disponibilite": 1,
+        "competences": [
+            "Spécialiste dans la maçonnerie",
+            "Installation de portail",
+            "Réparation de portail automatique"
+        ],
+        "presentation": "Tradition Construction est spécialisée dans tous les aspects de la maçonnerie, offrant des services de construction, de rénovation et de restauration. Nous allions savoir-faire traditionnel et techniques modernes pour garantir des ouvrages solides, esthétiques et durables. Notre équipe de maçons expérimentés s'engage à réaliser chaque projet avec précision et professionnalisme, en respectant vos exigences et les délais impartis.",
+        "qualifications_assurances": [
+            "Certification AAA",
+            "Assurance RCP et décennale"
+        ],
+        "photo": [],
+        "avis": [
+            {
+                "_id": 0,
+                "client": "Claire Moreau",
+                "secteur": "Saint Denis",
+                "avis": "Le travail de maçonnerie réalisé par Tradition Construction est exceptionnel. Les finitions sont impeccables et le chantier a été mené avec un grand soin. Très satisfait du résultat.",
+                "artisan": "Tradition Construction",
+                "domaine_artisan": "Maçonnerie"
+            },
+            {
+                "_id": 1,
+                "client": "Nicolas",
+                "secteur": "Saint Pierre",
+                "avis": "Une entreprise de maçonnerie très professionnelle. Le projet de rénovation a été géré de manière efficace, avec des matériaux de qualité et une attention aux détails.",
+                "artisan": "Tradition Construction",
+                "domaine_artisan": "Maçonnerie"
+            },
+            {
+                "_id": 2,
+                "client": "David Roussel",
+                "secteur": "Saint Denis",
+                "avis": "Tradition Construction a fait un travail remarquable sur notre extension de maison. Les maçons ont été ponctuels, soigneux et le résultat est à la hauteur de nos attentes.",
+                "artisan": "Tradition Construction",
+                "domaine_artisan": "Maçonnerie"
+            },
+            {
+                "_id": 3,
+                "client": "Renault",
+                "secteur": "Saint Louis",
+                "avis": "Très heureuse du service fourni par cette entreprise. Le mur de soutènement a été construit avec une grande précision et le chantier a été nettoyé parfaitement.",
+                "artisan": "Tradition Construction",
+                "domaine_artisan": "Maçonnerie"
+            },
+            {
+                "_id": 4,
+                "client": "Isabelle Bernard",
+                "secteur": "Etang Salé",
+                "avis": "Le service a été excellent du début à la fin. Les travaux de maçonnerie ont été réalisés dans les délais et avec une qualité de finition remarquable. Je recommande cette entreprise sans réserve.",
+                "artisan": "Tradition Construction",
+                "domaine_artisan": "Maçonnerie"
+            }
+        ]
+    },
+    {
+        "_id": 833456,
+        "name": "Batir & Expertise",
+        "domaine_artisan": "Maçonnerie",
+        "phone": "0692643568",
+        "mail": "traditionconstruction@gmail.com",
+        "location": "Sainte André",
+        "secteur": ["Est","Nord"],
+        "intervention_img": "",
         "disponibilite": true,
         "temps_disponibilite": 0,
         "competences": [
@@ -942,41 +1007,109 @@
                 "_id": 0,
                 "client": "Claire Moreau",
                 "secteur": "Saint Denis",
-                "avis": "Le travail de maçonnerie réalisé par Maçon & Tradition est exceptionnel. Les finitions sont impeccables et le chantier a été mené avec un grand soin. Très satisfait du résultat.",
-                "artisan": "Maçon & Tradition",
+                "avis": "Un travail de maçonnerie impeccable, réalisé avec soin et précision. Le résultat dépasse mes attentes, je suis ravi de la qualité de leur travail.",
+                "artisan": "Batir & Expertise",
                 "domaine_artisan": "Maçonnerie"
             },
             {
                 "_id": 1,
                 "client": "Nicolas",
-                "secteur": "Saint Pierre",
-                "avis": "Une entreprise de maçonnerie très professionnelle. Le projet de rénovation a été géré de manière efficace, avec des matériaux de qualité et une attention aux détails.",
-                "artisan": "Maçon & Tradition",
+                "secteur": "Saint Benoit",
+                "avis": "Très satisfaite du service de Bâtir & Expertise. Le maçon a été à l’écoute et a réalisé un travail propre et soigné pour la construction de notre terrasse.",
+                "artisan": "Batir & Expertise",
                 "domaine_artisan": "Maçonnerie"
             },
             {
                 "_id": 2,
                 "client": "David Roussel",
                 "secteur": "Saint Denis",
-                "avis": "Maçon & Tradition a fait un travail remarquable sur notre extension de maison. Les maçons ont été ponctuels, soigneux et le résultat est à la hauteur de nos attentes.",
-                "artisan": "Maçon & Tradition",
+                "avis": "Excellente expérience avec cette entreprise. Les travaux de maçonnerie pour mon agrandissement ont été réalisés avec professionnalisme et dans les délais prévus.",
+                "artisan": "Batir & Expertise",
                 "domaine_artisan": "Maçonnerie"
             },
             {
                 "_id": 3,
                 "client": "Renault",
-                "secteur": "Saint Louis",
-                "avis": "Très heureuse du service fourni par cette entreprise. Le mur de soutènement a été construit avec une grande précision et le chantier a été nettoyé parfaitement.",
-                "artisan": "Maçon & Tradition",
+                "secteur": "Saint André",
+                "avis": "Le mur que le maçon a construit est parfait, solide et avec de belles finitions. Une équipe sérieuse et respectueuse des délais. Je recommande sans hésiter.",
+                "artisan": "Batir & Expertise",
                 "domaine_artisan": "Maçonnerie"
             },
             {
                 "_id": 4,
                 "client": "Isabelle Bernard",
-                "secteur": "Etang Salé",
-                "avis": "Le service a été excellent du début à la fin. Les travaux de maçonnerie ont été réalisés dans les délais et avec une qualité de finition remarquable. Je recommande cette entreprise sans réserve.",
-                "artisan": "Maçon & Tradition",
+                "secteur": "Sainte Rose",
+                "avis": "Très satisfait de la rénovation de ma façade. Le maçon a fait un travail remarquable, avec un grand souci du détail. L’entreprise a été à la hauteur de mes attentes.",
+                "artisan": "Batir & Expertise",
                 "domaine_artisan": "Maçonnerie"
+            }
+        ]
+    },
+    {
+        "_id": 933456,
+        "name": "Élec & Solutions",
+        "domaine_artisan": "Electricien",
+        "phone": "0698723456",
+        "mail": "eletsolution@gmail.com",
+        "location": "Saint Denis",
+        "secteur": ["Est", "Nord", "Ouest"],
+        "intervention_img": "",
+        "disponibilite": false,
+        "temps_disponibilite": 1,
+        "competences": [
+            "Spécialiste des réseaux électriques",
+            "Raccordement et dérivation du flux électrique",
+            "Câblage depuis la source d'énergie",
+            "Localisation des dysfonctionnements",
+            "Réalisation d'une phase de test et de mesure",
+            "Force de proposition sur des solutions alternatives innovantes"
+        ],
+        "presentation": "Élec & Solutions est spécialisée dans l'installation, la rénovation et le dépannage de systèmes électriques pour particuliers et professionnels. Nous intervenons sur tout type de projet, en garantissant sécurité, conformité et efficacité énergétique. Notre équipe d’électriciens qualifiés assure un travail soigné et durable, en respectant vos besoins spécifiques et les normes en vigueur.",
+        "qualifications_assurances": [
+            "Certification AAA",
+            "Assurance RCP et décennale"
+        ],
+        "photo": [],
+        "avis": [
+            {
+                "_id": 0,
+                "client": "Jean-Luc Morel",
+                "secteur": "Saint Denis",
+                "avis": "Élec & Solutions a fait un excellent travail lors de la rénovation de notre installation électrique. L’équipe a été rapide, efficace et très professionnelle.",
+                "artisan": "Élec & Solutions",
+                "domaine_artisan": "Electricien"
+            },
+            {
+                "_id": 1,
+                "client": "Martine",
+                "secteur": "Saint Benoit",
+                "avis": "Très contente du service. L'électricien a installé notre système de domotique parfaitement et nous a bien expliqué son fonctionnement. Travail soigné et propre.",
+                "artisan": "Élec & Solutions",
+                "domaine_artisan": "Electricien"
+            },
+            {
+                "_id": 2,
+                "client": "Josie",
+                "secteur": "Saint André",
+                "avis": "Service impeccable ! L’électricien a su détecter et résoudre un problème complexe rapidement. Le travail est de qualité, je recommande cette entreprise.",
+                "artisan": "Élec & Solutions",
+                "domaine_artisan": "Electricien"
+            },
+            {
+                "_id": 3,
+                "client": "Marc Dubois",
+                "secteur": "Saint Gilles",
+                "avis": "Équipe très professionnelle, l’installation électrique de ma nouvelle maison a été faite avec soin. Tout fonctionne parfaitement et le chantier a été laissé propre.",
+                "artisan": "Élec & Solutions",
+                "domaine_artisan": "Electricien"
+            },
+            {
+                "_id": 4,
+                "client": "Nino",
+                "secteur": "Le Port",
+                "avis": "Très satisfait de l’intervention pour la mise aux normes de mon système électrique. L’électricien a été efficace et respectueux des délais. Je recommande sans hésitation.",
+                "artisan": "Élec & Solutions",
+                "domaine_artisan": "Electricien"
             }
         ]
     }

@@ -11,14 +11,14 @@ type Props = {
 
 const MenuSecteur = ({hidden} : Props) => {
     
-    const { setFilterSecteur } = useFilterContext();
+    const { setFilterSecteur, SetFilterMetier } = useFilterContext();
 
     function secteurSelection(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>) {
         const target = event.target as HTMLElement;
         const value = target.innerText.trim();
 
         setFilterSecteur(value);
-        console.log(value);
+        SetFilterMetier('');
     }
 
     return (

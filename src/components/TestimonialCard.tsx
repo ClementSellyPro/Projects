@@ -1,6 +1,7 @@
 import React from 'react';
 
 interface Props {
+    key: number,
     client: string,
     secteur: string,
     avis: string,

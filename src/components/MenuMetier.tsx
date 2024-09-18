@@ -11,12 +11,13 @@ type Props = {
 
 const MenuMetier = ({hidden} : Props) => {
 
-  const { SetFilterMetier } = useFilterContext();
+  const { setFilterSecteur, SetFilterMetier } = useFilterContext();
 
   function secteurSelection(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>){
     const target = event.target as HTMLElement;
     const value = target.innerText.trim();
     SetFilterMetier(value);
+    setFilterSecteur('');
   }
 
   return (
@@ -69,26 +70,36 @@ const MenuMetier = ({hidden} : Props) => {
             <Image className='group-hover:scale-125 transition' src='/icon_metier/electricien.png' alt="electricien" height={25} width={25} />
           </p> 
           </Link> 
+          <Link href='/result'>
           <p onClick={(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>) => {secteurSelection(event)}} className='group nav-links-metier-item flex items-center justify-between font-normal hover:font-semibold'>
             Maçonnerie
             <Image className='group-hover:scale-125 transition' src='/icon_metier/macon.svg' alt="macon" height={20} width={20} />
-          </p> 
+          </p>
+          </Link>  
+          <Link href='/result'>
           <p onClick={(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>) => {secteurSelection(event)}} className='group nav-links-metier-item flex items-center justify-between font-normal hover:font-semibold'>
             Maison individuelle
             <Image className='group-hover:scale-125 transition' src='/icon_metier/maison.png' alt="maison individuelle" height={20} width={20} />
           </p> 
+          </Link> 
+          <Link href='/result'>
           <p onClick={(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>) => {secteurSelection(event)}} className='group nav-links-metier-item flex items-center justify-between font-normal hover:font-semibold'>
             Maitre d&apos;oeuvre
             <Image className='group-hover:scale-125 transition' src='/icon_metier/maitre.png' alt="maitre d'oeuvre" height={20} width={20} />
           </p> 
+          </Link> 
+          <Link href='/result'>
           <p onClick={(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>) => {secteurSelection(event)}} className='group nav-links-metier-item flex items-center justify-between font-normal hover:font-semibold'>
             Menuisier
             <Image className='group-hover:scale-125 transition' src='/icon_metier/menuisier.png' alt="menuisier" height={20} width={20} />
           </p> 
+          </Link> 
+          <Link href='/result'>
           <p onClick={(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>) => {secteurSelection(event)}} className='group nav-links-metier-item flex items-center justify-between font-normal hover:font-semibold'>
             Peintre
             <Image className='group-hover:scale-125 transition' src='/icon_metier/peintre.png' alt="peintre" height={20} width={20} />
           </p> 
+          </Link> 
         </div>
         
         {/* group 3 */}
