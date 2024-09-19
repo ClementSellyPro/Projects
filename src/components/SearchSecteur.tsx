@@ -5,15 +5,20 @@ import Image from 'next/image'
 type Props = {
     isActive: boolean,
     setIsSecteurActive: React.Dispatch<React.SetStateAction<boolean>>,
-    setSecteurSelection: React.Dispatch<React.SetStateAction<string>>
+    setFilterSecteur: React.Dispatch<React.SetStateAction<string>>
 }
 
-const SearchSecteur = ({isActive, setIsSecteurActive, setSecteurSelection} : Props) => {
+const SearchSecteur = ({isActive, setIsSecteurActive, setFilterSecteur} : Props) => {
 
     function secteurSelectionFn(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>){
         const target = event.target as HTMLElement;
         const value = target.innerText;
-        setSecteurSelection(value);
+        
+        if(value === "Sur toute l'ile"){
+            setFilterSecteur('');
+        }else{
+            setFilterSecteur(value);
+        }
         setIsSecteurActive(false);
     }
 

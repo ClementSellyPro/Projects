@@ -9,6 +9,17 @@ export const metadata: Metadata = {
 };
 
 const page = () => {
+
+  const { setFilterSecteur, SetFilterMetier } = useContext(FilterContext);
+
+    useEffect(() => {
+        setFilterSecteur('');
+        SetFilterMetier('');
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
+
   return (
     <div className=''>
       <Hero />

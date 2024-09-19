@@ -1,8 +1,16 @@
+"use client"
+
+import FilterContext from "@/context/FilterContext";
+import { useContext, useEffect } from "react";
+
 // style in the global.css
 
 export default function Marquee(){
+
+    
+
     return(
-        <div className='Marquee md:px-20 md:pt-10 h-16 pt-10 px-10 bg-gradient-to-r from-subtleKalipro to-subtleKaliproTwo'>
+        <div className='Marquee md:px-20 md:pt-8 h-16 pt-10 px-10 bg-gradient-to-r from-subtleKalipro to-subtleKaliproTwo'>
             <div className='marquee-text pt-5 .fadeout-horizontal'>
                 <div className='marquee-text-track'>
                     <p>Architecte</p>

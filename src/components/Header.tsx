@@ -23,11 +23,11 @@ const Header = () => {
   }, [])
 
   return (
-    <div className='Header flex items-center md:px-20 px-5 py-5 static bg-slate-50'>
+    <div className='Header flex md:flex-row flex-col md:items-center items-start lg:px-20 md:px-14 px-5 py-3 static bg-slate-50'>
       {/* Logo */}
         <Link href={'/'}>
           <Image 
-          className='md:w-52 w-32'
+          className='lg:w-52 md:w-40 w-32'
           src='/logo.png' 
           alt='KALIPRO'
           width={200}
@@ -35,8 +35,8 @@ const Header = () => {
         </Link>
 
         {/* navigation bar */}
-        <nav className='ml-10 h-18 md:block hidden'>
-            <ul className='nav-links flex gap-5 text-xl h-20'>
+        <nav className='lg:ml-10 ml-5 h-18 md:block hidden'>
+            <ul className='nav-links flex gap-5 lg:text-xl text-lg h-20'>
                 <Link className='flex items-center hover:border-b-2 border-kalipro cursor-pointer' href={'/'}><li className='font-semibold'> Accueil </li></Link>
 
                 <li className='nav-link-metier hover:border-b-2 border-kalipro cursor-pointer font-semibold flex items-center'>
@@ -51,10 +51,29 @@ const Header = () => {
                   <MenuSecteur hidden={true} />
                 </li>
 
-                <Link className='flex items-center hover:border-b-2 border-kalipro cursor-pointer ' href={'/contact'}><li className='font-semibold'>Contact </li></Link>
+                <Link className='flex items-center hover:border-b-2 border-kalipro cursor-pointer ' href={'/contact'}>
+                  <li className='font-semibold'>Contact </li>
+                </Link>
             </ul>
         </nav>
-        <Link className='md:hidden font-semibold hover:border-b-2 border-kalipro absolute right-5' href='/contact'>Contact</Link>
+
+        {/* boutton donner avis - large screen*/}
+        <div className='md:flex flex-col items-center lg:w-fit w-48  md:absolute lg:right-20 md:right-14 hidden'>
+
+          <Link href={'/donneravis'} className='px-5 py-2 lg:text-sm md:text-xs bg-white text-kalipro font-semibold border-2 border-kalipro rounded-full hover:bg-kalipro hover:text-white'>
+            Donner mon avis pour un artisan
+          </Link>
+        </div>
+
+
+        {/* boutton donner avis - little screen*/}
+        <div className='md:hidden flex justify-between items-center w-full'>
+          <Link className='md:hidden font-semibold hover:border-b-2 border-kalipro text-sm' href='/contact'>Contact</Link>
+
+          <Link href={'/donneravis'} className='px-5 py-2 md:text-base text-xs bg-white text-kalipro font-semibold border-2 border-kalipro rounded-full hover:bg-kalipro hover:text-white'>
+            Donner mon avis pour un artisan
+          </Link>
+        </div>
     </div>
   )
 }

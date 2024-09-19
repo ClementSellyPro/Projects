@@ -20,12 +20,9 @@ const Footer = () => {
           <Link href='/presentation'>
             <p className='text-sm cursor-pointer hover:underline'>Comment ca marche?</p>
           </Link>
-          <Link href='/reglement'>
-            <p className='text-sm cursor-pointer hover:underline'>Charte qualite</p>
-          </Link>
-          <Link href='/reglement'>
-            <p className='text-sm cursor-pointer hover:underline'>Regles de moderations des avis</p>
-          </Link>
+          <a href='/Condition_general.pdf' target="_blank" rel='noopener noreferrer'>
+            <p className='text-sm cursor-pointer hover:underline'>Regles de modérations des avis</p>
+          </a>
         </div>
         
         <div className='footer-group flex flex-col gap-0.5'>
@@ -36,7 +33,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='footer-credit font-extralight text-xs pb-7 pt-12'>
-        2024 KALIPRO . Confidentialite . CGU . Mentions legales . plan du site
+        2024 KALIPRO . <a href='/Condition_general.pdf' target="_blank" rel='noopener noreferrer'>Confidentialité</a> . CGU . Mentions légales . plan du site
       </div>
     </div>
   )

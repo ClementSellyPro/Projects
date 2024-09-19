@@ -198,7 +198,10 @@ body {
 textarea{
   height: 200px;
 }
-
+button:disabled, button[disabled]{
+  background-color: #DDD;
+  cursor: not-allowed;
+}
 
 
 

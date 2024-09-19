@@ -3,7 +3,7 @@
 import TestimonialCard from '@/components/TestimonialCard';
 import DataContext from '@/context/DataContext';
 import Image from 'next/image';
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import Link from 'next/link'
 import { Artisan } from '@/type/ArtisanType';
 
@@ -42,7 +42,7 @@ const ArtisanDetail = ({ params }: any) => {
                     <div className='lg:h-20 md:h-16 h-10 lg:w-20 md:w-16 w-10 bg-slate-200 rounded-full'></div> 
                     <p className='lg:text-base md:text-sm'>Maxime de {dataToDisplay[0].name}<br/>
                     <span className='lg:text-xl md:text-lg'>{dataToDisplay[0].phone}</span></p>
-                    <Link href='/artisanMail'><button className='flex items-center gap-2 border border-kalipro font-semibold py-2 px-5 rounded-full bg-kalipro text-white hover:opacity-80 md:text-base text-sm'><Image src='/icon/mail-icon.png' alt='mail icon' width={20} height={20} />Envoyer un mail</button></Link>
+                    <Link href={`/artisanMail/${id}`}><button className='flex items-center gap-2 border border-kalipro font-semibold py-2 px-5 rounded-full bg-kalipro text-white hover:opacity-80 md:text-base text-sm'><Image src='/icon/mail-icon.png' alt='mail icon' width={20} height={20} />Envoyer un mail</button></Link>
                 </div>
             </div>
 
@@ -103,8 +103,6 @@ const ArtisanDetail = ({ params }: any) => {
                         avisClient.map((avis: avisType) => {
                         return <TestimonialCard key={avis._id} client={avis.client} secteur={avis.secteur} avis={avis.avis} artisan={avis.artisan} secteur_artisan={avis.secteur_artisan} />})
                     }
-                    
-                    {/* <TestimonialCard client='Johnny' secteur='Saint Denis' avis='Excellent boulot de la part de Electrika' artisan='Electrika' secteur_artisan='Est, Nord' /> */}
                 </div>
 
                 <button className='mt-10 border border-kalipro font-semibold py-2 px-5 rounded-full bg-white text-kalipro hover:bg-subtleKalipro'>Voir plus d&apos;avis</button>
