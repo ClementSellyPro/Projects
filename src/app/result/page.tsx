@@ -7,10 +7,11 @@ import FilterContext from '@/context/FilterContext';
 import DataContext from '@/context/DataContext';
 import { Artisan } from '@/type/ArtisanType';
 
+
 /* Result Page */
 const Page = () => {
   
-  const { filterSecteur, filterMetier} = useContext(FilterContext);
+  const { filterSecteur, filterMetier } = useContext(FilterContext);
   const { data } = useContext(DataContext);
 
   let dataToDisplay = data;
@@ -22,6 +23,7 @@ const Page = () => {
   }else{
     dataToDisplay = data.filter((data: Artisan) => data.secteur.includes(filterSecteur)).filter((data: Artisan) => data.domaine_artisan.includes(filterMetier));
   }
+  
 
   return (
     <div className='Result bg-gradient-to-tr from-subtleKalipro to-slate-50 pb-20 pt-10'>

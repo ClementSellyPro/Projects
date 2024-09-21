@@ -94,6 +94,12 @@ body {
   padding-top: 10px;
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
+/* item within menu metier (search bar - mainInput) */
+.search-links-metier-item{ 
+  margin-right: 15px;
+  padding-left: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
 .nav-links-metier-item:last-child{
   border: none;
 }

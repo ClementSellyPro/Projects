@@ -8,20 +8,10 @@ export const metadata: Metadata = {
   description: "Des artisans de qualité à proximité de chez vous.",
 };
 
-const page = () => {
-
-  const { setFilterSecteur, SetFilterMetier } = useContext(FilterContext);
-
-    useEffect(() => {
-        setFilterSecteur('');
-        SetFilterMetier('');
-
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-
+const Home = () => {
 
   return (
-    <div className=''>
+    <div>
       <Hero />
       <Marquee />
       <Testimonials />
@@ -29,4 +19,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Home

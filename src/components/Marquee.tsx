@@ -6,8 +6,16 @@ import { useContext, useEffect } from "react";
 // style in the global.css
 
 export default function Marquee(){
-
     
+    const { filterMetier, filterSecteur, setFilterSecteur, SetFilterMetier } = useContext(FilterContext);
+
+    useEffect(() => {
+        setFilterSecteur(() => '');
+        SetFilterMetier(() => '');
+
+        console.log('filterMetier ::::: ', filterMetier, '  filterSecteur :::::: ', filterSecteur);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);    
 
     return(
         <div className='Marquee md:px-20 md:pt-8 h-16 pt-10 px-10 bg-gradient-to-r from-subtleKalipro to-subtleKaliproTwo'>

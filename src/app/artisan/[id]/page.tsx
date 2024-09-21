@@ -5,7 +5,6 @@ import DataContext from '@/context/DataContext';
 import Image from 'next/image';
 import React, { useContext } from 'react'
 import Link from 'next/link'
-import { Artisan } from '@/type/ArtisanType';
 
 
 type avisType = {
