@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useContext, useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import SearchSecteur from './SearchSecteur'
 import FilterContext from '@/context/FilterContext'
 import SearchMetier from './SearchMetier'
@@ -39,12 +39,14 @@ const MainInput = () => {
         setSecteurDisplay('');
     }
 
+     // ref to hide search menu when clicking outside
+     let refSecteur = useRef<HTMLInputElement>(null);
 
     return (
         <div className='hero-input-section md:flex items-center bg-white p-1 w-fit lg:h-14 md:h-12 h-10 rounded-full hidden'>
             {/* metier menu  */}
             <div className='relative'>
-                <input onClick={displayMetier} className='seach-input pl-4 xl:w-80 lg:w-64 w-48 text-sm h-full outline-none' type="text" placeholder='Dans quel secteur?' defaultValue={filterMetierDisplay}  />
+                <input onClick={displayMetier} className='seach-input pl-4 xl:w-80 lg:w-64 w-48 text-sm h-full outline-none' type="text" placeholder='Que recherchez-vous?' defaultValue={filterMetierDisplay}  />
 
                 {/* secteur menu display */}
                 <div className='fixed lg:top-96 md:top-80'>
@@ -52,7 +54,8 @@ const MainInput = () => {
                         setIsMetierActive={setIsMetierActive} 
                         setMetierSecteur={SetFilterMetier} 
                         isActive={isMetierActive}
-                        setFilterMetierDisplay={setFilterMetierDisplay} />
+                        setFilterMetierDisplay={setFilterMetierDisplay}
+                         />
                 </div>
             </div>
         
@@ -67,7 +70,8 @@ const MainInput = () => {
                         setIsSecteurActive={setIsSecteurActive} 
                         setFilterSecteur={setFilterSecteur} 
                         isActive={isSecteurActive}
-                        setSecteurDisplay={setSecteurDisplay} />
+                        setSecteurDisplay={setSecteurDisplay} 
+                        refSecteur={refSecteur}/>
                 </div>
             </div>
 

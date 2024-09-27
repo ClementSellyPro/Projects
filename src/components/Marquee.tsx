@@ -13,14 +13,13 @@ export default function Marquee(){
         setFilterSecteur(() => '');
         SetFilterMetier(() => '');
 
-        console.log('filterMetier ::::: ', filterMetier, '  filterSecteur :::::: ', filterSecteur);
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);    
 
     return(
         <div className='Marquee md:px-20 md:pt-8 h-16 pt-10 px-10 bg-gradient-to-r from-subtleKalipro to-subtleKaliproTwo'>
             <div className='marquee-text pt-5 .fadeout-horizontal'>
-                <div className='marquee-text-track'>
+                <div className='marquee-text-track select-none'>
                     <p>Architecte</p>
                     <p>Terrassier</p>
                     <p>Maçonnerie</p>

@@ -6,18 +6,18 @@ import React from 'react'
 type Props = {
     isActive: boolean,
     setIsMetierActive: React.Dispatch<React.SetStateAction<boolean>>,
-    setMetierSecteur: React.Dispatch<React.SetStateAction<string>>
+    setMetierSecteur: React.Dispatch<React.SetStateAction<string>>,
     setFilterMetierDisplay: React.Dispatch<React.SetStateAction<string>>
 }
 
 const SearchMetier = ({isActive, setIsMetierActive, setMetierSecteur, setFilterMetierDisplay} : Props) => {
     function metierSelection(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>){
-        const target = event.target as HTMLElement;
-        const value = target.innerText;
+      const target = event.target as HTMLElement;
+      const value = target.innerText;
 
-        setMetierSecteur(value);
-        setFilterMetierDisplay(value);
-        setIsMetierActive(false);
+      setMetierSecteur(value);
+      setFilterMetierDisplay(value);
+      setIsMetierActive(false);
     }
 
   return (

@@ -10,7 +10,7 @@ const ResultCard = ({_id, name, domaine_artisan, phone, mail, location, secteur,
   const router = useRouter();
 
   return (
-    <div onClick={() => router.push(`/artisan/${_id}`)} className='ResultCard bg-white cursor-pointer border rounded-lg lg:w-wResultCardLg  w-full p-4 shadow-md hover:shadow-xl'>
+    <div onClick={() => router.push(`/artisan/${_id}`)} className='relative ResultCard bg-white cursor-pointer border rounded-lg lg:w-wResultCardLg w-full h-44 p-4 shadow-md hover:shadow-xl'>
         <div className='flex'>
             <div className='w-24 h-24 flex items-center justify-center rounded-full bg-slate-500'>logo</div>
 
@@ -21,14 +21,14 @@ const ResultCard = ({_id, name, domaine_artisan, phone, mail, location, secteur,
             </div>
         </div>
 
-        <div className='flex justify-between mt-4'>
+        {/* <div className='flex justify-between mt-4'>
             <div className={`${disponibilite? 'text-lime-500' : 'text-orange-400'} text-xs flex items-center`}>
                 <div className={`h-3 w-3 rounded-full mr-2 ${disponibilite? 'bg-lime-500' : 'bg-orange-400'}`}></div>
                 {disponibilite? `Disponible rapidement` : `Disponible dans ${temps_disponibilite} mois`}
             </div>
 
-            <button className='py-1.5 md:px-8 px-4 font-semibold bg-kalipro hover:opacity-75 text-white rounded-md'> Contacter</button>
-        </div>
+        </div> */}
+        <button className='absolute right-3 bottom-3 py-1.5 md:px-8 px-4 font-semibold bg-kalipro hover:opacity-75 text-white rounded-md'> Contacter</button>
     </div>
   )
 }
