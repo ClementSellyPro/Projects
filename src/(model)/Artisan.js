@@ -4,7 +4,7 @@ mongoose.connect(process.env.MONGODB_URI);
 
 mongoose.Promise = global.Promise;
 
-const artisan = newSchema(
+const artisanSchema = newSchema(
     {
         id: Number,
         name: String,
@@ -23,3 +23,7 @@ const artisan = newSchema(
         avis: [{_id: Number, client: String, secteur: String, avis: String, artisan: String, domaine_artisan: String}],
     }
 )
+
+const Artisan = mongoose.models.Artisan || mongoose.model("Artisan", artisanSchema);
+
+export default Artisan;
