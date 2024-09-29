@@ -4,7 +4,7 @@ mongoose.connect(process.env.MONGODB_URI);
 
 mongoose.Promise = global.Promise;
 
-const artisanSchema = newSchema(
+const artisanSchema = new Schema(
     {
         id: Number,
         name: String,
