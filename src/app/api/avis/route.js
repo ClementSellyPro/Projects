@@ -11,15 +11,17 @@ export async function POST(req, res){
 
         console.log('yes yes');
 
-        const body = await req.body;
-        const avisData = body.formData;
-        await Avis.create(avisData);
+        const body = await req.json();
+        const { id, prenom, nom, commune, mail, phone, avis } = body;
 
-        if(req.method === 'POST'){
-            return NextResponse.json({ message: "Avis Created"}, {status: 201});
-        }
+        // await Avis.create( id, prenom, nom, commune, mail, phone, avis);
+        const newAvis = new Avis( id, prenom, nom, commune, mail, phone, avis);
+        await newAvis.save();
+
+        return NextResponse.json({ message: "Avis Created"}, {status: 201});
 
     }catch(error){
+        console.log('no no no');
         return NextResponse.json({message: "Error: ", error}, {status: 500});
     }
 }
