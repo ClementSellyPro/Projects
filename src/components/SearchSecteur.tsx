@@ -38,9 +38,9 @@ const SearchSecteur = ({isActive, setIsSecteurActive, setFilterSecteur, setSecte
         }
     }
 
-    window.addEventListener('click', (e: MouseEvent) => compareRef(e))
+    // window.addEventListener('click', (e: MouseEvent) => compareRef(e))
 
-    window.removeEventListener('click', (e: MouseEvent) => compareRef(e));
+    // window.removeEventListener('click', (e: MouseEvent) => compareRef(e));
 
     return (
         <div ref={refSecteur} className={isActive ? 'search-secteur rounded-xl xl:w-80 lg:w-60 w-40' : 'search-secteur hidden'}>

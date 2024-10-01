@@ -22,13 +22,11 @@ const Donneravis = () => {
         }
 
         console.log(formData);
-        fetch('localhost:3000/api/avis', {
+        fetch('http://localhost:3000/api/avis', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(newAvis)
         })
-        .then()
-
     }
 
     return (

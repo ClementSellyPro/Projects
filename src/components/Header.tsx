@@ -31,7 +31,8 @@ const Header = () => {
           src='/logo.png' 
           alt='KALIPRO'
           width={200}
-          height={80} />
+          height={80}
+          priority={true} />
         </Link>
 
         {/* navigation bar */}
