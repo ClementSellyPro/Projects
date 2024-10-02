@@ -3,25 +3,22 @@ import { NextResponse } from "next/server";
 
 export async function POST(req, res){
     try{
-        // const res = NextResponse.next();
-        res.setHeader('Access-Control-Allow-Credentials', true);
-        res.setHeader('ACCESS-CONTROL-ALLOW-ORIGIN', '*');
-        res.setHeader('Access-Control-Allow-Methods', 'GET, DELETE, PATCH, POST, PUT');
-        res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+        // res.setHeader('Access-Control-Allow-Credentials', true);
+        // res.setHeader('ACCESS-CONTROL-ALLOW-ORIGIN', '*');
+        // res.setHeader('Access-Control-Allow-Methods', 'GET, DELETE, PATCH, POST, PUT');
+        // res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
         console.log('yes yes');
 
         const body = await req.json();
         const { id, prenom, nom, commune, mail, phone, avis } = body;
 
-        // await Avis.create( id, prenom, nom, commune, mail, phone, avis);
-        const newAvis = new Avis( id, prenom, nom, commune, mail, phone, avis);
+        const newAvis = new Avis({ id, prenom, nom, commune, mail, phone, avis });
         await newAvis.save();
 
         return NextResponse.json({ message: "Avis Created"}, {status: 201});
 
     }catch(error){
-        console.log('no no no');
         return NextResponse.json({message: "Error: ", error}, {status: 500});
     }
 }
