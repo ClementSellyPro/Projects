@@ -1,9 +1,5 @@
 import mongoose, { Schema } from "mongoose";
 
-mongoose.connect(process.env.MONGODB_URI);
-
-mongoose.Promise = global.Promise;
-
 const avisSchema = new Schema(
     {
         id: Number,
@@ -13,6 +9,9 @@ const avisSchema = new Schema(
         mail: String,
         phone: String,
         avis: String,
+    },
+    {
+        timestamps: true
     }
 )
 
