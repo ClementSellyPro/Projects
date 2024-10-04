@@ -1,12 +1,41 @@
 "use client"
 
 import Image from 'next/image';
-import React, { useState } from 'react'
+import React, { FormEvent, useState } from 'react'
 
 const Contact = () => {
 
   const [isNumberDisplay, setIsNumberDisplay] = useState(false);
   const [isTermAccepted, setIsTermAccepted] = useState(false);
+
+  function handleSubmit(e: FormEvent) {
+    e.preventDefault();
+
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+
+    const prenom = formData.get('prenom');
+    const nom = formData.get('nom');
+    const commune = formData.get('commune');
+    const mail = formData.get('mail');
+    const phone = formData.get('phone');
+    const message = formData.get('message');
+
+    const newMessage = {
+      "prenom": prenom,
+      "nom": nom,
+      "commune": commune,
+      "mail": mail,
+      "phone": phone,
+      "message": message};
+
+    fetch('http://localhost:3000/api/contactKalipro', {
+      method: 'POST',
+      headers: {'Content-Type': 'aplication/json'},
+      body: JSON.stringify(newMessage)
+    })
+    .catch(error => console.log(error));
+  }
 
   return (
     <div className='md:pl-20 lg:pr-20px pr-5px px-5 py-8  bg-slate-50 relative'>
@@ -21,36 +50,36 @@ const Contact = () => {
           }
         </div>
 
-        <form className='flex flex-col md:gap-10 gap-8 md:w-7/12 w-full'>
+        <form onSubmit={(e: FormEvent) => handleSubmit(e)} className='flex flex-col md:gap-10 gap-8 md:w-7/12 w-full'>
 
           <div className='flex flex-col gap-1'>
             <label className='font-semibold text-xl'>Prénom</label>
-            <input className='border py-3 pl-4 rounded-lg' type='text' placeholder='Julien' />
+            <input className='border py-3 pl-4 rounded-lg' name='prenom' type='text' placeholder='Julien' />
           </div>
           
           <div className='flex flex-col gap-1'>
             <label className='font-semibold text-xl'>Nom</label>
-            <input className='border py-3 pl-4 rounded-lg' type='text' placeholder='Payet' />
+            <input className='border py-3 pl-4 rounded-lg' name='nom' type='text' placeholder='Payet' />
           </div>
           
           <div className='flex flex-col gap-1'>
             <label className='font-semibold text-xl'>Commune</label>
-            <input className='border py-3 pl-4 rounded-lg' type='text' placeholder='Saint Denis' />
+            <input className='border py-3 pl-4 rounded-lg' name='commune' type='text' placeholder='Saint Denis' />
           </div>
           
           <div className='flex flex-col gap-1'>
             <label className='font-semibold text-xl'>Email</label>
-            <input className='border py-3 pl-4 rounded-lg' type='text' placeholder='julienpayet@mail.com' />
+            <input className='border py-3 pl-4 rounded-lg' name='mail' type='text' placeholder='julienpayet@mail.com' />
           </div>
           
           <div className='flex flex-col gap-1'>
             <label className='font-semibold text-xl'>Téléphone</label>
-            <input className='border py-3 pl-4 rounded-lg' type='text' placeholder='0692 12 34 56' />
+            <input className='border py-3 pl-4 rounded-lg' name='phone' type='text' placeholder='0692 12 34 56' />
           </div>
           
           <div className='flex flex-col gap-1'>
             <label className='font-semibold text-xl'>Votre message</label>
-            <textarea className='px-4 py-2 rounded-lg border resize-none' placeholder='Bonjour,&#10; nous recherchons un artisan afin de réaliser ... &#10; &#10; Vers quel artisan devons nous nous diriger pour ...' />
+            <textarea className='px-4 py-2 rounded-lg border resize-none' name='message' placeholder='Bonjour,&#10; nous recherchons un artisan afin de réaliser ... &#10; &#10; Vers quel artisan devons nous nous diriger pour ...' />
           </div>
 
           <div className='flex gap-1'>

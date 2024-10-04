@@ -27,8 +27,6 @@ const Donneravis = () => {
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(newAvis)
         })
-        .then(response => response.json())
-        .then(data => console.log(data))
         .catch(error => console.log("Petit erreur:", error))
     }
 
