@@ -1,12 +1,15 @@
 "use client"
 
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import React, { FormEvent, useState } from 'react'
 
 const Contact = () => {
 
   const [isNumberDisplay, setIsNumberDisplay] = useState(false);
   const [isTermAccepted, setIsTermAccepted] = useState(false);
+
+  const router = useRouter();
 
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
@@ -35,6 +38,9 @@ const Contact = () => {
       body: JSON.stringify(newMessage)
     })
     .catch(error => console.log(error));
+
+    form.reset();
+    router.push('/');
   }
 
   return (

@@ -1,10 +1,13 @@
 "use client"
 
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 const Donneravis = () => {
 
     const [isTermAccepted, setIsTermAccepted] = useState(false);
+
+    const router = useRouter();
 
     function handleSubmit(e: React.FormEvent){
         e.preventDefault();
@@ -21,13 +24,15 @@ const Donneravis = () => {
             avis: formData.get("avis")
         }
 
-        // console.log(formData);
         fetch('http://localhost:3000/api/avis', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(newAvis)
         })
         .catch(error => console.log("Petit erreur:", error))
+
+        form.reset();
+        router.push('/');
     }
 
     return (

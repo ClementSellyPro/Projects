@@ -1,6 +1,7 @@
 "use client"
 
 import DataContext from '@/context/DataContext';
+import { useRouter } from 'next/navigation';
 import React, { FormEvent, useContext, useState } from 'react'
 
 const ArtisanMail = ({params}: any) => {
@@ -8,6 +9,8 @@ const ArtisanMail = ({params}: any) => {
   const id = Number(params.id);
   const { data } = useContext(DataContext);
   const selectedArtisan = data.filter(artisan => artisan._id === id);
+
+  const router = useRouter();
 
   // mail de l'artisan
   const mailArtisan = selectedArtisan[0].mail;
@@ -43,6 +46,9 @@ const ArtisanMail = ({params}: any) => {
       body: JSON.stringify(newMessage)
     })
     .catch(error => console.log(error));
+
+    form.reset();
+    router.push('/');
   }
 
   return (
