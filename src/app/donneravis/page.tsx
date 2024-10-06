@@ -6,8 +6,17 @@ import { useRouter } from 'next/navigation';
 const Donneravis = () => {
 
     const [isTermAccepted, setIsTermAccepted] = useState(false);
+    const [isFullfilled, setIsFullfield] = useState(true);
 
     const router = useRouter();
+
+    function checkAllField(prenom: FormDataEntryValue | null, nom: FormDataEntryValue | null, commune: FormDataEntryValue | null, mail: FormDataEntryValue | null, phone: FormDataEntryValue | null, avis: FormDataEntryValue | null){
+        if(prenom !== null || nom !== null || commune !== null || mail !== null || phone !== null || avis !== null){
+            setIsFullfield(false);
+        }else{
+            setIsFullfield(true);
+        }
+    }
 
     function handleSubmit(e: React.FormEvent){
         e.preventDefault();
@@ -24,15 +33,19 @@ const Donneravis = () => {
             avis: formData.get("avis")
         }
 
-        fetch('http://localhost:3000/api/avis', {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify(newAvis)
-        })
-        .catch(error => console.log("Petit erreur:", error))
+        checkAllField(newAvis.prenom, newAvis.nom, newAvis.commune, newAvis.mail, newAvis.phone, newAvis.avis);
 
-        form.reset();
-        router.push('/');
+        if(isFullfilled){
+            fetch('http://localhost:3000/api/avis', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(newAvis)
+            })
+            .catch(error => console.log("Petit erreur:", error))
+    
+            form.reset();
+            router.push('/');
+        }
     }
 
     return (
@@ -46,17 +59,17 @@ const Donneravis = () => {
 
                 <div className='flex flex-col gap-1'>
                 <label className='font-semibold text-xl'>Prénom</label>
-                <input className='border py-3 pl-4 rounded-lg' name='prenom' type='text' placeholder='Julien' />
+                <input className='border py-3 pl-4 rounded-lg' name='prenom' type='text' placeholder='Julien' required/>
                 </div>
 
                 <div className='flex flex-col gap-1'>
                 <label className='font-semibold text-xl'>Nom</label>
-                <input className='border py-3 pl-4 rounded-lg' name="nom" type='text' placeholder='Payet' />
+                <input className='border py-3 pl-4 rounded-lg' name="nom" type='text' placeholder='Payet' required />
                 </div>
 
                 <div className='flex flex-col gap-1'>
                 <label className='font-semibold text-xl'>Commune</label>
-                <input className='border py-3 pl-4 rounded-lg' name="commune" type='text' placeholder='Saint Denis' />
+                <input className='border py-3 pl-4 rounded-lg' name="commune" type='text' placeholder='Saint Denis' required />
                 </div>
 
                 <div className='flex flex-col gap-1'>
@@ -66,12 +79,12 @@ const Donneravis = () => {
 
                 <div className='flex flex-col gap-1'>
                 <label className='font-semibold text-xl'>Téléphone</label>
-                <input className='border py-3 pl-4 rounded-lg' name="phone" type='text' placeholder='0692 12 34 56' />
+                <input className='border py-3 pl-4 rounded-lg' name="phone" type='text' placeholder='0692 12 34 56' required />
                 </div>
 
                 <div className='flex flex-col gap-1'>
                 <label className='font-semibold text-xl'>Votre avis <span className='font-normal text-base'>(n&apos;oublier pas de mentionner l&apos;artisan concerné)</span></label>
-                <textarea className='px-4 py-2 rounded-lg border resize-none' name="avis" placeholder='' />
+                <textarea className='px-4 py-2 rounded-lg border resize-none' name="avis" placeholder='' required />
                 </div>
                 
                 {/* file selection */}
@@ -85,7 +98,9 @@ const Donneravis = () => {
                 <p className='ml-2'>J&apos;accepte les <a className='underline cursor-pointer' href='/Condition_general.pdf' target="_blank" rel='noopener noreferrer'>conditions générale d&apos;utilisation</a></p>
                 </div>
 
-                <button disabled={!isTermAccepted} className='w-fit py-3 px-10 font-semibold rounded-full bg-blueKalipro hover:opacity-80 text-white' type='submit'>Envoyer</button>
+                {isFullfilled === false ? <p className='text-orange-400'>Veuillez renseigner tous les champs.</p> : null}
+                
+                <button onClick={() => checkAllField} disabled={!isTermAccepted} className='w-fit py-3 px-10 font-semibold rounded-full bg-blueKalipro hover:opacity-80 text-white' type='submit'>Envoyer</button>
 
             </form>
         </div>

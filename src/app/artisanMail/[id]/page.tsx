@@ -63,32 +63,32 @@ const ArtisanMail = ({params}: any) => {
 
         <div className='flex flex-col gap-1'>
           <label className='font-semibold text-xl'>Prénom</label>
-          <input className='border py-3 pl-4 rounded-lg' name='prenom' type='text' placeholder='Julien' />
+          <input className='border py-3 pl-4 rounded-lg' name='prenom' type='text' placeholder='Julien' required />
         </div>
         
         <div className='flex flex-col gap-1'>
           <label className='font-semibold text-xl'>Nom</label>
-          <input className='border py-3 pl-4 rounded-lg' name='nom' type='text' placeholder='Payet' />
+          <input className='border py-3 pl-4 rounded-lg' name='nom' type='text' placeholder='Payet' required />
         </div>
         
         <div className='flex flex-col gap-1'>
           <label className='font-semibold text-xl'>Commune</label>
-          <input className='border py-3 pl-4 rounded-lg' name='commune' type='text' placeholder='Saint Denis' />
+          <input className='border py-3 pl-4 rounded-lg' name='commune' type='text' placeholder='Saint Denis' required />
         </div>
         
         <div className='flex flex-col gap-1'>
           <label className='font-semibold text-xl'>Email</label>
-          <input className='border py-3 pl-4 rounded-lg' name='mail' type='text' placeholder='julienpayet@mail.com' />
+          <input className='border py-3 pl-4 rounded-lg' name='mail' type='text' placeholder='julienpayet@mail.com' required />
         </div>
         
         <div className='flex flex-col gap-1'>
           <label className='font-semibold text-xl'>Telephone</label>
-          <input className='border py-3 pl-4 rounded-lg' name='phone' type='text' placeholder='0692 12 34 56' />
+          <input className='border py-3 pl-4 rounded-lg' name='phone' type='text' placeholder='0692 12 34 56' required />
         </div>
         
         <div className='flex flex-col gap-1'>
           <label className='font-semibold text-xl'>Votre message</label>
-          <textarea className='px-4 py-2 rounded-lg border resize-none' name='message' placeholder='Bonjour, je recherches un artisan afin de réaliser ...' />
+          <textarea className='px-4 py-2 rounded-lg border resize-none' name='message' placeholder='Bonjour, je recherches un artisan afin de réaliser ...' required />
         </div>
 
         <div className='flex gap-1'>

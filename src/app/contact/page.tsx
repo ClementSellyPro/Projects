@@ -2,14 +2,26 @@
 
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import React, { FormEvent, useState } from 'react'
+import React, { ChangeEvent, FormEvent, useState } from 'react'
 
 const Contact = () => {
 
-  const [isNumberDisplay, setIsNumberDisplay] = useState(false);
-  const [isTermAccepted, setIsTermAccepted] = useState(false);
+  const [isNumberDisplay, setIsNumberDisplay] = useState<Boolean>(false);
+  const [isTermAccepted, setIsTermAccepted] = useState<Boolean>(false);
+  // const [phoneNumber, setPhoneNumber] = useState<string>('');
 
   const router = useRouter();
+
+  // function setPhoneNumberFunction(e: ChangeEvent<HTMLInputElement>){
+  //   let inputValue = e.currentTarget.value;
+  //   const regex = new RegExp('^\+33[1-9][0-9]{8}$');
+  //   let display = regex.replace(inputValue);
+  //   if(inputValue !== null){
+  //     setPhoneNumber(display);
+  //   }
+  // }
+
+  // onChange={(e: ChangeEvent<HTMLInputElement>) => setPhoneNumberFunction(e)} value={phoneNumber}
 
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
@@ -60,32 +72,32 @@ const Contact = () => {
 
           <div className='flex flex-col gap-1'>
             <label className='font-semibold text-xl'>Prénom</label>
-            <input className='border py-3 pl-4 rounded-lg' name='prenom' type='text' placeholder='Julien' />
+            <input className='border py-3 pl-4 rounded-lg' name='prenom' type='text' placeholder='Julien' required />
           </div>
           
           <div className='flex flex-col gap-1'>
             <label className='font-semibold text-xl'>Nom</label>
-            <input className='border py-3 pl-4 rounded-lg' name='nom' type='text' placeholder='Payet' />
+            <input className='border py-3 pl-4 rounded-lg' name='nom' type='text' placeholder='Payet' required />
           </div>
           
           <div className='flex flex-col gap-1'>
             <label className='font-semibold text-xl'>Commune</label>
-            <input className='border py-3 pl-4 rounded-lg' name='commune' type='text' placeholder='Saint Denis' />
+            <input className='border py-3 pl-4 rounded-lg' name='commune' type='text' placeholder='Saint Denis' required />
           </div>
           
           <div className='flex flex-col gap-1'>
             <label className='font-semibold text-xl'>Email</label>
-            <input className='border py-3 pl-4 rounded-lg' name='mail' type='text' placeholder='julienpayet@mail.com' />
+            <input className='border py-3 pl-4 rounded-lg' name='mail' type='text' placeholder='julienpayet@mail.com' required />
           </div>
           
           <div className='flex flex-col gap-1'>
             <label className='font-semibold text-xl'>Téléphone</label>
-            <input className='border py-3 pl-4 rounded-lg' name='phone' type='text' placeholder='0692 12 34 56' />
+            <input  className='border py-3 pl-4 rounded-lg' name='phone' type='text' placeholder='0692 12 34 56' required />
           </div>
           
           <div className='flex flex-col gap-1'>
             <label className='font-semibold text-xl'>Votre message</label>
-            <textarea className='px-4 py-2 rounded-lg border resize-none' name='message' placeholder='Bonjour,&#10; nous recherchons un artisan afin de réaliser ... &#10; &#10; Vers quel artisan devons nous nous diriger pour ...' />
+            <textarea className='px-4 py-2 rounded-lg border resize-none' name='message' placeholder='Bonjour,&#10; nous recherchons un artisan afin de réaliser ... &#10; &#10; Vers quel artisan devons nous nous diriger pour ...' required />
           </div>
 
           <div className='flex gap-1'>
