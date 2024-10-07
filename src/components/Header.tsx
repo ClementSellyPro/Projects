@@ -59,7 +59,7 @@ const Header = () => {
         </nav>
 
         {/* boutton donner avis - large screen*/}
-        <div className='md:flex flex-col items-center lg:w-fit w-48  md:absolute lg:right-20 md:right-14 hidden'>
+        <div className='md:flex flex-col items-center lg:w-fit w-40  md:absolute lg:right-20 md:right-14 hidden'>
 
           <Link href={'/donneravis'} className='px-5 py-2 lg:text-sm md:text-xs bg-white text-kalipro font-semibold border-2 border-kalipro rounded-full hover:bg-kalipro hover:text-white'>
             Donner mon avis pour un artisan

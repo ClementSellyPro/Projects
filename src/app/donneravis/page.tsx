@@ -6,15 +6,36 @@ import { useRouter } from 'next/navigation';
 const Donneravis = () => {
 
     const [isTermAccepted, setIsTermAccepted] = useState(false);
-    const [isFullfilled, setIsFullfield] = useState(true);
+    const [emailInput, setEmailInput] = useState('');
+    const [validEmail, setValidEmail] = useState(false);
+    const [phoneInput, setPhoneInput] = useState('');
+    const [validPhone, setValidPhone] = useState(false);
 
     const router = useRouter();
 
-    function checkAllField(prenom: FormDataEntryValue | null, nom: FormDataEntryValue | null, commune: FormDataEntryValue | null, mail: FormDataEntryValue | null, phone: FormDataEntryValue | null, avis: FormDataEntryValue | null){
-        if(prenom !== null || nom !== null || commune !== null || mail !== null || phone !== null || avis !== null){
-            setIsFullfield(false);
+    function handleEmailInput(e: React.FormEvent<HTMLInputElement>){
+        const target = e.currentTarget.value;
+        const regex = (/^\S+@\S+\.\S{2,3}$/);
+
+        setEmailInput(target);
+        if(regex.test(target)){
+            setValidEmail(true)
         }else{
-            setIsFullfield(true);
+            setValidEmail(false);
+        }
+    }
+
+    function handlePhoneInput(e: React.FormEvent<HTMLInputElement>){
+        const target = e.currentTarget.value;
+        const regex = /^\d{10}$/;
+        
+        console.log(regex.test(target));
+        setPhoneInput(target);
+
+        if(regex.test(target)){
+            setValidPhone(true)
+        }else{
+            setValidPhone(false);
         }
     }
 
@@ -33,9 +54,7 @@ const Donneravis = () => {
             avis: formData.get("avis")
         }
 
-        checkAllField(newAvis.prenom, newAvis.nom, newAvis.commune, newAvis.mail, newAvis.phone, newAvis.avis);
-
-        if(isFullfilled){
+        if(validEmail && validPhone){
             fetch('http://localhost:3000/api/avis', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
@@ -53,7 +72,6 @@ const Donneravis = () => {
             <div className='flex justify-between items-center py-8 mb-6 border-b bg-slate-50'>
                 <h1 className='md:text-4xl text-2xl font-semibold'>Donner mon avis</h1>
             </div>
-
 
             <form onSubmit={handleSubmit} className='flex flex-col md:gap-10 gap-8 md:w-7/12 w-full'>
 
@@ -74,12 +92,12 @@ const Donneravis = () => {
 
                 <div className='flex flex-col gap-1'>
                 <label className='font-semibold text-xl'>Email</label>
-                <input className='border py-3 pl-4 rounded-lg' name="email" type='text' placeholder='julienpayet@mail.com' />
+                <input onChange={(e: React.FormEvent<HTMLInputElement>) => handleEmailInput(e)} value={emailInput} className='border py-3 pl-4 rounded-lg' name="email" type='text' placeholder='julienpayet@mail.com' />
                 </div>
 
                 <div className='flex flex-col gap-1'>
                 <label className='font-semibold text-xl'>Téléphone</label>
-                <input className='border py-3 pl-4 rounded-lg' name="phone" type='text' placeholder='0692 12 34 56' required />
+                <input onChange={(e: React.FormEvent<HTMLInputElement>) => handlePhoneInput(e)} value={phoneInput} className='border py-3 pl-4 rounded-lg' name="phone" type='text' placeholder='0692 12 34 56' required />
                 </div>
 
                 <div className='flex flex-col gap-1'>
@@ -98,9 +116,10 @@ const Donneravis = () => {
                 <p className='ml-2'>J&apos;accepte les <a className='underline cursor-pointer' href='/Condition_general.pdf' target="_blank" rel='noopener noreferrer'>conditions générale d&apos;utilisation</a></p>
                 </div>
 
-                {isFullfilled === false ? <p className='text-orange-400'>Veuillez renseigner tous les champs.</p> : null}
-                
-                <button onClick={() => checkAllField} disabled={!isTermAccepted} className='w-fit py-3 px-10 font-semibold rounded-full bg-blueKalipro hover:opacity-80 text-white' type='submit'>Envoyer</button>
+                {validEmail === false ? <p className='text-orange-400'>Veuillez renseigner une adresse Email valide.</p> : null}
+                {validPhone === false ? <p className='text-orange-400'>Veuillez renseigner un numéro de Téléphone valide.</p> : null}
+
+                <button disabled={!isTermAccepted} className='w-fit py-3 px-10 font-semibold rounded-full bg-blueKalipro hover:opacity-80 text-white' type='submit'>Envoyer</button>
 
             </form>
         </div>

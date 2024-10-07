@@ -9,6 +9,10 @@ const ArtisanMail = ({params}: any) => {
   const id = Number(params.id);
   const { data } = useContext(DataContext);
   const selectedArtisan = data.filter(artisan => artisan._id === id);
+  const [emailInput, setEmailInput] = useState('');
+  const [validEmail, setValidEmail] = useState(false);
+  const [phoneInput, setPhoneInput] = useState('');
+  const [validPhone, setValidPhone] = useState(false);
 
   const router = useRouter();
 
@@ -16,6 +20,32 @@ const ArtisanMail = ({params}: any) => {
   const mailArtisan = selectedArtisan[0].mail;
 
   const [isTermAccepted, SetIsTermAccepted] = useState(false);
+
+  function handleEmailInput(e: React.FormEvent<HTMLInputElement>){
+    const target = e.currentTarget.value;
+    const regex = (/^\S+@\S+\.\S{2,3}$/);
+
+    setEmailInput(target);
+    if(regex.test(target)){
+        setValidEmail(true)
+    }else{
+        setValidEmail(false);
+    }
+  }
+
+  function handlePhoneInput(e: React.FormEvent<HTMLInputElement>){
+    const target = e.currentTarget.value;
+    const regex = /^\d{10}$/;
+        
+    console.log(regex.test(target));
+    setPhoneInput(target);
+
+    if(regex.test(target)){
+        setValidPhone(true)
+    }else{
+        setValidPhone(false);
+    }
+  }
 
   function handleSubmit(e: FormEvent){
     e.preventDefault();
@@ -78,12 +108,12 @@ const ArtisanMail = ({params}: any) => {
         
         <div className='flex flex-col gap-1'>
           <label className='font-semibold text-xl'>Email</label>
-          <input className='border py-3 pl-4 rounded-lg' name='mail' type='text' placeholder='julienpayet@mail.com' required />
+          <input className='border py-3 pl-4 rounded-lg' name='mail' type='email' placeholder='julienpayet@mail.com' onChange={(e: React.FormEvent<HTMLInputElement>) => handleEmailInput(e)} value={emailInput} required />
         </div>
         
         <div className='flex flex-col gap-1'>
           <label className='font-semibold text-xl'>Telephone</label>
-          <input className='border py-3 pl-4 rounded-lg' name='phone' type='text' placeholder='0692 12 34 56' required />
+          <input className='border py-3 pl-4 rounded-lg' name='phone' type='text' placeholder='0692 12 34 56' onChange={(e: React.FormEvent<HTMLInputElement>) => handlePhoneInput(e)} value={phoneInput} required />
         </div>
         
         <div className='flex flex-col gap-1'>
@@ -96,10 +126,13 @@ const ArtisanMail = ({params}: any) => {
           <p className='ml-2'>J&apos;accepte les <a className='underline cursor-pointer' href='/Condition_general.pdf' target="_blank" rel='noopener noreferrer'>conditions générale d&apos;utilisation</a></p>
         </div>
 
+        {validEmail === false ? <p className='text-orange-400'>Veuillez renseigner une adresse Email valide.</p> : null}
+        {validPhone === false ? <p className='text-orange-400'>Veuillez renseigner un numéro de Téléphone valide.</p> : null}
+
         <button disabled={!isTermAccepted} className='w-fit py-3 px-10 font-semibold rounded-full bg-blueKalipro hover:opacity-80 text-white' type='submit'>Envoyer</button>
       </form>
     </div>
   )
 }
 
-export default ArtisanMail
+export default ArtisanMail;
