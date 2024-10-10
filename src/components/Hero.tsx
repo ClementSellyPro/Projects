@@ -20,7 +20,7 @@ const Hero = () => {
     }
     
     return (
-        <div className='Hero lg:px-20 md:px-14 px-5  bg-gradient-to-tr from-subtleKalipro to-slate-50'>
+        <div className='Hero lg:px-20 md:px-14 px-5 md:pb-0 pb-10 bg-gradient-to-tr from-subtleKalipro to-slate-50'>
             <div className='hero-main flex flex-col justify-around items-center md:p-24 p-10 rounded-xl'>
 
                 {/* Images section*/}
@@ -47,7 +47,7 @@ const Hero = () => {
                 
             </div>
             {/* Input section for little screen */}
-            <div className='hero-input-section flex flex-col justify-items-end gap-3 md:hidden w-full h-44 py-2 mt-5'>
+            <div className='hero-input-section flex flex-col items-end gap-3 md:hidden w-full h-44 py-2 mt-5'>
                 {/* <input className='bg-white rounded-lg w-full h-20 pl-4 outline-none border' type='text' placeholder='Que recherchez-vous?' /> */}
                 <select onChange={(e: ChangeEvent<HTMLSelectElement>) => metierSelectionMobile(e)} className='bg-white rounded-lg w-full h-20 pl-4  border'>
                     <option value="">Que recherchez vous?</option>

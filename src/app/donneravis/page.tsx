@@ -1,15 +1,16 @@
 "use client"
 
-import React, { useState } from 'react';
+import React, { ChangeEvent, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 const Donneravis = () => {
 
-    const [isTermAccepted, setIsTermAccepted] = useState(false);
-    const [emailInput, setEmailInput] = useState('');
-    const [validEmail, setValidEmail] = useState(false);
-    const [phoneInput, setPhoneInput] = useState('');
-    const [validPhone, setValidPhone] = useState(false);
+    const [isTermAccepted, setIsTermAccepted] = useState<boolean>(false);
+    const [emailInput, setEmailInput] = useState<string>('');
+    const [validEmail, setValidEmail] = useState<boolean>(false);
+    const [phoneInput, setPhoneInput] = useState<string>('');
+    const [validPhone, setValidPhone] = useState<boolean>(false);
+    const [file, setFile] = useState<File | null>(null);
 
     const router = useRouter();
 
@@ -39,6 +40,17 @@ const Donneravis = () => {
         }
     }
 
+    function handleFile(e: ChangeEvent<HTMLInputElement>){
+        const selectedFile = e.target.files?.[0];
+        const maxFileSize = 5 * 1024 * 1024;
+
+        if (selectedFile && selectedFile.size > maxFileSize){
+            setFile(null); // reset file if size limit
+        }else{
+            setFile(selectedFile || null);
+        }
+    }
+
     function handleSubmit(e: React.FormEvent){
         e.preventDefault();
 
@@ -51,7 +63,8 @@ const Donneravis = () => {
             commune: formData.get("commune"),
             mail: formData.get("email"),
             phone: formData.get("phone"),
-            avis: formData.get("avis")
+            avis: formData.get("avis"),
+            fileSelection: formData.get("fileSelection")
         }
 
         if(validEmail && validPhone){
@@ -108,7 +121,7 @@ const Donneravis = () => {
                 {/* file selection */}
                 <div className='flex flex-col gap-1'>
                 <label htmlFor="fileSelection" className='font-semibold text-xl'>Selectionner ma facture:</label>
-                <input className='px-4 py-2 rounded-lg border resize-none bg-white' type="file" id="fileSelection" name="fileSelection" accept="image/png, image/jpeg, application/pdf" />
+                <input className='px-4 py-2 rounded-lg border resize-none bg-white' type="file" id="fileSelection" name="fileSelection" accept="image/png, image/jpeg, application/pdf" onChange={(e: ChangeEvent<HTMLInputElement>) => handleFile(e)} />
                 </div>
 
                 <div className='flex gap-1'>

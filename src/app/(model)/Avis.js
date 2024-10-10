@@ -9,6 +9,11 @@ const avisSchema = new Schema(
         mail: String,
         phone: String,
         avis: String,
+        fileSelection: mongoose.Schema.Types.ObjectId
+        // fileSelection: {
+        //     data: fileData, 
+        //     contentType: fileURLToPath.mimetype
+        // }
     },
     {
         timestamps: true
