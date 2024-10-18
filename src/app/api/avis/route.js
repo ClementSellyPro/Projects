@@ -1,15 +1,81 @@
 import Avis from "../../(model)/Avis";
 import { NextResponse } from "next/server";
 import connectMongoDB from "@/app/lib/mongoose"
-import formidable from "formidable";
+// import upload from "../../lib/multer";
+import nodemailer from 'nodemailer';
+import multer from "multer";
 import fs from 'fs';
 
-export const config = {
-    api: {
-        bodyParser: false,
-    }
-}
 
+// const upload = multer({
+//     storage: multer.diskStorage({
+//         destination: './uploads',
+//         filename: (req, file, cb) => {
+//             cb(null, Date.now() + path.extname(file.originalname));
+//         }
+//     })
+// });
+
+// const apiRoute = nextConnect({
+//     onError(error, req, res) {
+//         res.status(501).json({error: `Something wrong happened ${error.message}`})
+//     },
+//     onNoMatch(req, res){
+//         res.status(405).json({ error: `Method '${req.method}' not alloowed`})
+//     }
+// });
+
+// apiRoute.use(upload.single('fileSelection'));
+
+// apiRoute.post(async (req, res) => {
+//     await connectMongoDB();
+//     const { prenom, nom, commune, mail, phone, avis, fileSelection } = req.body;
+
+//     const newSubmission = new Submission({
+//         prenom, nom, commune, mail, phone, avis, fileSelection
+//     })
+
+//     const transporter = nodemailer. createTransport({
+//         service: 'gmail',
+//         auth: {
+//             user: process.env.EMAIL_USER,
+//             pass: process.env.EMAIL_PASS
+//         }
+//     });
+
+//     const mailOptions = {
+//         from: process.env.EMAIL.USER,
+//         to: mail,
+//         subject: 'Form submission with file attachment',
+//         text: `The file from ${prenom} ${nom} has been sent`,
+//         attachments:[
+//             {
+//                 filename: req.file.filename,
+//                 path: path.join(process.cwd(), 'uploads', req.file.filename)
+//             }
+//         ]
+//     };
+
+//     try{
+//         await transporter.sendMail(mailOptions);
+
+//         fs.unlinkSync(path.join(process.cwd(), 'uploads', req.file.filename));
+
+//         res.status(200).json({ message: 'Email sent successfully'});
+//     }catch(error){
+//         res.status(500).json({error: 'Failed to send email', details: error.message})
+//     }
+// })
+
+// export default apiRoute;
+
+// export const config = {
+//     api: {
+//         bodyParser: false, // Disable body parser for file uploads
+//     }
+// }
+
+/*
 export async function POST(req, res){
     const form = new formidable.IncomingForm({
         maxFileSize: 5 * 1024 * 1024, // 5Mo limit size
@@ -73,3 +139,4 @@ export async function POST(req, res){
         return NextResponse.json({message: "Error: ", error}, {status: 500});
     }
 }
+*/

@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useContext, useRef, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import SearchSecteur from './SearchSecteur'
 import FilterContext from '@/context/FilterContext'
 import SearchMetier from './SearchMetier'
@@ -39,9 +39,6 @@ const MainInput = () => {
         setSecteurDisplay('');
     }
 
-     // ref to hide search menu when clicking outside
-     let refSecteur = useRef<HTMLInputElement>(null);
-
     return (
         <div className='hero-input-section md:flex items-center bg-white p-1 w-fit lg:h-14 md:h-12 h-10 rounded-full hidden'>
             {/* metier menu  */}
@@ -71,7 +68,7 @@ const MainInput = () => {
                         setFilterSecteur={setFilterSecteur} 
                         isActive={isSecteurActive}
                         setSecteurDisplay={setSecteurDisplay} 
-                        refSecteur={refSecteur}/>
+                        />
                 </div>
             </div>
 

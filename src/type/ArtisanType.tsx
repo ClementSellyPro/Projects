@@ -1,3 +1,13 @@
+type avisType = {
+  _id: number,
+  client: string,
+  secteur: string,
+  avis: string,
+  artisan: string,
+  secteur_artisan: string
+}
+
+
 export interface Artisan {
     _id: number,
     name: string,
@@ -13,5 +23,5 @@ export interface Artisan {
     presentation: string,
     qualifications_assurances: string[],
     photo: string[],
-    avis: string[]
+    avis: avisType[]
   }

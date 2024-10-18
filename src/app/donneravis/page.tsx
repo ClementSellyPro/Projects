@@ -51,7 +51,7 @@ const Donneravis = () => {
         }
     }
 
-    function handleSubmit(e: React.FormEvent){
+    async function handleSubmit(e: React.FormEvent){
         e.preventDefault();
 
         const form = e.target as HTMLFormElement;
@@ -64,16 +64,27 @@ const Donneravis = () => {
             mail: formData.get("email"),
             phone: formData.get("phone"),
             avis: formData.get("avis"),
-            fileSelection: formData.get("fileSelection")
+            fileSelection: file
         }
 
         if(validEmail && validPhone){
-            fetch('http://localhost:3000/api/avis', {
+            // fetch('http://localhost:3000/api/avis', {
+            //     method: 'POST',
+            //     headers: {'Content-Type': 'application/json'},
+            //     body: JSON.stringify(newAvis)
+            // })
+            // .catch(error => console.log("Petit erreur:", error))
+            const res = await fetch('http://localhost:3000/api/avis', {
                 method: 'POST',
-                headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(newAvis)
             })
-            .catch(error => console.log("Petit erreur:", error))
+
+            const data = await res.json();
+            if(data.success){
+                alert('File upload')
+            }else{
+                alert('Error upload')
+            }
     
             form.reset();
             router.push('/');

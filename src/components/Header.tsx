@@ -58,23 +58,23 @@ const Header = () => {
             </ul>
         </nav>
 
-        {/* boutton donner avis - large screen*/}
+        {/* boutton donner avis - large screen
         <div className='md:flex flex-col items-center lg:w-fit w-40  md:absolute lg:right-20 md:right-14 hidden'>
 
           <Link href={'/donneravis'} className='px-5 py-2 lg:text-sm md:text-xs bg-white text-kalipro font-semibold border-2 border-kalipro rounded-full hover:bg-kalipro hover:text-white'>
             Donner mon avis pour un artisan
           </Link>
-        </div>
+        </div>*/}
 
 
-        {/* boutton donner avis - little screen*/}
+        {/* boutton donner avis - little screen
         <div className='md:hidden flex justify-between items-center w-full'>
           <Link className='md:hidden font-semibold hover:border-b-2 border-kalipro text-sm' href='/contact'>Contact</Link>
 
           <Link href={'/donneravis'} className='px-5 py-2 md:text-base text-xs bg-white text-kalipro font-semibold border-2 border-kalipro rounded-full hover:bg-kalipro hover:text-white'>
             Donner mon avis pour un artisan
           </Link>
-        </div>
+        </div>*/}
     </div>
   )
 }
