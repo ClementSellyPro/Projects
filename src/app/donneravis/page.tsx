@@ -64,17 +64,11 @@ const Donneravis = () => {
             mail: formData.get("email"),
             phone: formData.get("phone"),
             avis: formData.get("avis"),
-            fileSelection: file
+            // fileSelection: file
         }
 
         if(validEmail && validPhone){
-            // fetch('http://localhost:3000/api/avis', {
-            //     method: 'POST',
-            //     headers: {'Content-Type': 'application/json'},
-            //     body: JSON.stringify(newAvis)
-            // })
-            // .catch(error => console.log("Petit erreur:", error))
-            const res = await fetch('http://localhost:3000/api/avis', {
+            const res = await fetch('http://localhost:3000/api/send/avis', {
                 method: 'POST',
                 body: JSON.stringify(newAvis)
             })
