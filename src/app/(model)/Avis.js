@@ -6,7 +6,7 @@ const avisSchema = new Schema(
         prenom: String,
         nom: String,
         commune: String,
-        mail: String,
+        email: String,
         phone: String,
         avis: String,
         fileSelection: String

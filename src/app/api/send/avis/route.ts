@@ -1,17 +1,17 @@
-import { AvisEmail } from '@/components/email-template/AvisEmail';
+import AvisEmail  from '@/components/email-template/AvisEmail';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
-    const {prenom, nom, commune, mail, phone, avis} = await request.json();
+    const {prenom, nom, commune, email, phone, avis} = await request.json();
 
     try {
       const { data, error } = await resend.emails.send({
-        from: 'Acme <onboarding@resend.dev>',
-        to: ['contact.ellys@gmail.com'],
-        subject: 'Hello world',
-        react: AvisEmail({ nom: nom, prenom:prenom, email: mail, phone: phone, commune: commune, avis: avis }),
+        from: 'onboarding@resend.dev',
+        to: 'clement.selly@gmail.com',
+        subject: 'Nouvelle AVIS Artisan',
+        react: AvisEmail({ nom, prenom, email, phone, commune, avis }),
       });
   
       if (error) {

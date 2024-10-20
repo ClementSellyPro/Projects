@@ -61,7 +61,7 @@ const Donneravis = () => {
             prenom: formData.get("prenom"),
             nom: formData.get("nom"),
             commune: formData.get("commune"),
-            mail: formData.get("email"),
+            email: formData.get("email"),
             phone: formData.get("phone"),
             avis: formData.get("avis"),
             // fileSelection: file
@@ -73,12 +73,12 @@ const Donneravis = () => {
                 body: JSON.stringify(newAvis)
             })
 
-            const data = await res.json();
-            if(data.success){
-                alert('File upload')
-            }else{
-                alert('Error upload')
-            }
+            // const data = await res.json();
+            // if(data.success){
+            //     alert('File upload')
+            // }else{
+            //     alert('Error upload')
+            // }
     
             form.reset();
             router.push('/');
