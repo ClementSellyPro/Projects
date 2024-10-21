@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import { FilterContextProvider } from "@/context/FilterContext";
 import { DataContextProvider } from "@/context/DataContext";
 import Beta from "@/components/Beta";
+import { Toaster } from "react-hot-toast";
 
 
 export default function RootLayout({
@@ -19,6 +20,7 @@ export default function RootLayout({
         <Beta />
         <DataContextProvider>
         <FilterContextProvider>
+          <Toaster position="bottom-right" toastOptions={{ duration: 3000 }} />
           <Header />
           <main>
             {children}

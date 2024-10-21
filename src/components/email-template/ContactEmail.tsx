@@ -1,27 +1,27 @@
 import { Html } from "@react-email/components";
 import * as React from 'react';
 
-interface AvisEmailProps{
+interface ContactEmailProps{
     nom: string,
     prenom: string,
     email: string,
     phone: string,
     commune: string,
-    avis: string,
+    message: string,
 }
 
-export default function AvisEmail({nom, prenom, email, phone, commune, avis}:AvisEmailProps){
+export default function ContactEmail({nom, prenom, email, commune, phone, message}:ContactEmailProps){
     return(
         <Html>
         <div>
-            <h1>Nouvelle avis Artisan</h1>
+            <h1>Nouveau message pour KALIPRO</h1>
 
             <p>Nom: {nom}</p>
             <p>Prénom: {prenom}</p>
             <p>Email: {email}</p>
             <p>Téléphone: {phone}</p>
             <p>Commune: {commune}</p>
-            <p>Avis: {avis}</p>
+            <p>Message: {message}</p>
         </div>
         </Html>
     )

@@ -2,6 +2,7 @@
 
 import React, { ChangeEvent, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import toast from 'react-hot-toast';
 
 const Donneravis = () => {
 
@@ -80,6 +81,7 @@ const Donneravis = () => {
             //     alert('Error upload')
             // }
     
+            toast.success('Votre avis a bien été envoyé');
             form.reset();
             router.push('/');
         }

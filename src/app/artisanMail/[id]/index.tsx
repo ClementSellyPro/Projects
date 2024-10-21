@@ -1,9 +1,10 @@
 "use client"
-import { Artisan } from "@/type/ArtisanType";
+// import { Artisan } from "@/type/ArtisanType";
 import { useRouter } from "next/navigation";
 import { FormEvent, useContext, useState } from "react";
-import DataContext from '@/context/DataContext';
+// import DataContext from '@/context/DataContext';
 import FilterContext from "@/context/FilterContext";
+import toast from "react-hot-toast";
 
 const ArtisanMail = ({params}: any) => {
 
@@ -69,7 +70,7 @@ const ArtisanMail = ({params}: any) => {
       const prenom = formData.get('prenom');
       const nom = formData.get('nom');
       const commune = formData.get('commune');
-      const mail = formData.get('mail');
+      const email = formData.get('mail');
       const phone = formData.get('phone');
       const message = formData.get('message');
   
@@ -78,9 +79,10 @@ const ArtisanMail = ({params}: any) => {
         "prenom": prenom,
         "nom": nom,
         "commune": commune,
-        "mail": mail,
+        "email": email,
         "phone": phone,
-        "message": message
+        "message": message,
+        "mailArtisan": mailArtisan
       }
   
       fetch("http://localhost:3000/api/contactArtisan", {
@@ -90,6 +92,7 @@ const ArtisanMail = ({params}: any) => {
       })
       .catch(error => console.log(error));
   
+      toast.success('Votre message a bien été envoyé');
       form.reset();
       router.push('/');
     }

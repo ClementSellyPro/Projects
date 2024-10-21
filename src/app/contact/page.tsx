@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import React, { FormEvent, useState } from 'react'
+import toast from 'react-hot-toast';
 
 const Contact = () => {
 
@@ -50,7 +51,7 @@ const Contact = () => {
     const prenom = formData.get('prenom');
     const nom = formData.get('nom');
     const commune = formData.get('commune');
-    const mail = formData.get('mail');
+    const email = formData.get('mail');
     const phone = formData.get('phone');
     const message = formData.get('message');
 
@@ -58,7 +59,7 @@ const Contact = () => {
       "prenom": prenom,
       "nom": nom,
       "commune": commune,
-      "mail": mail,
+      "email": email,
       "phone": phone,
       "message": message};
 
@@ -69,6 +70,7 @@ const Contact = () => {
     })
     .catch(error => console.log(error));
 
+    toast.success('Votre message a bien été envoyé');
     form.reset();
     router.push('/');
   }
