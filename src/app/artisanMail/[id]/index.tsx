@@ -1,27 +1,13 @@
 "use client"
-// import { Artisan } from "@/type/ArtisanType";
 import { useRouter } from "next/navigation";
 import { FormEvent, useContext, useState } from "react";
-// import DataContext from '@/context/DataContext';
 import FilterContext from "@/context/FilterContext";
 import toast from "react-hot-toast";
 
 const ArtisanMail = ({params}: any) => {
-
-    // const id = Number(params.id);
-    // const { data } = useContext(DataContext);
-  
-    // let data: Artisan[] = [];
-  
-    // async() =>{
-    //     const res = await fetch('/artisan.json');
-    //     const dataFetch: Artisan[] = await res.json();
-    //     data = dataFetch;
-    // }
     
     const {selectedArtisan} = useContext(FilterContext);
   
-    // const selectedArtisan = data.filter(artisan => artisan._id === id);
     const [emailInput, setEmailInput] = useState('');
     const [validEmail, setValidEmail] = useState(false);
     const [phoneInput, setPhoneInput] = useState('');

@@ -41,7 +41,7 @@ const Donneravis = () => {
         }
     }
 
-    function handleFile(e: ChangeEvent<HTMLInputElement>){
+    async function handleFile(e: ChangeEvent<HTMLInputElement>){
         const selectedFile = e.target.files?.[0];
         const maxFileSize = 5 * 1024 * 1024;
 
@@ -52,34 +52,24 @@ const Donneravis = () => {
         }
     }
 
-    async function handleSubmit(e: React.FormEvent){
+    async function handleSubmit(e: React.FormEvent<HTMLFormElement>){
         e.preventDefault();
 
-        const form = e.target as HTMLFormElement;
-        const formData = new FormData(form);
-
-        const newAvis = {
-            prenom: formData.get("prenom"),
-            nom: formData.get("nom"),
-            commune: formData.get("commune"),
-            email: formData.get("email"),
-            phone: formData.get("phone"),
-            avis: formData.get("avis"),
-            // fileSelection: file
-        }
+        const form = e.currentTarget;
+        const formData = new FormData(e.currentTarget);
 
         if(validEmail && validPhone){
             const res = await fetch('http://localhost:3000/api/send/avis', {
                 method: 'POST',
-                body: JSON.stringify(newAvis)
+                body: formData
             })
 
-            // const data = await res.json();
-            // if(data.success){
-            //     alert('File upload')
-            // }else{
-            //     alert('Error upload')
-            // }
+            const data = await res.json();
+            if(data.success){
+                console.log('Success formData sent.')
+            }else{
+                console.log('Error formData not sent.')
+            }
     
             toast.success('Votre avis a bien été envoyé');
             form.reset();
@@ -97,7 +87,7 @@ const Donneravis = () => {
 
                 <div className='flex flex-col gap-1'>
                 <label className='font-semibold text-xl'>Prénom</label>
-                <input className='border py-3 pl-4 rounded-lg' name='prenom' type='text' placeholder='Julien' required/>
+                <input className='border py-3 pl-4 rounded-lg' name='prenom' type='text' placeholder='John' required/>
                 </div>
 
                 <div className='flex flex-col gap-1'>
@@ -112,7 +102,7 @@ const Donneravis = () => {
 
                 <div className='flex flex-col gap-1'>
                 <label className='font-semibold text-xl'>Email</label>
-                <input onChange={(e: React.FormEvent<HTMLInputElement>) => handleEmailInput(e)} value={emailInput} className='border py-3 pl-4 rounded-lg' name="email" type='text' placeholder='julienpayet@mail.com' />
+                <input onChange={(e: React.FormEvent<HTMLInputElement>) => handleEmailInput(e)} value={emailInput} className='border py-3 pl-4 rounded-lg' name="email" type='text' placeholder='johnpayet@mail.com' />
                 </div>
 
                 <div className='flex flex-col gap-1'>
@@ -127,8 +117,8 @@ const Donneravis = () => {
                 
                 {/* file selection */}
                 <div className='flex flex-col gap-1'>
-                <label htmlFor="fileSelection" className='font-semibold text-xl'>Selectionner ma facture:</label>
-                <input className='px-4 py-2 rounded-lg border resize-none bg-white' type="file" id="fileSelection" name="fileSelection" accept="image/png, image/jpeg, application/pdf" onChange={(e: ChangeEvent<HTMLInputElement>) => handleFile(e)} />
+                <label htmlFor="fil" className='font-semibold text-xl'>Selectionner ma facture:</label>
+                <input className='px-4 py-2 rounded-lg border resize-none bg-white' type="file" id="file" name="file" accept="image/png, image/jpeg, application/pdf" onChange={(e: ChangeEvent<HTMLInputElement>) => handleFile(e)} />
                 </div>
 
                 <div className='flex gap-1'>
