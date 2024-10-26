@@ -111,7 +111,7 @@ const Donneravis = () => {
                 </div>
 
                 <div className='flex flex-col gap-1'>
-                <label className='font-semibold text-xl'>Votre avis <span className='font-normal text-base'>(n&apos;oublier pas de mentionner l&apos;artisan concerné)</span></label>
+                <label className='font-semibold text-xl'>Votre avis</label>
                 <textarea className='px-4 py-2 rounded-lg border resize-none' name="avis" placeholder='' required />
                 </div>
                 

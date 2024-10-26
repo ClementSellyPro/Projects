@@ -35,6 +35,9 @@ const ArtisanDetail = ({ params }: {params:any}) => {
     //         console.log("Fetch :::: ", dataFetch)
     //     }
     // },[]);
+    function handleClick(){
+        console.log(dataToDisplay)
+    };
     
 
     // const dataToDisplay = data.filter(data => data._id === id);
@@ -65,7 +68,7 @@ const ArtisanDetail = ({ params }: {params:any}) => {
                 <div className='flex flex-col gap-5'>
                     {/* Competence */}
                     <div className='hover:bg-subtleKalipro p-7 border rounded-xl'>
-                        <h2 className='font-semibold md:text-2xl text-3xl mb-5'>Compétences</h2>
+                        <h2 className='font-semibold md:text-2xl text-3xl mb-5'  onClick={handleClick}>Compétences</h2>
                         <div>
                             <span className='font-semibold'>{dataToDisplay?.competences[0]} </span> <br />
                             {
