@@ -4,12 +4,12 @@ import { NextRequest, NextResponse } from 'next/server';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export const config = {
-  api: {
-    bodyParser: false,
-    externalResolver: true,
-  },
-}
+// export const config = {
+//   api: {
+//     bodyParser: false,
+//     externalResolver: true,
+//   },
+// }
 
 export async function POST(req: NextRequest) {
   const formData = await req.formData()

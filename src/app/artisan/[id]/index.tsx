@@ -7,6 +7,7 @@ import Link from "next/link";
 import DataContext from '@/context/DataContext';
 import { useContext, useEffect, useState } from "react";
 import FilterContext from "@/context/FilterContext";
+import { useRouter } from "next/router";
 
 type avisType = {
     _id: number,
@@ -19,48 +20,47 @@ type avisType = {
 
 const ArtisanDetail = ({ params }: {params:any}) => {
 
-    const id = Number(params.id);
-    // const [data, setData] = useState<Artisan[]>([]);
+    const router = useRouter();
 
-    const {selectedArtisan} = useContext(FilterContext);
+    const id = Number(params.id);
+    const [data, setData] = useState<Artisan[]>([]);
+
+    // const {selectedArtisan} = useContext(FilterContext);
 
     // const { data } = useContext(DataContext);
     // let data: Artisan[] = [];
 
-    // useEffect(() => {
-    //     async() =>{
-    //         const res = await fetch('http://localhost:3000/artisan.json');
-    //         const dataFetch = await res.json();
-    //         setData(dataFetch);
-    //         console.log("Fetch :::: ", dataFetch)
-    //     }
-    // },[]);
-    function handleClick(){
-        console.log(dataToDisplay)
-    };
+    useEffect(() => {
+        async() =>{
+            const res = await fetch('http://localhost:3000/artisan.json');
+            const dataFetch = await res.json();
+            setData(dataFetch);
+            console.log("Fetch :::: ", dataFetch)
+        }
+    },[router.events]);
     
 
-    // const dataToDisplay = data.filter(data => data._id === id);
-    const dataToDisplay = selectedArtisan;
-    const competences = dataToDisplay?.competences.slice(1, dataToDisplay?.competences.length);
-    const avisClient = dataToDisplay?.avis.map(avis => avis);
+    const dataToDisplay = data.filter(data => data._id === id);
+    // const dataToDisplay = selectedArtisan;
+    const competences = dataToDisplay[0]?.competences.slice(1, dataToDisplay[0]?.competences.length);
+    const avisClient = dataToDisplay[0]?.avis.map(avis => avis);
 
     return (
         <div className='bg-slate-50 md:px-20 py-10 px-5 relative'>
             {/* header artisan */}
             <div className='md:flex block justify-between items-center py-6 bg-slate-50 border-b border-t sticky top-0'>
                 <div>
-                    <h1 className='font-semibold text-blueKalipro xl:text-5xl lg:text-4xl md:text-3xl text-2xl'>{dataToDisplay?.name}</h1>
-                    <p className='flex items-center gap-1 text-sm'><Image src='/icon/location.png' alt='location icon' width={20} height={20} /> {dataToDisplay?.location}</p>
+                    <h1 className='font-semibold text-blueKalipro xl:text-5xl lg:text-4xl md:text-3xl text-2xl'>{dataToDisplay[0]?.name}</h1>
+                    <p className='flex items-center gap-1 text-sm'><Image src='/icon/location.png' alt='location icon' width={20} height={20} /> {dataToDisplay[0]?.location}</p>
                 </div>
 
                 {/* header artisan contact */}
                 <div className='flex items-center gap-5 mt-5'>
                     {/* change for image */}
                     <div className='lg:h-20 md:h-16 h-10 lg:w-20 md:w-16 w-10 bg-slate-200 rounded-full'></div> 
-                    <p className='lg:text-base md:text-sm'>Maxime de {dataToDisplay?.name}<br/>
-                    <span className='lg:text-xl md:text-lg'>{dataToDisplay?.phone}</span></p>
-                    <Link href={`/artisanMail/${dataToDisplay?._id}`}><button className='flex items-center gap-2 border border-kalipro font-semibold py-2 px-5 rounded-full bg-kalipro text-white hover:opacity-80 md:text-base text-sm'><Image src='/icon/mail-icon.png' alt='mail icon' width={20} height={20} />Envoyer un mail</button></Link>
+                    <p className='lg:text-base md:text-sm'>Maxime de {dataToDisplay[0]?.name}<br/>
+                    <span className='lg:text-xl md:text-lg'>{dataToDisplay[0]?.phone}</span></p>
+                    <Link href={`/artisanMail/${dataToDisplay[0]?._id}`}><button className='flex items-center gap-2 border border-kalipro font-semibold py-2 px-5 rounded-full bg-kalipro text-white hover:opacity-80 md:text-base text-sm'><Image src='/icon/mail-icon.png' alt='mail icon' width={20} height={20} />Envoyer un mail</button></Link>
                 </div>
             </div>
 
@@ -68,9 +68,9 @@ const ArtisanDetail = ({ params }: {params:any}) => {
                 <div className='flex flex-col gap-5'>
                     {/* Competence */}
                     <div className='hover:bg-subtleKalipro p-7 border rounded-xl'>
-                        <h2 className='font-semibold md:text-2xl text-3xl mb-5'  onClick={handleClick}>Compétences</h2>
+                        <h2 className='font-semibold md:text-2xl text-3xl mb-5'>Compétences</h2>
                         <div>
-                            <span className='font-semibold'>{dataToDisplay?.competences[0]} </span> <br />
+                            <span className='font-semibold'>{dataToDisplay[0]?.competences[0]} </span> <br />
                             {
                                 competences?.map((competence, index) => <p key={index}>{competence}</p>)
                             }
@@ -79,7 +79,7 @@ const ArtisanDetail = ({ params }: {params:any}) => {
                     {/* Presentation */}
                     <div className='hover:bg-subtleKalipro p-7 border rounded-xl'>
                         <h2 className='font-semibold md:text-2xl text-3xl mb-5'>Présentation</h2>
-                        <p className='max-w-md'>{dataToDisplay?.presentation}</p>
+                        <p className='max-w-md'>{dataToDisplay[0]?.presentation}</p>
                     </div>
                     {/* Assurance */}
                     <div className='hover:bg-subtleKalipro p-7 border rounded-xl'>

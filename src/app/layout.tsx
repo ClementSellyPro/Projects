@@ -27,7 +27,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
-          <RGPD />
+          {/* <RGPD /> */}
         </FilterContextProvider>
         </DataContextProvider>
       </body>

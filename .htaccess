@@ -1,0 +1,39 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Handle Next.js static files
+  RewriteRule ^_next/static(?:/\w+)?/(.*) static/$1 [L]
+
+  # Handle Next.js _next/image endpoint
+  RewriteCond %{REQUEST_URI} ^/_next/image
+  RewriteRule . - [L]
+
+  # Handle API routes
+  RewriteRule ^api/(.*)$ /api/$1 [L]
+
+  # Send all other requests to Next.js server
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ /index.php [L,QSA]
+
+  # Set correct MIME types
+  AddType image/png .png
+  AddType image/jpeg .jpg .jpeg
+  AddType image/svg+xml .svg
+</IfModule>
+
+# Enable compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css application/javascript application/json
+</IfModule>
+
+# Set caching headers
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>

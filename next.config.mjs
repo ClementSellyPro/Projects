@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig = { 
+    images: {
+        domains: ['kalipro.re'],
+        formats: ['image/avif', 'image/webp'],
+        unoptimized: true
+      },
+
     // output: 'export',
 
     // async headers() {

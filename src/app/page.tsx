@@ -6,6 +6,7 @@ import Testimonials from '@/components/Testimonials';
 export const metadata: Metadata = {
   title: "Kalipro",
   description: "Des artisans de qualité à proximité de chez vous.",
+  keywords:["artisan", "plombier", "reunion", "travaux", "construction"]
 };
 
 const Home = () => {
