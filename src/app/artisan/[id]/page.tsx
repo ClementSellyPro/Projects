@@ -12,6 +12,6 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ArtisanDetailPage({params}: {params:string}){
+export default function ArtisanDetailPage({params}: {params:{id:string}}){
   return <ArtisanDetail params={{id:params}} />
 }

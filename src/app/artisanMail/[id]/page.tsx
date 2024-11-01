@@ -13,6 +13,6 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ArtisanMailPage({params}: {params:string}){
-  return <ArtisanMail params={{_id:params}} />
+export default function ArtisanMailPage({params}: {params:{id:string}}){
+  return <ArtisanMail params={{id:params}} />
 }

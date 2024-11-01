@@ -1,12 +1,25 @@
 "use client"
+
 import { useRouter } from "next/navigation";
-import { FormEvent, useContext, useState } from "react";
+import { FormEvent, useContext, useState, useEffect } from "react";
 import FilterContext from "@/context/FilterContext";
 import toast from "react-hot-toast";
+import DataContext from "@/context/DataContext";
 
-const ArtisanMail = ({params}: any) => {
+interface paramsType {
+  params: {
+    id: {
+      id: string;
+    };
+  };
+}
+
+const ArtisanMail = ({params}: paramsType) => {
+  const id = params.id.id;
     
-    const {selectedArtisan} = useContext(FilterContext);
+    // const {selectedArtisan} = useContext(FilterContext);
+    const {data} = useContext(DataContext);
+    const selectedArtisan = data.filter(data => data._id.toString() === id)
   
     const [emailInput, setEmailInput] = useState('');
     const [validEmail, setValidEmail] = useState(false);
@@ -16,9 +29,15 @@ const ArtisanMail = ({params}: any) => {
     const router = useRouter();
   
     // mail de l'artisan
-    const mailArtisan = selectedArtisan?.mail;
+    const mailArtisan = selectedArtisan[0]?.mail;
   
     const [isTermAccepted, SetIsTermAccepted] = useState(false);
+
+    useEffect(() => {
+      console.log(mailArtisan);
+
+      // eslint-disable-next-line
+    }, []);
   
   
     function handleEmailInput(e: React.FormEvent<HTMLInputElement>){
@@ -61,7 +80,7 @@ const ArtisanMail = ({params}: any) => {
       const message = formData.get('message');
   
       const newMessage = {
-        "idArtisan": selectedArtisan?._id,
+        "idArtisan": selectedArtisan[0]?._id,
         "prenom": prenom,
         "nom": nom,
         "commune": commune,
@@ -87,7 +106,7 @@ const ArtisanMail = ({params}: any) => {
       <div className='md:px-20 px-5 py-8 bg-slate-50'>
   
         <div className='flex justify-between pb-5 border-b'>
-          <h1 className='text-4xl font-base'>Envoyer un message à : <strong className='text-blueKalipro'> {selectedArtisan?.name}</strong></h1>
+          <h1 className='text-4xl font-base'>Envoyer un message à : <strong className='text-blueKalipro'> {selectedArtisan[0]?.name}</strong></h1>
         </div>
   
   
