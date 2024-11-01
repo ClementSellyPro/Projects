@@ -7,7 +7,7 @@ import Link from "next/link";
 import DataContext from '@/context/DataContext';
 import { useContext, useEffect, useState } from "react";
 import FilterContext from "@/context/FilterContext";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 
 type avisType = {
     _id: number,
@@ -18,30 +18,21 @@ type avisType = {
     secteur_artisan: string
 }
 
-const ArtisanDetail = ({ params }: {params:any}) => {
+interface paramsType {
+    params: {
+        id: {
+            id: string;
+        };
+    };
+}
 
-    const router = useRouter();
+const ArtisanDetail = ({ params }: paramsType) => {
+    const id = params.id.id;
 
-    const id = Number(params.id);
-    const [data, setData] = useState<Artisan[]>([]);
-
-    // const {selectedArtisan} = useContext(FilterContext);
-
-    // const { data } = useContext(DataContext);
-    // let data: Artisan[] = [];
-
-    useEffect(() => {
-        async() =>{
-            const res = await fetch('http://localhost:3000/artisan.json');
-            const dataFetch = await res.json();
-            setData(dataFetch);
-            console.log("Fetch :::: ", dataFetch)
-        }
-    },[router.events]);
+    // get all data and filter according the params id
+    const { data } = useContext(DataContext);
+    const dataToDisplay = data.filter(data => (data._id.toString() === id));
     
-
-    const dataToDisplay = data.filter(data => data._id === id);
-    // const dataToDisplay = selectedArtisan;
     const competences = dataToDisplay[0]?.competences.slice(1, dataToDisplay[0]?.competences.length);
     const avisClient = dataToDisplay[0]?.avis.map(avis => avis);
 
@@ -53,7 +44,7 @@ const ArtisanDetail = ({ params }: {params:any}) => {
                     <h1 className='font-semibold text-blueKalipro xl:text-5xl lg:text-4xl md:text-3xl text-2xl'>{dataToDisplay[0]?.name}</h1>
                     <p className='flex items-center gap-1 text-sm'><Image src='/icon/location.png' alt='location icon' width={20} height={20} /> {dataToDisplay[0]?.location}</p>
                 </div>
-
+                
                 {/* header artisan contact */}
                 <div className='flex items-center gap-5 mt-5'>
                     {/* change for image */}
