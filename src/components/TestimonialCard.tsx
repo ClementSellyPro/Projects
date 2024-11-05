@@ -24,7 +24,7 @@ const TestimonialCard = ({client, secteur, avis, artisan, secteur_artisan}: Prop
                 <p className='font-semibold text-sm'>{client}</p>
                 <p className='text-xs  text-slate-500'>({secteur})</p>
             </div>
-            <p className='mt-3 text-sm'>
+            <p className='mt-3 text-sm leading-relaxed'>
                 {`"${avisClient}"`}
             </p>
         </div>

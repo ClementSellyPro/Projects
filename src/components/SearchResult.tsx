@@ -5,16 +5,13 @@ import ResultCard from './resultPage/ResultCard';
 import NoArtisans from './resultPage/NoArtisans';
 import DataContext from '@/context/DataContext';
 import { Artisan } from '@/type/ArtisanType';
+import FilterContext from '@/context/FilterContext';
 
 
-type propsType = {
-  filterSecteur: string,
-  filterMetier: string
-}
-
-const SearchResult = ({filterSecteur, filterMetier}: propsType) => {
+const SearchResult = () => {
 
   const { data } = useContext(DataContext);
+  const {filterMetier, filterSecteur} = useContext(FilterContext);
 
   let dataToDisplay = data;
 

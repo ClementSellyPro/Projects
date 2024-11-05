@@ -32,6 +32,7 @@ const Hero = () => {
 
                 {/* Home message */}
                     <div className='hero-message lg:text-6xl md:text-5xl sm:text-3xl text-xl text-center text-white'>
+                        {/* animation avec framer motion */}
                         <motion.div
                         initial={{opacity: 0, y:20}}
                         animate={{opacity: 1, y:0}}
@@ -79,6 +80,7 @@ const Hero = () => {
                     <option value="Ouest">Ouest</option>
                 </select>
                 
+                {/* Boutton rechercher qui redirige vers la page result/page.tsx */}
                 <Link href='/result'>
                 <button className='group flex items-center bg-blueKalipro hover:opacity-80 w-44 lg:h-16 h-12 
                                 text-white text-l lg:text-xl font-semibold py-2 px-7 rounded-full' 

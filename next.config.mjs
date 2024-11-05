@@ -6,7 +6,7 @@ const nextConfig = {
         unoptimized: true
       },
 
-    // output: 'export',
+    output: 'export',
 
     // async headers() {
     //     return [

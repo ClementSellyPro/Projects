@@ -13,8 +13,13 @@ const Home = () => {
 
   return (
     <div>
+      {/* La grande image quand on arive sur le site, dans lequel se trouve le grand input (de la version desktop), mais aussi les petits input (de la version mobile, le grand input est "hidden" en version mobile) */}
       <Hero />
+
+      {/* La petite bande deroulante avec tous les metiers */}
       <Marquee />
+
+      {/* Les temoignages a l'accueil */}
       <Testimonials />
     </div>
   )

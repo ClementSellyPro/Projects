@@ -13,10 +13,11 @@ import Link from 'next/link';
 /* Result Page */
 const Page = () => {
   
+  // recuperation des "filter" pour determiner la liste des metiers a afficher "dataToDisplay". Les filters sont dans un premier temps configurer dans le grand input dans le composant Hero.tsx
   const { filterSecteur, filterMetier, setFilterSecteur, SetFilterMetier } = useContext(FilterContext);
   const { data } = useContext(DataContext);
 
-  let dataToDisplay = data;
+  let dataToDisplay = data; // initialisation. Ensuite filtrer juste en bas
 
   if(filterSecteur === ''){
     dataToDisplay = data.filter((data: Artisan) => data.domaine_artisan.includes(filterMetier));
@@ -26,6 +27,7 @@ const Page = () => {
     dataToDisplay = data.filter((data: Artisan) => data.secteur.includes(filterSecteur)).filter((data: Artisan) => data.domaine_artisan.includes(filterMetier));
   }
 
+  // possibilite de reatribuer les filters grace au MiniInput.tsx component sur la page actuel (result/page.tsx)
   function secteurSelectionMobile(e: ChangeEvent<HTMLSelectElement>){
       setFilterSecteur(e.target.value);
   }
@@ -93,7 +95,8 @@ const Page = () => {
         <p className='md:mx-20 mx-5 md:mt-10 mt-6 py-2 px-10 rounded-lg bg-slate-200 text-slate-500 '>Tous les professionels présents sur notre site ont été selectionnés par nos soins.</p>
 
         <div className='results-section flex justify-between flex-wrap gap-10 md:px-20 px-5 mt-10'>
-            <SearchResult filterSecteur={filterSecteur} filterMetier={filterMetier} />
+          {/* tous les artisans rechercher sont lister dans SearchResult.tsx */}
+            <SearchResult />
         </div>
     </div>
   )

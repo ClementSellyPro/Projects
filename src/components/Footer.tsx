@@ -21,7 +21,7 @@ const Footer = () => {
             <p className='text-sm cursor-pointer hover:underline'>Comment ça marche?</p>
           </Link>
           <a href='/Condition_general.pdf' target="_blank" rel='noopener noreferrer'>
-            <p className='text-sm cursor-pointer hover:underline'>Regles de modérations des avis</p>
+            <p className='text-sm cursor-pointer hover:underline'>CGU</p>
           </a>
         </div>
         

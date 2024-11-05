@@ -8,6 +8,7 @@ import DataContext from '@/context/DataContext';
 import { useContext, useEffect, useState } from "react";
 import FilterContext from "@/context/FilterContext";
 // import { useRouter } from "next/router";
+import ClickablePhone from '@/components/ClickablePhone';
 
 type avisType = {
     _id: number,
@@ -47,10 +48,9 @@ const ArtisanDetail = ({ params }: paramsType) => {
                 
                 {/* header artisan contact */}
                 <div className='flex items-center gap-5 mt-5'>
-                    {/* change for image */}
-                    <div className='lg:h-20 md:h-16 h-10 lg:w-20 md:w-16 w-10 bg-slate-200 rounded-full'></div> 
-                    <p className='lg:text-base md:text-sm'>Maxime de {dataToDisplay[0]?.name}<br/>
-                    <span className='lg:text-xl md:text-lg'>{dataToDisplay[0]?.phone}</span></p>
+                    {/* change for image the logo of the artisan when official launch*/}
+                    <div className='lg:h-20 lg:w-20 md:h-16 md:w-16 h-12 w-12 bg-slate-200 rounded-full'></div> 
+                    <p className='lg:text-base md:text-sm w-36'><span className='lg:text-xl md:text-lg'><ClickablePhone phoneNumber={dataToDisplay[0]?.phone} /></span></p>
                     <Link href={`/artisanMail/${dataToDisplay[0]?._id}`}><button className='flex items-center gap-2 border border-kalipro font-semibold py-2 px-5 rounded-full bg-kalipro text-white hover:opacity-80 md:text-base text-sm'><Image src='/icon/mail-icon.png' alt='mail icon' width={20} height={20} />Envoyer un mail</button></Link>
                 </div>
             </div>

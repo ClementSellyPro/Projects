@@ -8,24 +8,25 @@ import FilterContext from '@/context/FilterContext'
 
 const ResultCard = ({_id, name, domaine_artisan, phone, mail, location, secteur, intervention_img, disponibilite, temps_disponibilite, competences, presentation, qualifications_assurances, photo, avis}: Artisan) => {
 
-    const {selectedArtisan, setSelectedArtisan} = useContext(FilterContext);
+    // const {selectedArtisan, setSelectedArtisan} = useContext(FilterContext);
     const router = useRouter();
 
     function handleClick(){
-        setSelectedArtisan({_id, name, domaine_artisan, phone, mail, location, secteur, intervention_img, disponibilite, temps_disponibilite, competences, presentation, qualifications_assurances, photo, avis});
+        // setSelectedArtisan({_id, name, domaine_artisan, phone, mail, location, secteur, intervention_img, disponibilite, temps_disponibilite, competences, presentation, qualifications_assurances, photo, avis});
         router.push(`/artisan/${_id}`);
-        localStorage.setItem('selectedArtisan', JSON.stringify(selectedArtisan));
+        // localStorage.setItem('selectedArtisan', JSON.stringify(selectedArtisan));
     }
 
     return (
-        <div onClick={handleClick} className='relative ResultCard bg-white cursor-pointer border rounded-lg lg:w-wResultCardLg w-full h-44 p-4 shadow-md hover:shadow-xl'>
+        <div onClick={handleClick} className='relative ResultCard bg-white cursor-pointer border rounded-lg lg:w-wResultCardLg w-full h-44 p-3 shadow-md hover:shadow-xl'>
             <div className='flex'>
-                <div className='w-24 h-24 flex items-center justify-center rounded-full bg-slate-500'>logo</div>
+                {/* logo */}
+                <div className='w-20 h-20 flex items-center justify-center rounded-full bg-slate-500'>logo</div>
 
-                <div className='info-section ml-5'>
+                <div className='info-section ml-4'>
                     <p className='text-xl font-semibold'>{name}</p>
                     <p className='text-xs text-slate-500'>{domaine_artisan}</p>
-                    <p className='mt-6 text-base'>Zone intervention: {secteur.map(secteur => secteur + ', ')}</p>
+                    <p className='mt-6 text-sm'>Zone intervention: {secteur.map(secteur => secteur + ', ')}</p>
                 </div>
             </div>
 

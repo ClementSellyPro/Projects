@@ -21,7 +21,7 @@ const MenuMetier = ({hidden} : Props) => {
   }
 
   return (
-    <div className={hidden ? 'nav-links-metier hidden': 'nav-links-metier'}>
+    <div className={hidden ? 'nav-links-metier hidden': 'nav-links-metier overflow-x-hidden'}>
       {/* group 1 */}
       <div className='nav-links-metier-group'>
         <Link href='/result'>
