@@ -44,6 +44,7 @@ export default function RootLayout({
         <Beta />
         <DataContextProvider>
         <FilterContextProvider>
+          {/* toaster affiche un message pour confirmer l'envoi du mail pour les contacts */}
           <Toaster position="bottom-right" toastOptions={{ duration: 3000 }} />
           <Header />
           <main>

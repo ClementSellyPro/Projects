@@ -24,6 +24,7 @@
             "Assurance RCP et décennale"
         ],
         "photo": [],
+        "logo": "/logo_example/logo_3.jpg",
         "avis": [
             {
                 "_id": 0,
@@ -89,6 +90,7 @@
             "Certification AAA",
             "Assurance RCP et décennale"
         ],
+        "logo": "/logo_example/logo_1.jpg",
         "photo": [],
         "avis": [
             {
@@ -125,7 +127,7 @@
             },
             {
                 "_id": 4,
-                "client": "Martine",
+                "client": "Justine",
                 "secteur": "Sainte Marie",
                 "avis": "Le travail réalisé sur ma maison est d'une grande qualité, avec un souci du détail remarquable. Toute l'équipe a été professionnelle et le résultat dépasse mes attentes.",
                 "artisan": "Maison Réunionnaise",
@@ -156,6 +158,7 @@
             "Assurance RCP et décennale"
         ],
         "photo": [],
+        "logo": "/logo_example/logo_15.jpg",
         "avis": [
             {
                 "_id": 0,
@@ -200,71 +203,6 @@
         ]
     },
     {
-        "_id": 423456,
-        "name": "CreuseTout",
-        "domaine_artisan": "Aménagement extérieur",
-        "phone": "0692123457",
-        "mail": "creusetout@gmail.com",
-        "location": "Saint Benoit",
-        "secteur": ["Est", "Nord", "Sud"],
-        "intervention_img": "",
-        "disponibilite": true,
-        "temps_disponibilite": 0,
-        "competences": [
-            "Spécialiste pour l'aménagement extérieur'",
-            "Terassement",
-            "Gros engin"
-        ],
-        "presentation": "Notre entreprise est spécialisée dans l'aménagement extérieur, créant des espaces personnalisés et harmonieux pour sublimer votre jardin ou terrasse. Nous concevons et réalisons des projets sur mesure tels que des terrasses, allées et terrassement.",
-        "qualifications_assurances": [
-            "Certification AAA",
-            "Assurance RCP et décennale"
-        ],
-        "photo": [],
-        "avis": [
-            {
-                "_id": 0,
-                "client": "Gérard",
-                "secteur": "Saint Denis",
-                "avis": "Le terrassement a été réalisé rapidement et avec précision. Mon terrain est parfaitement nivelé, prêt pour la construction, je suis vraiment satisfait du résultat.",
-                "artisan": "CreuseTout",
-                "domaine_artisan": "Aménagement extérieur"
-            },
-            {
-                "_id": 1,
-                "client": "Maxime",
-                "secteur": "Sainte Marie",
-                "avis": "Une équipe professionnelle qui a su répondre à mes attentes. Le terrassement a été fait proprement, et le chantier a été laissé en ordre. Je recommande vivement !",
-                "artisan": "CreuseTout",
-                "domaine_artisan": "Aménagement extérieur"
-            },
-            {
-                "_id": 2,
-                "client": "Homer",
-                "secteur": "Saint Suzanne",
-                "avis": "Travail impeccable, mon terrain a été parfaitement aplanit et tout s'est déroulé dans les délais annoncés. Un service fiable et de qualité.",
-                "artisan": "CreuseTout",
-                "domaine_artisan": "Aménagement extérieur"
-            },
-            {
-                "_id": 3,
-                "client": "Marge",
-                "secteur": "Saint Denis",
-                "avis": "Très satisfait du terrassement de mon terrain. L'équipe a su gérer les contraintes du terrain difficile et le résultat est au-delà de mes espérances.",
-                "artisan": "CreuseTout",
-                "domaine_artisan": "Aménagement extérieur"
-            },
-            {
-                "_id": 4,
-                "client": "Martine",
-                "secteur": "Sainte Marie",
-                "avis": "Le terrassement a été réalisé avec soin et efficacité. Tout a été fait comme convenu, terrain prêt et chantier propre. Excellent service !",
-                "artisan": "CreuseTout",
-                "domaine_artisan": "Aménagement extérieur"
-            }
-        ]
-    },
-    {
         "_id": 523456,
         "name": "Architectura",
         "domaine_artisan": "Architecte",
@@ -286,6 +224,7 @@
             "Assurance RCP et décennale"
         ],
         "photo": [],
+        "logo":"/logo_example/logo_5.jpg",
         "avis": [
             {
                 "_id": 0,
@@ -351,6 +290,7 @@
             "Assurance RCP et décennale"
         ],
         "photo": [],
+        "logo": "/logo_example/logo_12.jpg",
         "avis": [
             {
                 "_id": 0,
@@ -416,6 +356,7 @@
             "Assurance RCP et décennale"
         ],
         "photo": [],
+        "logo": "/logo_example/logo_14.jpg",
         "avis": [
             {
                 "_id": 0,
@@ -482,6 +423,7 @@
             "Assurance RCP et décennale"
         ],
         "photo": [],
+        "logo": "/logo_example/logo_13.jpg",
         "avis": [
             {
                 "_id": 0,
@@ -547,6 +489,7 @@
             "Assurance RCP et décennale"
         ],
         "photo": [],
+        "logo": "/logo_example/logo_16.png",
         "avis": [
             {
                 "_id": 0,
@@ -612,6 +555,7 @@
             "Assurance RCP et décennale"
         ],
         "photo": [],
+        "logo": "/logo_example/logo_6.jpg",
         "avis": [
             {
                 "_id": 0,
@@ -677,6 +621,7 @@
             "Assurance RCP et décennale"
         ],
         "photo": [],
+        "logo": "/logo_example/logo_7.jpg",
         "avis": [
             {
                 "_id": 0,
@@ -742,6 +687,7 @@
             "Assurance RCP et décennale"
         ],
         "photo": [],
+        "logo": "/logo_example/logo_11.jpg",
         "avis": [
             {
                 "_id": 0,
@@ -786,6 +732,72 @@
         ]
     },
     {
+        "_id": 423456,
+        "name": "CreuseTout",
+        "domaine_artisan": "Aménagement extérieur",
+        "phone": "0692123457",
+        "mail": "creusetout@gmail.com",
+        "location": "Saint Benoit",
+        "secteur": ["Est", "Nord", "Sud"],
+        "intervention_img": "",
+        "disponibilite": true,
+        "temps_disponibilite": 0,
+        "competences": [
+            "Spécialiste pour l'aménagement extérieur'",
+            "Terassement",
+            "Gros engin"
+        ],
+        "presentation": "Notre entreprise est spécialisée dans l'aménagement extérieur, créant des espaces personnalisés et harmonieux pour sublimer votre jardin ou terrasse. Nous concevons et réalisons des projets sur mesure tels que des terrasses, allées et terrassement.",
+        "qualifications_assurances": [
+            "Certification AAA",
+            "Assurance RCP et décennale"
+        ],
+        "photo": [],
+        "logo": "/logo_example/logo_17.png",
+        "avis": [
+            {
+                "_id": 0,
+                "client": "Gérard",
+                "secteur": "Saint Denis",
+                "avis": "Le terrassement a été réalisé rapidement et avec précision. Mon terrain est parfaitement nivelé, prêt pour la construction, je suis vraiment satisfait du résultat.",
+                "artisan": "CreuseTout",
+                "domaine_artisan": "Aménagement extérieur"
+            },
+            {
+                "_id": 1,
+                "client": "Maxime",
+                "secteur": "Sainte Marie",
+                "avis": "Une équipe professionnelle qui a su répondre à mes attentes. Le terrassement a été fait proprement, et le chantier a été laissé en ordre. Je recommande vivement !",
+                "artisan": "CreuseTout",
+                "domaine_artisan": "Aménagement extérieur"
+            },
+            {
+                "_id": 2,
+                "client": "Homer",
+                "secteur": "Saint Suzanne",
+                "avis": "Travail impeccable, mon terrain a été parfaitement aplanit et tout s'est déroulé dans les délais annoncés. Un service fiable et de qualité.",
+                "artisan": "CreuseTout",
+                "domaine_artisan": "Aménagement extérieur"
+            },
+            {
+                "_id": 3,
+                "client": "Marge",
+                "secteur": "Saint Denis",
+                "avis": "Très satisfait du terrassement de mon terrain. L'équipe a su gérer les contraintes du terrain difficile et le résultat est au-delà de mes espérances.",
+                "artisan": "CreuseTout",
+                "domaine_artisan": "Aménagement extérieur"
+            },
+            {
+                "_id": 4,
+                "client": "Martine",
+                "secteur": "Sainte Marie",
+                "avis": "Le terrassement a été réalisé avec soin et efficacité. Tout a été fait comme convenu, terrain prêt et chantier propre. Excellent service !",
+                "artisan": "CreuseTout",
+                "domaine_artisan": "Aménagement extérieur"
+            }
+        ]
+    },
+    {
         "_id": 533456,
         "name": "Automatik",
         "domaine_artisan": "Portail et automatisme",
@@ -807,6 +819,7 @@
             "Assurance RCP et décennale"
         ],
         "photo": [],
+        "logo": "/logo_example/logo_10.jpg",
         "avis": [
             {
                 "_id": 0,
@@ -872,6 +885,7 @@
             "Assurance RCP et décennale"
         ],
         "photo": [],
+        "logo": "/logo_example/logo_9.jpg",
         "avis": [
             {
                 "_id": 0,
@@ -937,6 +951,7 @@
             "Assurance RCP et décennale"
         ],
         "photo": [],
+        "logo": "/logo_example/logo_8.jpg",
         "avis": [
             {
                 "_id": 0,
@@ -1002,6 +1017,7 @@
             "Assurance RCP et décennale"
         ],
         "photo": [],
+        "logo": "/logo_example/logo_2.jpg",
         "avis": [
             {
                 "_id": 0,
@@ -1070,6 +1086,7 @@
             "Assurance RCP et décennale"
         ],
         "photo": [],
+        "logo": "/logo_example/logo_4.jpg",
         "avis": [
             {
                 "_id": 0,

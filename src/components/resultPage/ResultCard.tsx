@@ -1,12 +1,18 @@
 "use client"
 
-import React, { useContext } from 'react'
+import React from 'react'
 import { useRouter } from 'next/navigation'
-import { Artisan } from '@/type/ArtisanType'
-import FilterContext from '@/context/FilterContext'
+import Image from 'next/image';
 
+interface propsType {
+    _id: number,
+    name: string,
+    domaine_artisan: string,
+    secteur: string[],
+    logo: string,
+}
 
-const ResultCard = ({_id, name, domaine_artisan, phone, mail, location, secteur, intervention_img, disponibilite, temps_disponibilite, competences, presentation, qualifications_assurances, photo, avis}: Artisan) => {
+const ResultCard = ({_id, name, domaine_artisan, secteur, logo}: propsType) => {
 
     // const {selectedArtisan, setSelectedArtisan} = useContext(FilterContext);
     const router = useRouter();
@@ -19,9 +25,14 @@ const ResultCard = ({_id, name, domaine_artisan, phone, mail, location, secteur,
 
     return (
         <div onClick={handleClick} className='relative ResultCard bg-white cursor-pointer border rounded-lg lg:w-wResultCardLg w-full h-44 p-3 shadow-md hover:shadow-xl'>
-            <div className='flex'>
+            <div className='flex items-center'>
                 {/* logo */}
-                <div className='w-20 h-20 flex items-center justify-center rounded-full bg-slate-500'>logo</div>
+                {
+                    logo ? <Image className='rounded-full' src={logo} alt="Logo" width={80} height={80} /> 
+                    : 
+                    <div className='w-20 h-20 flex items-center justify-center rounded-full bg-slate-500'>logo</div>
+                }
+                
 
                 <div className='info-section ml-4'>
                     <p className='text-xl font-semibold'>{name}</p>
@@ -35,7 +46,6 @@ const ResultCard = ({_id, name, domaine_artisan, phone, mail, location, secteur,
                     <div className={`h-3 w-3 rounded-full mr-2 ${disponibilite? 'bg-lime-500' : 'bg-orange-400'}`}></div>
                     {disponibilite? `Disponible rapidement` : `Disponible dans ${temps_disponibilite} mois`}
                 </div>
-
             </div> */}
             <button className='absolute right-3 bottom-3 py-1.5 md:px-8 px-4 font-semibold bg-kalipro hover:opacity-75 text-white rounded-md'> Contacter</button>
         </div>

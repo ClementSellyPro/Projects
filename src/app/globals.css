@@ -201,6 +201,14 @@ button:disabled, button[disabled]{
   cursor: not-allowed;
 }
 
+/* --------------------------------------------- */
+.artisan_photo-container{
+  
+}
+
+.artisan_photo-container image{
+  
+}
 
 
 /* ------------------------------ max-width: 1024px ------------------------------ */

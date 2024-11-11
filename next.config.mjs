@@ -5,7 +5,7 @@ const nextConfig = {
         formats: ['image/avif', 'image/webp'],
         unoptimized: true
       },
-
+      
     output: 'export',
 
     // async headers() {

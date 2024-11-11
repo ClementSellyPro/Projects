@@ -1,20 +1,33 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Handle static files from _next/static
+  # Redirect any non-homepage path to the home page on refresh
+  RewriteCond %{REQUEST_URI} !^/$
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^.*$ / [L,R=302]
+
+  # Handle Next.js static files
   RewriteRule ^_next/static/(.*)$ /_next/static/$1 [L,PT]
 
-  # Handle _next/image endpoint for Next.js image optimization
+  # Handle Next.js _next/image endpoint for image optimization
   RewriteCond %{REQUEST_URI} ^/_next/image
   RewriteRule . - [L]
 
-  # Allow API route handling
+  # Handle API routes
   RewriteRule ^api/(.*)$ /api/$1 [L,PT]
 
-  # Redirect all other requests to index.html to enable client-side routing for Next.js
+  # Send all other requests to Next.js server (if needed for further processing)
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^.*$ /index.html [L]
+  RewriteRule ^(.*)$ /index.html [L]
+</IfModule>
+
+# Set MIME types
+<IfModule mod_mime.c>
+  AddType image/png .png
+  AddType image/jpeg .jpg .jpeg
+  AddType image/svg+xml .svg
 </IfModule>
 
 # Enable gzip compression for faster loading

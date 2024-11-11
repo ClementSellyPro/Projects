@@ -22,6 +22,7 @@ export interface Artisan {
     competences: string[],
     presentation: string,
     qualifications_assurances: string[],
+    logo: string,
     photo: string[],
     avis: avisType[]
   }

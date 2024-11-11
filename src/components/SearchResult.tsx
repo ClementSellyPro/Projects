@@ -29,7 +29,7 @@ const SearchResult = () => {
           dataToDisplay.length > 0 ?
         
           dataToDisplay.map((result: Artisan) => {
-              return <ResultCard key={result._id} _id={result._id} name={result.name} domaine_artisan={result.domaine_artisan} phone={result.name} mail={result.mail} location={result.location} secteur={result.secteur} intervention_img={result.intervention_img} disponibilite={result.disponibilite} temps_disponibilite={result.temps_disponibilite} competences={result.competences} presentation={result.presentation} qualifications_assurances={result.qualifications_assurances} photo={result.photo} avis={result.avis} />
+              return <ResultCard key={result._id} _id={result._id} name={result.name} domaine_artisan={result.domaine_artisan} secteur={result.secteur} logo={result.logo} />
           })
           :
           <NoArtisans />

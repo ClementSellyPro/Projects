@@ -74,8 +74,8 @@ const MainInput = () => {
 
             {/* search button */}
             <Link onClick={resetFilterDisplay} href='/result'>
-            <button className='group flex items-center bg-blueKalipro hover:opacity-80 
-                            text-white text-l lg:text-xl font-semibold lg:py-2.5 py-2 px-7 rounded-full ' 
+            <button className='group flex gap-3 items-center bg-blueKalipro hover:opacity-80 
+                            text-white text-l lg:text-xl font-semibold lg:py-2.5 py-2 px-7 rounded-full' 
                     type='button'>
                 <Image  src='/icon/search-icon.png' 
                         alt='Arrow'
