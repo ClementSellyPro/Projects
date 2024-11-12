@@ -105,7 +105,7 @@ const ArtisanDetail = ({ params }: paramsType) => {
                 {/* zone intervention */}
                 <div className='hover:bg-subtleKalipro p-7 border rounded-xl md:mt-0 mt-5 md:ml-5 ml-0'>
                     <h2 className='font-semibold text-2xl mb-5'>Zone d&apos;intervention</h2>
-                    <Image src='/map-est-nord.png' alt='Carte' width={400} height={400} />
+                    <Image className="rounded-md" src='/map-est-nord.png' alt='Carte' width={400} height={400} />
                 </div>
             </div>
 

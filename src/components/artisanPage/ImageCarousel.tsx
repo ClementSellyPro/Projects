@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
-import { Dialog, DialogContent } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogDescription } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight, X } from 'lucide-react'
+import { DialogTitle } from '@radix-ui/react-dialog'
 
 interface PhotoType {
   src: string,
@@ -76,6 +77,7 @@ export default function ImageCarousel({photos} : PhotosType) {
             className="relative aspect-square overflow-hidden rounded-lg focus:outline-none focus:ring-2"
             onClick={() => openCarousel(index)}
           >
+          {photos &&
             <Image
               src={photo.src}
               alt={photo.alt}
@@ -84,23 +86,29 @@ export default function ImageCarousel({photos} : PhotosType) {
               style={{ width: '100%', height: '100%' }}
               className="object-cover w-full h-full transition-transform duration-300 hover:scale-110"
             />
+          }
           </button>
         ))}
       </div>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent className="max-w-[95vw] max-h-[95vh] p-0">
+        <DialogDescription className="sr-only">
+          Gallerie photo. Utiliser les flèches pour changer de photos.
+        </DialogDescription>
+          
           <div className="relative flex items-center justify-center w-full h-full">
-            <Image
-              className='rounded-md'
-              src={photos[currentImageIndex].src}
-              alt={photos[currentImageIndex].alt}
-              width={photos[currentImageIndex].width}
-              height={photos[currentImageIndex].height}
-              style={imageStyle}
-              objectFit="contain"
-              priority
-            />
+            {photos &&
+              <Image
+                className='rounded-md'
+                src={photos[currentImageIndex].src}
+                alt={photos[currentImageIndex].alt}
+                width={photos[currentImageIndex].width}
+                height={photos[currentImageIndex].height}
+                style={imageStyle}
+                priority
+              />
+            }
             <Button
               variant="outline"
               size="icon"
@@ -131,6 +139,10 @@ export default function ImageCarousel({photos} : PhotosType) {
           </div>
           <div className="text-center -mt-2 p-2 bg-background">
             Photo {currentImageIndex + 1} sur {photos.length}
+            
+            <DialogTitle>
+              <p className='font-semibold ml-8 mt-1 text-2xl'>Photos <span className="text-sm font-thin">(images généré par AI comme exemple)</span></p>
+            </DialogTitle>
           </div>
         </DialogContent>
       </Dialog>

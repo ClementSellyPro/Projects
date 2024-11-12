@@ -71,7 +71,7 @@
     {
         "_id": 223456,
         "name": "Maison Réunionnaise",
-        "domaine_artisan": "Maçonnerie",
+        "domaine_artisan": "Maison individuelle",
         "phone": "0692123457",
         "mail": "maisonreunionnaise@gmail.com",
         "location": "Saint Denis",
@@ -80,7 +80,7 @@
         "disponibilite": false,
         "temps_disponibilite": 3,
         "competences": [
-            "Spécialiste pour la construction de maison",
+            "Spécialiste dans la construction de maison individuelle",
             "Lecture de plan",
             "Sous bassement",
             "Gros oueuvre"
@@ -99,7 +99,7 @@
                 "secteur": "Saint Denis",
                 "avis": "Je suis extrêmement satisfait de la réalisation de ma maison, qui correspond exactement à mes attentes. Le travail a été effectué avec soin et professionnalisme, dans les délais prévus.",
                 "artisan": "Maison Réunionnaise",
-                "domaine_artisan": "Maçonnerie"
+                "domaine_artisan": "Maison individuelle"
             },
             {
                 "_id": 1,
@@ -107,7 +107,7 @@
                 "secteur": "Sainte Marie",
                 "avis": "Je suis ravi de la qualité de la maçonnerie, tout a été réalisé avec précision et attention aux détails. Le chantier s'est déroulé sans accroc et le résultat final est impeccable.",
                 "artisan": "Maison Réunionnaise",
-                "domaine_artisan": "Maçonnerie"
+                "domaine_artisan": "Maison individuelle"
             },
             {
                 "_id": 2,
@@ -115,7 +115,7 @@
                 "secteur": "Saint Denis",
                 "avis": "Le travail réalisé sur ma maison est d'une grande qualité, avec un souci du détail remarquable. Toute l'équipe a été professionnelle et le résultat dépasse mes attentes.",
                 "artisan": "Maison Réunionnaise",
-                "domaine_artisan": "Maçonnerie"
+                "domaine_artisan": "Maison individuelle"
             },
             {
                 "_id": 3,
@@ -123,7 +123,7 @@
                 "secteur": "Saint Denis",
                 "avis": "Le travail realisé est d’une grande qualitée. Kalipro m’a permis de trouver un artisan de qualité à proximité de chez moi.",
                 "artisan": "Maison Réunionnaise",
-                "domaine_artisan": "Maçonnerie"
+                "domaine_artisan": "Maison individuelle"
             },
             {
                 "_id": 4,
@@ -131,7 +131,7 @@
                 "secteur": "Sainte Marie",
                 "avis": "Le travail réalisé sur ma maison est d'une grande qualité, avec un souci du détail remarquable. Toute l'équipe a été professionnelle et le résultat dépasse mes attentes.",
                 "artisan": "Maison Réunionnaise",
-                "domaine_artisan": "Maçonnerie"
+                "domaine_artisan": "Maison individuelle"
             }
         ]
     },
@@ -932,7 +932,7 @@
     {
         "_id": 733456,
         "name": "Tradition Construction",
-        "domaine_artisan": "Maçonnerie",
+        "domaine_artisan": "Maison individuelle",
         "phone": "0692643568",
         "mail": "traditionconstruction@gmail.com",
         "location": "Sainte Denis",
@@ -941,7 +941,7 @@
         "disponibilite": false,
         "temps_disponibilite": 1,
         "competences": [
-            "Spécialiste dans la maçonnerie",
+            "Spécialiste dans la construction de maison individuelle",
             "Installation de portail",
             "Réparation de portail automatique"
         ],
@@ -959,7 +959,7 @@
                 "secteur": "Saint Denis",
                 "avis": "Le travail de maçonnerie réalisé par Tradition Construction est exceptionnel. Les finitions sont impeccables et le chantier a été mené avec un grand soin. Très satisfait du résultat.",
                 "artisan": "Tradition Construction",
-                "domaine_artisan": "Maçonnerie"
+                "domaine_artisan": "Maison individuelle"
             },
             {
                 "_id": 1,
@@ -967,7 +967,7 @@
                 "secteur": "Saint Pierre",
                 "avis": "Une entreprise de maçonnerie très professionnelle. Le projet de rénovation a été géré de manière efficace, avec des matériaux de qualité et une attention aux détails.",
                 "artisan": "Tradition Construction",
-                "domaine_artisan": "Maçonnerie"
+                "domaine_artisan": "Maison individuelle"
             },
             {
                 "_id": 2,
@@ -975,7 +975,7 @@
                 "secteur": "Saint Denis",
                 "avis": "Tradition Construction a fait un travail remarquable sur notre extension de maison. Les maçons ont été ponctuels, soigneux et le résultat est à la hauteur de nos attentes.",
                 "artisan": "Tradition Construction",
-                "domaine_artisan": "Maçonnerie"
+                "domaine_artisan": "Maison individuelle"
             },
             {
                 "_id": 3,
@@ -983,7 +983,7 @@
                 "secteur": "Saint Louis",
                 "avis": "Très heureuse du service fourni par cette entreprise. Le mur de soutènement a été construit avec une grande précision et le chantier a été nettoyé parfaitement.",
                 "artisan": "Tradition Construction",
-                "domaine_artisan": "Maçonnerie"
+                "domaine_artisan": "Maison individuelle"
             },
             {
                 "_id": 4,
@@ -991,14 +991,14 @@
                 "secteur": "Etang Salé",
                 "avis": "Le service a été excellent du début à la fin. Les travaux de maçonnerie ont été réalisés dans les délais et avec une qualité de finition remarquable. Je recommande cette entreprise sans réserve.",
                 "artisan": "Tradition Construction",
-                "domaine_artisan": "Maçonnerie"
+                "domaine_artisan": "Maison individuelle"
             }
         ]
     },
     {
         "_id": 833456,
         "name": "Batir & Expertise",
-        "domaine_artisan": "Maçonnerie",
+        "domaine_artisan": "Maison individuelle",
         "phone": "0692643568",
         "mail": "traditionconstruction@gmail.com",
         "location": "Sainte André",
@@ -1007,7 +1007,7 @@
         "disponibilite": true,
         "temps_disponibilite": 0,
         "competences": [
-            "Spécialiste dans la maçonnerie",
+            "Spécialiste dans la construction de maison individuelle",
             "Installation de portail",
             "Réparation de portail automatique"
         ],
@@ -1025,7 +1025,7 @@
                 "secteur": "Saint Denis",
                 "avis": "Un travail de maçonnerie impeccable, réalisé avec soin et précision. Le résultat dépasse mes attentes, je suis ravi de la qualité de leur travail.",
                 "artisan": "Batir & Expertise",
-                "domaine_artisan": "Maçonnerie"
+                "domaine_artisan": "Maison individuelle"
             },
             {
                 "_id": 1,
@@ -1033,7 +1033,7 @@
                 "secteur": "Saint Benoit",
                 "avis": "Très satisfaite du service de Bâtir & Expertise. Le maçon a été à l’écoute et a réalisé un travail propre et soigné pour la construction de notre terrasse.",
                 "artisan": "Batir & Expertise",
-                "domaine_artisan": "Maçonnerie"
+                "domaine_artisan": "Maison individuelle"
             },
             {
                 "_id": 2,
@@ -1041,7 +1041,7 @@
                 "secteur": "Saint Denis",
                 "avis": "Excellente expérience avec cette entreprise. Les travaux de maçonnerie pour mon agrandissement ont été réalisés avec professionnalisme et dans les délais prévus.",
                 "artisan": "Batir & Expertise",
-                "domaine_artisan": "Maçonnerie"
+                "domaine_artisan": "Maison individuelle"
             },
             {
                 "_id": 3,
@@ -1049,7 +1049,7 @@
                 "secteur": "Saint André",
                 "avis": "Le mur que le maçon a construit est parfait, solide et avec de belles finitions. Une équipe sérieuse et respectueuse des délais. Je recommande sans hésiter.",
                 "artisan": "Batir & Expertise",
-                "domaine_artisan": "Maçonnerie"
+                "domaine_artisan": "Maison individuelle"
             },
             {
                 "_id": 4,
@@ -1057,7 +1057,7 @@
                 "secteur": "Sainte Rose",
                 "avis": "Très satisfait de la rénovation de ma façade. Le maçon a fait un travail remarquable, avec un grand souci du détail. L’entreprise a été à la hauteur de mes attentes.",
                 "artisan": "Batir & Expertise",
-                "domaine_artisan": "Maçonnerie"
+                "domaine_artisan": "Maison individuelle"
             }
         ]
     },

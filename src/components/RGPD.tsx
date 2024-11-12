@@ -25,7 +25,9 @@ function RGPD() {
     return (
         <div className='rgpd-bandeau fixed bottom-0 w-full'>
             <div className='px-10 py-4 flex justify-between items-center  gap-4 bg-white'>
-                <p>Message RGPD.</p>
+                <p>Notre site n&apos;utilise aucun cookie publicitaire, seulement les essentiels afin de permettre le bon fonctionnement du site.<br/>
+                En naviguant sur notre site vous acceptez les conditions generale d&apos;utilisation.
+                </p>
 
                 <button onClick={handleClick} className='border rounded-md px-4 py-1 text-white bg-blueKalipro hover:bg-blue-400'> Ok </button>
             </div>

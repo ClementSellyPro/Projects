@@ -53,6 +53,16 @@ const SearchMetier = ({isActive, setIsMetierActive, setMetierSecteur, setFilterM
         <Image className='group-hover:scale-125 transition' src='/icon_metier/cuisiniste.png' alt="cuisiniste" height={15} width={15} />
         </p>
     
+        <p onClick={(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>) => {metierSelection(event)}} className='group search-links-metier-item py-1 flex items-center justify-between  font-normal hover:font-semibold cursor-pointer'>
+        Décorateur intérieur
+        <Image className='group-hover:scale-125 transition' src='/icon_metier/decorateur.png' alt="decorateur" height={15} width={15} />
+        </p>
+        
+        <p onClick={(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>) => {metierSelection(event)}} className='group search-links-metier-item py-1 flex items-center justify-between  font-normal hover:font-semibold cursor-pointer'>
+        Dessinateur <span className='text-xs ml-2'> (permis construire)</span>
+        <Image className='group-hover:scale-125 transition' src='/icon_metier/dessinateur.png' alt="dessinateur" height={15} width={15} />
+        </p>
+
         <p onClick={(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>) => {metierSelection(event)}} className='group search-links-metier-item py-1 flex items-center justify-between font-normal hover:font-semibold cursor-pointer'>
         Electricien
         <Image className='group-hover:scale-125 transition' src='/icon_metier/electricien.png' alt="electricien" height={20} width={20} />
