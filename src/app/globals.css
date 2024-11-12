@@ -201,14 +201,6 @@ button:disabled, button[disabled]{
   cursor: not-allowed;
 }
 
-/* --------------------------------------------- */
-.artisan_photo-container{
-  
-}
-
-.artisan_photo-container image{
-  
-}
 
 
 /* ------------------------------ max-width: 1024px ------------------------------ */
@@ -247,4 +239,9 @@ button:disabled, button[disabled]{
     width: 100%;
   }
 
+}
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }

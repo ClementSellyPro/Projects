@@ -4,9 +4,9 @@ import TestimonialCard from "@/components/TestimonialCard";
 import Image from "next/image";
 import Link from "next/link";
 import DataContext from '@/context/DataContext';
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import ClickablePhone from '@/components/ClickablePhone';
-import ModalImage from "@/components/artisanPage/ModalImage";
+import ImageCarousel from "@/components/artisanPage/ImageCarousel";
 
 type avisType = {
     _id: number,
@@ -25,11 +25,15 @@ interface paramsType {
     };
 }
 
+interface PhotoType {
+    src: string,
+    alt: string,
+    height: number,
+    width: number
+}
+
 const ArtisanDetail = ({ params }: paramsType) => {
     const id = params.id.id;
-
-    const [selectedImage, setSelectedImage] = useState<string | null>('');
-    const [isModalDisplay, setIsModalDisplay] = useState(false);
 
     // get all data and filter according the params id
     const { data } = useContext(DataContext);
@@ -38,19 +42,23 @@ const ArtisanDetail = ({ params }: paramsType) => {
     const competences = dataToDisplay[0]?.competences.slice(1, dataToDisplay[0]?.competences.length);
     const avisClient = dataToDisplay[0]?.avis.map(avis => avis);
 
-    function handleImageModal(e: React.MouseEvent<HTMLElement>){
-        const targetImage = e.currentTarget.querySelector('img');
-        if (targetImage) {
-            const src = targetImage.getAttribute('src');
-            setSelectedImage(src);
-            setIsModalDisplay(true);
-        }
-    }
+
+
+    // Sample image data
+    const imagesSample: PhotoType[] = [
+        { src: '/photo_example/photography_1.jpg', height:400, width:600, alt: 'Sample image 1' },
+        { src: '/photo_example/photography_2.jpg', height:400, width:600, alt: 'Sample image 2' },
+        { src: '/photo_example/photography_3.jpg', height:400, width:600, alt: 'Sample image 3' },
+        { src: '/photo_example/photography_4.jpg', height:400, width:600, alt: 'Sample image 4' },
+        { src: '/photo_example/photography_5.jpg', height:400, width:600, alt: 'Sample image 5' },
+        { src: '/photo_example/photography_6.jpg', height:400, width:600, alt: 'Sample image 6' },
+        { src: '/photo_example/photography_7.jpg', height:400, width:600, alt: 'Sample image 7' },
+    ]
 
     return (
         <div className='bg-slate-50 md:px-20 py-10 px-5 relative'>
             {/* header artisan */}
-            <div className='md:flex block justify-between items-center py-6 bg-slate-50 border-b border-t sticky top-0'>
+            <div className='md:flex block justify-between items-center py-6 bg-slate-50 border-b border-t sticky top-0 z-10'>
                 <div>
                     <h1 className='font-semibold text-blueKalipro xl:text-5xl lg:text-4xl md:text-3xl text-2xl'>{dataToDisplay[0]?.name}</h1>
                     <p className='flex items-center gap-1 text-sm'><Image src='/icon/location.png' alt='location icon' width={20} height={20} /> {dataToDisplay[0]?.location}</p>
@@ -102,7 +110,7 @@ const ArtisanDetail = ({ params }: paramsType) => {
             </div>
 
             {/* photos section */}
-            <div className='mt-10 pb-10 border-b'>
+            {/* <div className='mt-10 pb-10 border-b'>
                 <h2 className='font-semibold mb-5 text-2xl'>Photos <span className="text-sm font-thin">(images généré par AI comme exemple)</span></h2>
 
                 <div className='flex flex-wrap gap-5'>
@@ -121,9 +129,8 @@ const ArtisanDetail = ({ params }: paramsType) => {
                 </div>
 
                 <button className='mt-10 border border-kalipro font-semibold py-2 px-5 rounded-full bg-white text-kalipro hover:bg-subtleKalipro'>Voir plus de photos</button>
-            </div>
-            {/* modal image, pour afficher en grand l'image selectionner */}
-            {/* <ModalImage isDisplay={isModalDisplay} selectedImage={selectedImage} /> */}
+            </div> */}
+            <ImageCarousel photos={imagesSample} />
             
             {/* Avis clients */}
             <div className='mt-10'>

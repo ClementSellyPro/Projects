@@ -40,13 +40,13 @@ const Header = () => {
             <ul className='nav-links flex gap-5 lg:text-xl text-lg h-20'>
                 <Link className='flex items-center hover:border-b-2 border-kalipro cursor-pointer' href={'/'}><li className='font-semibold'> Accueil </li></Link>
 
-                <li className='nav-link-metier hover:border-b-2 border-kalipro cursor-pointer font-semibold flex items-center'>
+                <li className='nav-link-metier hover:border-b-2 border-kalipro cursor-pointer font-semibold flex items-center z-20'>
                   Metiers 
                   {/* Metiers dropdown menu */}
                   <MenuMetier hidden={true} />
                 </li>
                 
-                <li className='nav-link-secteur hover:border-b-2 border-kalipro cursor-pointer font-semibold flex items-center'>
+                <li className='nav-link-secteur hover:border-b-2 border-kalipro cursor-pointer font-semibold flex items-center z-20'>
                   Secteurs
                   {/* Secteurs dropdown menu */}
                   <MenuSecteur hidden={true} />
