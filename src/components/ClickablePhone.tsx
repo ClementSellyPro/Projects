@@ -8,7 +8,7 @@ export default function Component({ phoneNumber } : { phoneNumber?: string }) {
     }
     
     return (
-      <div onClick={handleclick} className="flex items-center justify-center rounded-md md:w-40 w-36 md:px-4 px-2 py-2 bg-slate-200">
+      <div onClick={handleclick} className="flex items-center justify-center rounded-md md:w-44 w-36 md:px-4 px-2 py-2 bg-slate-200">
         <a
           href={`tel:${formattedNumber}`}
           className="flex items-center gap-2"

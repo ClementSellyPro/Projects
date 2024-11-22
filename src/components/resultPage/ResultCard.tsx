@@ -14,13 +14,10 @@ interface propsType {
 
 const ResultCard = ({_id, name, domaine_artisan, secteur, logo}: propsType) => {
 
-    // const {selectedArtisan, setSelectedArtisan} = useContext(FilterContext);
     const router = useRouter();
 
     function handleClick(){
-        // setSelectedArtisan({_id, name, domaine_artisan, phone, mail, location, secteur, intervention_img, disponibilite, temps_disponibilite, competences, presentation, qualifications_assurances, photo, avis});
         router.push(`/artisan/${_id}`);
-        // localStorage.setItem('selectedArtisan', JSON.stringify(selectedArtisan));
     }
 
     return (

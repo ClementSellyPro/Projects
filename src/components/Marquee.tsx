@@ -34,6 +34,8 @@ export default function Marquee(){
                     <p>Aménagement ext.</p>
                     <p>Rénovation</p>
                     <p>Maison individuelle</p>
+                    {/* <p>Décorateur intérieur</p>
+                    <p>Dessinateur</p> */}
                     
                     <p aria-hidden="true">Architecte</p>
                     <p aria-hidden="true">Terrassier</p>
@@ -49,6 +51,8 @@ export default function Marquee(){
                     <p aria-hidden="true">Aménagement ext.</p>
                     <p aria-hidden="true">Rénovation</p>
                     <p aria-hidden="true">Maison individuelle</p>
+                    {/* <p aria-hidden="true">Décorateur intérieur</p>
+                    <p aria-hidden="true">Dessinateur</p> */}
                 </div>
             </div>
         </div>

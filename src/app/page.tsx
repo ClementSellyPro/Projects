@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Hero from '@/components/Hero';
 import Marquee from "@/components/Marquee";
 import Testimonials from '@/components/Testimonials';
+import NewArtisans from "@/components/NewArtisans";
+import Rejoins from "@/components/Rejoins";
 
 export const metadata: Metadata = {
   title: "Kalipro",
@@ -18,6 +20,11 @@ const Home = () => {
 
       {/* La petite bande deroulante avec tous les metiers */}
       <Marquee />
+
+      {/* Affiche quelques artisans (peut etre les derniers entrants) */}
+      <NewArtisans />
+
+      {/* <Rejoins /> */}
 
       {/* Les temoignages a l'accueil */}
       <Testimonials />

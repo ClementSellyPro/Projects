@@ -64,7 +64,7 @@ const Contact = () => {
       "phone": phone,
       "message": message};
 
-    fetch('http://localhost:3000/api/contactKalipro', {
+    fetch('https://kalipro.re/api/contactKalipro', {
       method: 'POST',
       headers: {'Content-Type': 'aplication/json'},
       body: JSON.stringify(newMessage)
@@ -84,7 +84,6 @@ const Contact = () => {
 
         {
           isNumberDisplay ? <ClickablePhone phoneNumber="0692 123456" />
-          // <p className='flex items-center gap-2 md:text-2xl text-xl'><Image src='/icon/phone-icon.png' alt='Icone telephone' width={18} height={18} /> 0692 123456</p>
           : 
           <button onClick={() => setIsNumberDisplay(true)} className='py-2 px-6 rounded-full border border-kalipro hover:bg-kalipro text-kalipro hover:text-white w-fit'>Nous appeler</button>
         }

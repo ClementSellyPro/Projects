@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 interface Props {
@@ -7,12 +8,13 @@ interface Props {
     secteur: string,
     avis: string,
     artisan: string,
+    id_artisan: number,
     domaine_artisan: string,
     logo: string
 }
 
-const TestimonialCard = ({client, secteur, avis, artisan, domaine_artisan, logo}: Props) => {
 
+function TestimonialCardHome({client, secteur, avis, artisan, id_artisan, domaine_artisan, logo}: Props) {
     let avisClient = avis;
 
     if(avis.length > 150){
@@ -35,13 +37,15 @@ const TestimonialCard = ({client, secteur, avis, artisan, domaine_artisan, logo}
         {/* section artisan */}
         <div className='testimonial-artisan flex items-center px-5 py-3 rounded-bl-2xl rounded-br-2xl bg-gradient-to-t from-white to-slate-200'>
             {/* logo */}
+            <Link href={`/artisan/${id_artisan}`}>
             {
                 logo ? <Image className='rounded-full' src={logo} alt="Logo" width={60} height={60} /> 
                 : 
                 <div className='w-20 h-20 flex items-center justify-center rounded-full bg-slate-500'>logo</div>
             }
+            </Link>
             <div className='info ml-3'>
-                <p className='md:text-lg md:font-normal text-sm font-semibold'>{artisan}</p>
+                <Link href={`/artisan/${id_artisan}`}><p className='md:text-lg md:font-normal text-sm font-semibold'>{artisan}</p></Link>
                 <p className='text-xs text-slate-500'>{domaine_artisan}</p>
             </div>
         </div>
@@ -49,4 +53,4 @@ const TestimonialCard = ({client, secteur, avis, artisan, domaine_artisan, logo}
   )
 }
 
-export default TestimonialCard
+export default TestimonialCardHome

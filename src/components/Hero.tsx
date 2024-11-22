@@ -53,23 +53,26 @@ const Hero = () => {
                 <select onChange={(e: ChangeEvent<HTMLSelectElement>) => metierSelectionMobile(e)} className='bg-white rounded-lg w-full h-20 pl-4  border'>
                     <option value="">Que recherchez vous?</option>
                     <option value="Aménagement ext.">Aménagement ext.</option>
-                    <option value="Architecte">Architecte</option>
-                    <option value="Carreleur">Carreleur</option>
-                    <option value="Charpentier">Charpentier</option>
+                    <option value="Architecture">Architecture</option>
+                    <option value="Carrelage">Carrelage</option>
+                    <option value="Charpente/Couverture">Charpente/Couverture</option>
                     <option value="Climatisation">Climatisation</option>
-                    <option value="Cuisiniste">Cuisiniste</option>
-                    <option value="Décorateur intérieur">Décorateur intérieur</option>
-                    <option value="Electricien">Electricien</option>
+                    <option value="Cuisine">Cuisine</option>
+                    <option value="Décoration intérieur">Décoration intérieur</option>
+                    <option value="Dessin">Dessin (permis construire)</option>
+                    <option value="Electricité">Electricité</option>
                     <option value="Maçonnerie">Maçonnerie</option>
                     <option value="Maison individuelle">Maison individuelle</option>
                     <option value="Maitre d'oeuvre">Maitre d&apos;oeuvre</option>
-                    <option value="Menuisier">Menuisier</option>
-                    <option value="Peintre">Peintre</option>
+                    <option value="Menuiserie">Menuiserie</option>
+                    <option value="Peinture">Peinture</option>
+                    <option value="Piscine">Piscine</option>
                     <option value="Plaquiste">Plaquiste</option>
-                    <option value="Plombier">Plombier</option>
+                    <option value="Plomberie">Plomberie</option>
                     <option value="Portail/automatisme">Portail/automatisme</option>
                     <option value="Rénovation">Rénovation</option>
-                    <option value="Terrassier">Terrassier</option>
+                    <option value="Terrassement">Terrassement</option>
+                    <option value="Autre projet">Autre projet</option>
                 </select>
                 {/* secteur selection */}
                 <select onChange={(e: ChangeEvent<HTMLSelectElement>) => secteurSelectionMobile(e)} className='bg-white rounded-lg w-full h-20 pl-4 border'>

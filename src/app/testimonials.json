@@ -5,7 +5,9 @@
         "secteur": "Saint Philipe",
         "avis": "Très contente du service. L'électricien a installé notre système de domotique parfaitement et nous a bien expliqué son fonctionnement. Travail soigné et propre.",
         "artisan": "Electrika",
-        "secteur_artisan": "Electricien"
+        "id_artisan": 123456,
+        "domaine_artisan": "Electricité",
+        "logo": "/logo_example/logo_3.jpg"
     },
     {
         "_id": 1,
@@ -13,7 +15,9 @@
         "secteur": "Saint Denis",
         "avis": "Je suis ravi de la qualité de la maçonnerie, tout a été réalisé avec précision et attention aux détails. Le chantier s'est déroulé sans accroc et le résultat final est impeccable.",
         "artisan": "Maison Réunionnaise",
-        "secteur_artisan": "Maçonnerie"
+        "id_artisan": 223456,
+        "domaine_artisan": "Maison individuelle",
+        "logo": "/logo_example/logo_1.jpg"
     },
     {
         "_id": 2,
@@ -21,7 +25,9 @@
         "secteur": "Saint Philipe",
         "avis": "Le travail realise est d’une grande qualitée. Kalipro m’a permis de trouver un artisan de qualité à proximité de chez moi. C’était la première fois que je passais par kalipro, je ne regrette pas mon choix.",
         "artisan": "Architectura",
-        "secteur_artisan": "Design intérieur"
+        "id_artisan": 523456,
+        "domaine_artisan": "Design intérieur",
+        "logo": "/logo_example/logo_5.jpg"
     },
     {
         "_id": 3,
@@ -29,15 +35,19 @@
         "secteur": "Sainte Marie",
         "avis": "Un travail de menuiserie sur mesure impeccable, réalisé avec soin et professionnalisme. Le résultat dépasse mes attentes, je recommande vivement cette entreprise.",
         "artisan": "La Menuiserie",
-        "secteur_artisan": "Menuiserie"
+        "id_artisan": 323456,
+        "domaine_artisan": "Menuiserie",
+        "logo": "/logo_example/logo_15.jpg"
     },
     {
         "_id": 4,
         "client": "Marcel",
         "secteur": "Sainte André",
         "avis": " Service impeccable de la part de aPlomb. Le problème de fuite a été réparé rapidement et efficacement. Très satisfait du travail réalisé.",
-        "artisan": "aPlomb",
-        "secteur_artisan": "Plombier"
+        "artisan": "Plomberie Excellence",
+        "id_artisan": 433456,
+        "domaine_artisan": "Plomberie",
+        "logo": "/logo_example/logo_11.jpg"
     },
     {
         "_id": 5,
@@ -45,6 +55,8 @@
         "secteur": "Saint Pierre",
         "avis": "Le travail realise est d’une grande qualitée. Kalipro m’a permis de trouver un artisan de qualite. Je ne regrette pas mon choix.",
         "artisan": "Electrika",
-        "secteur_artisan": "Electricien"
+        "id_artisan": 123456,
+        "domaine_artisan": "Electricité",
+        "logo": "/logo_example/logo_3.jpg"
     }
 ]

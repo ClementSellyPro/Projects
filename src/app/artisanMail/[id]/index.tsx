@@ -1,25 +1,29 @@
 "use client"
 
-import { useRouter } from "next/navigation";
-import { FormEvent, useContext, useState, useEffect } from "react";
-import FilterContext from "@/context/FilterContext";
+import { useRouter, notFound } from "next/navigation";
+import { FormEvent, useContext, useState } from "react";
 import toast from "react-hot-toast";
 import DataContext from "@/context/DataContext";
+import { Artisan } from "@/type/ArtisanType";
 
 interface paramsType {
   params: {
     id: {
       id: string;
     };
-  };
+  },
+  data: Artisan[]
 }
 
-const ArtisanMail = ({params}: paramsType) => {
-  const id = params.id.id;
-    
-    // const {selectedArtisan} = useContext(FilterContext);
-    const {data} = useContext(DataContext);
+const ArtisanMail = ({params, data}: paramsType) => {
+    const id = params.id.id;
+
+    // const {data} = useContext(DataContext);
+
     const selectedArtisan = data.filter(data => data._id.toString() === id)
+
+    // console.warn("The ID receive is :: ", id);
+    // console.log("ARTISANS DATA :::::::: ", data);
   
     const [emailInput, setEmailInput] = useState('');
     const [validEmail, setValidEmail] = useState(false);
@@ -32,12 +36,6 @@ const ArtisanMail = ({params}: paramsType) => {
     const mailArtisan = selectedArtisan[0]?.mail;
   
     const [isTermAccepted, SetIsTermAccepted] = useState(false);
-
-    useEffect(() => {
-      console.log(mailArtisan);
-
-      // eslint-disable-next-line
-    }, []);
   
   
     function handleEmailInput(e: React.FormEvent<HTMLInputElement>){
@@ -56,7 +54,7 @@ const ArtisanMail = ({params}: paramsType) => {
       const target = e.currentTarget.value;
       const regex = /^\d{10}$/;
           
-      console.log(regex.test(target));
+      // console.log(regex.test(target));
       setPhoneInput(target);
   
       if(regex.test(target)){

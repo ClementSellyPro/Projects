@@ -17,12 +17,12 @@ const Footer = () => {
         
         <div className='footer-group flex flex-col gap-0.5'>
           <p className='footer-group-title font-bold mb-1'>Utilisateurs</p>
-          <Link href='/presentation'>
+          <Link href='/cgu#howto'>
             <p className='text-sm cursor-pointer hover:underline'>Comment ça marche?</p>
           </Link>
-          <a href='/Condition_general.pdf' target="_blank" rel='noopener noreferrer'>
+          <Link href='/cgu'>
             <p className='text-sm cursor-pointer hover:underline'>CGU</p>
-          </a>
+          </Link>
         </div>
         
         <div className='footer-group flex flex-col gap-0.5'>
@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='footer-credit font-extralight text-xs pb-7 pt-12'>
-        2024 KALIPRO . <a href='/Condition_general.pdf' target="_blank" rel='noopener noreferrer'>Confidentialité</a> . CGU . Mentions légales . plan du site
+        2024 KALIPRO . <Link href='/cgu'>Confidentialité</Link> . <Link href='/cgu'>CGU</Link> . <Link href={'/mentions'}>Mentions légales</Link> 
       </div>
     </div>
   )

@@ -7,22 +7,19 @@ import DataContext from '@/context/DataContext';
 import { useContext } from "react";
 import ClickablePhone from '@/components/ClickablePhone';
 import ImageCarousel from "@/components/artisanPage/ImageCarousel";
+import ModalAvis from "@/components/artisanPage/ModalAvis";
+import { AvisType } from "@/type/AvisType";
+import { notFound } from "next/navigation";
+import { Artisan } from "@/type/ArtisanType";
 
-type avisType = {
-    _id: number,
-    client: string,
-    secteur: string,
-    avis: string,
-    artisan: string,
-    secteur_artisan: string
-}
 
 interface paramsType {
     params: {
         id: {
             id: string;
         };
-    };
+    },
+    data: Artisan[]
 }
 
 interface PhotoType {
@@ -32,17 +29,16 @@ interface PhotoType {
     width: number
 }
 
-const ArtisanDetail = ({ params }: paramsType) => {
+const ArtisanDetail = ({ params, data }: paramsType) => {
     const id = params.id.id;
+    if(!id) notFound();
 
     // get all data and filter according the params id
-    const { data } = useContext(DataContext);
+    // const { data } = useContext(DataContext);
     const dataToDisplay = data.filter(data => (data._id.toString() === id));
     
     const competences = dataToDisplay[0]?.competences.slice(1, dataToDisplay[0]?.competences.length);
     const avisClient = dataToDisplay[0]?.avis.map(avis => avis);
-
-
 
     // Sample image data
     const imagesSample: PhotoType[] = [
@@ -53,15 +49,22 @@ const ArtisanDetail = ({ params }: paramsType) => {
         { src: '/photo_example/photography_5.jpg', height:400, width:600, alt: 'Sample image 5' },
         { src: '/photo_example/photography_6.jpg', height:400, width:600, alt: 'Sample image 6' },
         { src: '/photo_example/photography_7.jpg', height:400, width:600, alt: 'Sample image 7' },
-    ]
+    ];
 
     return (
         <div className='bg-slate-50 md:px-20 py-10 px-5 relative'>
             {/* header artisan */}
             <div className='md:flex block justify-between items-center py-6 bg-slate-50 border-b border-t sticky top-0 z-10'>
+                {/* name */}
                 <div>
                     <h1 className='font-semibold text-blueKalipro xl:text-5xl lg:text-4xl md:text-3xl text-2xl'>{dataToDisplay[0]?.name}</h1>
+
+                    {/* location and note */}
+                    <div className="flex items-center gap-4 mt-2">
+                    <p className="flex items-center gap-1 font-semibold"><Image src='/icon/etoile.png' alt="etoile" width={20} height={20} /> {dataToDisplay[0]?.note}</p>
+
                     <p className='flex items-center gap-1 text-sm'><Image src='/icon/location.png' alt='location icon' width={20} height={20} /> {dataToDisplay[0]?.location}</p>
+                    </div>
                 </div>
                 
                 {/* header artisan contact */}
@@ -110,40 +113,21 @@ const ArtisanDetail = ({ params }: paramsType) => {
             </div>
 
             {/* photos section */}
-            {/* <div className='mt-10 pb-10 border-b'>
-                <h2 className='font-semibold mb-5 text-2xl'>Photos <span className="text-sm font-thin">(images généré par AI comme exemple)</span></h2>
-
-                <div className='flex flex-wrap gap-5'>
-                    <div onClick={(e) => handleImageModal(e)} className="artisan_photo-container hover:cursor-pointer">
-                        <Image src={"/photo_example/photography_2.jpg"} alt={"cuisine"} width={220} height={400} />
-                    </div>
-                    <div onClick={(e) => handleImageModal(e)} className="artisan_photo-container hover:cursor-pointer h-fit">
-                        <Image src={"/photo_example/photography_1.jpg"} alt={"cuisine"} width={400} height={220} />
-                    </div>
-                    <div onClick={(e) => handleImageModal(e)} className="artisan_photo-container hover:cursor-pointer">
-                        <Image src={"/photo_example/photography_4.jpg"} alt={"cuisine"} width={220} height={400} />
-                    </div>
-                    <div onClick={(e) => handleImageModal(e)} className="artisan_photo-container hover:cursor-pointer h-fit">
-                        <Image src={"/photo_example/photography_3.jpg"} alt={"cuisine"} width={400} height={220} />
-                    </div>
-                </div>
-
-                <button className='mt-10 border border-kalipro font-semibold py-2 px-5 rounded-full bg-white text-kalipro hover:bg-subtleKalipro'>Voir plus de photos</button>
-            </div> */}
             <ImageCarousel photos={imagesSample} />
             
             {/* Avis clients */}
             <div className='mt-10'>
                 <h2 className='font-semibold text-2xl mb-5'>Avis clients</h2>
-
+                
                 <div className='flex md:justify-between justify-center flex-wrap gap-5'>
                     {
-                        avisClient?.map((avis: avisType) => {
-                        return <TestimonialCard key={avis._id} client={avis.client} secteur={avis.secteur} avis={avis.avis} artisan={avis.artisan} secteur_artisan={avis.secteur_artisan} />})
+                        avisClient?.map((avis: AvisType) => {
+                        return <TestimonialCard key={avis._id} client={avis.client} secteur={avis.secteur} avis={avis.avis} artisan={avis.artisan} domaine_artisan={avis.domaine_artisan} logo={avis.logo} />})
                     }
                 </div>
 
-                <button className='mt-10 border border-kalipro font-semibold py-2 px-5 rounded-full bg-white text-kalipro hover:bg-subtleKalipro'>Voir plus d&apos;avis</button>
+                {/* Afficher tous les avis */}
+                <ModalAvis avisClient={avisClient} />
             </div>
         </div>
     )

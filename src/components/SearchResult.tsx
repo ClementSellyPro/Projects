@@ -6,6 +6,7 @@ import NoArtisans from './resultPage/NoArtisans';
 import DataContext from '@/context/DataContext';
 import { Artisan } from '@/type/ArtisanType';
 import FilterContext from '@/context/FilterContext';
+import AutreProjet from './AutreProjet';
 
 
 const SearchResult = () => {
@@ -26,6 +27,9 @@ const SearchResult = () => {
   return (
     <>
         {
+          filterMetier === "Autre projet" ? <AutreProjet /> :
+
+
           dataToDisplay.length > 0 ?
         
           dataToDisplay.map((result: Artisan) => {
