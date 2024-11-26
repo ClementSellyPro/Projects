@@ -4,13 +4,12 @@ import Image from 'next/image';
 import React from 'react'
 
 type Props = {
-    isActive: boolean,
     setIsMetierActive: React.Dispatch<React.SetStateAction<boolean>>,
     setMetierSecteur: React.Dispatch<React.SetStateAction<string>>,
     setFilterMetierDisplay: React.Dispatch<React.SetStateAction<string>>
 }
 
-const SearchMetier = ({isActive, setIsMetierActive, setMetierSecteur, setFilterMetierDisplay} : Props) => {
+const SearchMetier = ({setIsMetierActive, setMetierSecteur, setFilterMetierDisplay} : Props) => {
 
     function metierSelection(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>){
       const target = event.target as HTMLElement;
@@ -31,7 +30,7 @@ const SearchMetier = ({isActive, setIsMetierActive, setMetierSecteur, setFilterM
     
 
   return (
-    <div className={isActive ? 'search-metier rounded-xl xl:w-80 lg:w-64 w-40 h-48 overflow-scroll' : 'search-metier hidden'}>
+    <div className={'search-metier rounded-xl xl:w-80 lg:w-64 w-40 h-48 overflow-y-scroll'}>
         
         <p onClick={(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>) => {metierSelection(event)}} className='group search-links-metier-item py-1 flex items-center justify-between font-normal hover:font-semibold cursor-pointer'>
         Aménagement ext.

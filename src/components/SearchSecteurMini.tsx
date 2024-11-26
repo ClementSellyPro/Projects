@@ -1,6 +1,7 @@
 "use client"
 
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
 
 type Props = {
     setFilterSecteur: React.Dispatch<React.SetStateAction<string>>,
@@ -8,8 +9,8 @@ type Props = {
     setIsSecteurActive: React.Dispatch<React.SetStateAction<boolean>>,
 }
 
-const SearchSecteur = ({ setFilterSecteur, setSecteurDisplay, setIsSecteurActive} : Props) => {
-
+function SearchSecteurMini({ setFilterSecteur, setSecteurDisplay, setIsSecteurActive} : Props) {
+  
     function secteurSelectionFn(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>){
         const target = event.target as HTMLElement;
         const value = target.innerText;
@@ -25,7 +26,7 @@ const SearchSecteur = ({ setFilterSecteur, setSecteurDisplay, setIsSecteurActive
     }
 
     return (
-        <div className={'search-secteur rounded-xl xl:w-80 lg:w-60 w-40'}>
+        <div className={'search-secteur-mini rounded-xl w-60'}>
 
             <p onClick={(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>) => secteurSelectionFn(event)} className='group search-secteur-item flex justify-between items-center font-normal hover:font-semibold'>
                 Nord <Image className='group-hover:scale-125 transition' src='/icon/secteur-nord-icon.png' alt='Secteur Est' width={25} height={25} />
@@ -47,4 +48,4 @@ const SearchSecteur = ({ setFilterSecteur, setSecteurDisplay, setIsSecteurActive
     )
 }
 
-export default SearchSecteur
+export default SearchSecteurMini

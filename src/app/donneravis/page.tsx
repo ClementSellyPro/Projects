@@ -59,7 +59,7 @@ const Donneravis = () => {
         const formData = new FormData(e.currentTarget);
 
         if(validEmail && validPhone){
-            const res = await fetch('http://localhost:3000/api/send/avis', {
+            const res = await fetch('/api/send/avis', {
                 method: 'POST',
                 body: formData
             })

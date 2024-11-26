@@ -10,7 +10,7 @@ function Mention() {
         <div className='flex flex-col gap-2'>
           <p><span className='font-semibold'>Immatriculation au registre:</span> 934 451 147</p>
           <p><span className='font-semibold'>Siège social:</span> 98 LOT les manguiers - 97440 Saint André</p>
-          <p><span className='font-semibold'>Hébergeur du site:</span> Hostinger. Le siège d&apos;Hostinger est situé à Kaunas, en Lituanie</p>
+          <p><span className='font-semibold'>Hébergeur du site:</span> Hostinger. Le siège d&apos;Hostinger est situé à Kaunas, en Lituanie.</p>
         </div>
     </div>
   )

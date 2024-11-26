@@ -1,10 +1,11 @@
 "use client"
 
-import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import React, { FormEvent, useState } from 'react'
 import toast from 'react-hot-toast';
 import ClickablePhone from '@/components/ClickablePhone';
+
+require('dotenv').config();
 
 const Contact = () => {
 
@@ -33,7 +34,7 @@ const Contact = () => {
     const target = e.currentTarget.value;
     const regex = /^\d{10}$/;
         
-    console.log(regex.test(target));
+    // console.log(regex.test(target));
     setPhoneInput(target);
 
     if(regex.test(target)){
@@ -45,6 +46,14 @@ const Contact = () => {
 
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
+    console.log('TEST CONTACT v1.6');
+    // just to be sure that the api key is available
+    const api_key = process.env.NEXT_PUBLIC_RESEND_API_KEY;
+    let api_display;
+    if(api_key){
+      api_display = api_key.toString().slice(0,4);
+    }
+    console.log("API KEY: ",api_display);
 
     const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
@@ -64,16 +73,37 @@ const Contact = () => {
       "phone": phone,
       "message": message};
 
-    fetch('https://kalipro.re/api/contactKalipro', {
-      method: 'POST',
-      headers: {'Content-Type': 'aplication/json'},
-      body: JSON.stringify(newMessage)
-    })
-    .catch(error => console.log(error));
+      fetch('/api/contactKalipro', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(newMessage)
+      })
+      .catch(error => console.log(error));
 
-    toast.success('Votre message a bien été envoyé');
-    form.reset();
-    router.push('/');
+      toast.success('Votre message a bien été envoyé');
+      form.reset();
+      router.push('/');
+
+      // try {
+      //   const response = await fetch('https://kalipro.re/api/contactKalipro', {
+      //     method: 'POST',
+      //     headers: {'Content-Type': 'application/json'},
+      //     body: JSON.stringify(newMessage)
+      //   })
+
+      //   const responseText = await response.text();
+      //   console.log('Raw response:', responseText);
+
+      //   if (!response.ok) {
+      //     throw new Error(`HTTP error! status: ${response.status}`)
+      //   }
+
+      //   const data = await response.json()
+      //   console.log('Response from server:', data)
+
+      // } catch (error) {
+      //   console.error('Error submitting form:', error)
+      // }
   }
 
   return (

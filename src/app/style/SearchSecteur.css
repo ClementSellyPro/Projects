@@ -1,4 +1,4 @@
-.search-secteur{
+.search-secteur, .search-secteur-mini{
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -20,7 +20,7 @@
     cursor: pointer;
 }
 
-.search-metier{
+.search-metier, .search-metier-mini{
     display: flex;
     flex-direction: column;
     gap: 5px;

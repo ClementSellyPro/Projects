@@ -88,11 +88,12 @@ const ArtisanMail = ({params, data}: paramsType) => {
         "mailArtisan": mailArtisan
       }
   
-      fetch("http://localhost:3000/api/contactArtisan", {
+      fetch("/api/contactArtisan", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(newMessage)
       })
+      .then(data => console.log(data))
       .catch(error => console.log(error));
   
       toast.success('Votre message a bien été envoyé');

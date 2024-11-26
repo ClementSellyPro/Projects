@@ -22,7 +22,7 @@ export default function RootLayout({
   useEffect(() => {
     const fetchData = async () =>{
       try{
-        const res = await fetch('http://localhost:3000/artisans.json');
+        const res = await fetch('/artisans.json');
         if (!res.ok){
           throw new Error(`HTTP error! status: ${res.status}`)
         }
