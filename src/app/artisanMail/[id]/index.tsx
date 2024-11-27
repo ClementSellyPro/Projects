@@ -5,6 +5,7 @@ import { FormEvent, useContext, useState } from "react";
 import toast from "react-hot-toast";
 import DataContext from "@/context/DataContext";
 import { Artisan } from "@/type/ArtisanType";
+import Link from "next/link";
 
 interface paramsType {
   params: {
@@ -143,7 +144,7 @@ const ArtisanMail = ({params, data}: paramsType) => {
   
           <div className='flex gap-1'>
             <input onChange={(e) => SetIsTermAccepted(e.target.checked)} type='checkbox' />
-            <p className='ml-2'>J&apos;accepte les <a className='underline cursor-pointer' href='/Condition_general.pdf' target="_blank" rel='noopener noreferrer'>conditions générale d&apos;utilisation</a></p>
+            <p className='ml-2'>J&apos;accepte les <Link className='underline cursor-pointer' href='/cgu' target="_blank">conditions générale d&apos;utilisation</Link></p>
           </div>
   
           {validEmail === false ? <p className='text-orange-400'>Veuillez renseigner une adresse Email valide.</p> : null}

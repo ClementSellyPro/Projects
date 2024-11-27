@@ -30,7 +30,7 @@ function SearchMetierMini({setIsMetierActive, setMetierSecteur, setFilterMetierD
       
   
     return (
-      <div className={'search-metier rounded-xl w-64 h-48 overflow-scroll'}>
+      <div className={'search-metier rounded-xl w-64 h-48 overflow-y-scroll'}>
           
           <p onClick={(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>) => {metierSelection(event)}} className='group search-links-metier-item py-1 flex items-center justify-between font-normal hover:font-semibold cursor-pointer'>
           Aménagement ext.

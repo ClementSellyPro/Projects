@@ -4,9 +4,9 @@ const nextConfig = {
         domains: ['kalipro.re'],
         formats: ['image/avif', 'image/webp'],
         unoptimized: true
-      },
+    },
       
-    output: 'export',
+    // output: 'export',
 
     // async headers() {
     //     return [

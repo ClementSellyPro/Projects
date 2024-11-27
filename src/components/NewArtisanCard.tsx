@@ -19,7 +19,7 @@ function NewArtisanCard({_id, name, domaine_artisan, secteur, logo, competences,
         {/* section artisan */}
         <div className='testimonial-artisan flex'>
             {/* logo */}
-            <Link className='overflow-hidden rounded-tr-md rounded-tl-md' href={`/artisan/${_id}`}>
+            <Link className='w-full overflow-hidden rounded-tr-md rounded-tl-md' href={`/artisan/${_id}`}>
             {
                 logo ? <Image className='w-full rounded-tr-md rounded-tl-md transition-transform duration-300 hover:scale-110' src={logo} alt="Logo" width={60} height={60} />
                 : 

@@ -3,6 +3,8 @@
 import React, { ChangeEvent, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
+import Loading from '@/components/ui/Loading';
+import Link from 'next/link';
 
 const Donneravis = () => {
 
@@ -12,6 +14,7 @@ const Donneravis = () => {
     const [phoneInput, setPhoneInput] = useState<string>('');
     const [validPhone, setValidPhone] = useState<boolean>(false);
     const [file, setFile] = useState<File | null>(null);
+    const [isLoading, setIsLoading] = useState(false);
 
     const router = useRouter();
 
@@ -59,17 +62,27 @@ const Donneravis = () => {
         const formData = new FormData(e.currentTarget);
 
         if(validEmail && validPhone){
-            const res = await fetch('/api/send/avis', {
-                method: 'POST',
-                body: formData
-            })
+            // set isLoading to give feedback to the user
+            setIsLoading(true);
 
-            const data = await res.json();
-            if(data.success){
-                console.log('Success formData sent.')
-            }else{
-                console.log('Error formData not sent.')
+            try{
+                const res = await fetch('/api/send/avis', {
+                    method: 'POST',
+                    body: formData
+                })
+
+                const data = await res.json();
+                if(data.success){
+                    console.log('Success formData sent.')
+                }else{
+                    console.log('Error formData not sent.')
+                }
+            }catch (error){
+                console.log(error);
+            }finally{
+                setIsLoading(false);
             }
+            
     
             toast.success('Votre avis a bien été envoyé');
             form.reset();
@@ -79,6 +92,8 @@ const Donneravis = () => {
 
     return (
         <div className='md:pl-20 lg:pr-20px pr-5px px-5 py-8  bg-slate-50 relative'>
+            {/* <Loading /> */}
+
             <div className='flex justify-between items-center py-8 mb-6 border-b bg-slate-50'>
                 <h1 className='md:text-4xl text-2xl font-semibold'>Donner mon avis</h1>
             </div>
@@ -87,7 +102,7 @@ const Donneravis = () => {
 
                 <div className='flex flex-col gap-1'>
                 <label className='font-semibold text-xl'>Prénom</label>
-                <input className='border py-3 pl-4 rounded-lg' name='prenom' type='text' placeholder='John' required/>
+                <input className='border py-3 pl-4 rounded-lg' name='prenom' type='text' placeholder='Jean' required/>
                 </div>
 
                 <div className='flex flex-col gap-1'>
@@ -102,12 +117,12 @@ const Donneravis = () => {
 
                 <div className='flex flex-col gap-1'>
                 <label className='font-semibold text-xl'>Email</label>
-                <input onChange={(e: React.FormEvent<HTMLInputElement>) => handleEmailInput(e)} value={emailInput} className='border py-3 pl-4 rounded-lg' name="email" type='text' placeholder='johnpayet@mail.com' />
+                <input onChange={(e: React.FormEvent<HTMLInputElement>) => handleEmailInput(e)} value={emailInput} className='border py-3 pl-4 rounded-lg' name="email" type='text' placeholder='jeanpayet@mail.com' />
                 </div>
 
                 <div className='flex flex-col gap-1'>
                 <label className='font-semibold text-xl'>Téléphone</label>
-                <input onChange={(e: React.FormEvent<HTMLInputElement>) => handlePhoneInput(e)} value={phoneInput} className='border py-3 pl-4 rounded-lg' name="phone" type='text' placeholder='0692 12 34 56' required />
+                <input onChange={(e: React.FormEvent<HTMLInputElement>) => handlePhoneInput(e)} value={phoneInput} className='border py-3 pl-4 rounded-lg' name="phone" type='text' placeholder='0692123456' required />
                 </div>
 
                 <div className='flex flex-col gap-1'>
@@ -123,13 +138,21 @@ const Donneravis = () => {
 
                 <div className='flex gap-1'>
                 <input type='checkbox' onChange={(e) => setIsTermAccepted(e.target.checked)} />
-                <p className='ml-2'>J&apos;accepte les <a className='underline cursor-pointer' href='/Condition_general.pdf' target="_blank" rel='noopener noreferrer'>conditions générale d&apos;utilisation</a></p>
+                <p className='ml-2'>J&apos;accepte les <Link className='underline cursor-pointer' target='blank' href='/cgu'>conditions générale d&apos;utilisation</Link></p>
                 </div>
 
                 {validEmail === false ? <p className='text-orange-400'>Veuillez renseigner une adresse Email valide.</p> : null}
                 {validPhone === false ? <p className='text-orange-400'>Veuillez renseigner un numéro de Téléphone valide.</p> : null}
 
-                <button disabled={!isTermAccepted} className='w-fit py-3 px-10 font-semibold rounded-full bg-blueKalipro hover:opacity-80 text-white' type='submit'>Envoyer</button>
+                <button disabled={!isTermAccepted} className='w-fit py-3 px-10 font-semibold rounded-full bg-blueKalipro hover:opacity-80 text-white' type='submit'>
+                    Envoyer
+                </button>
+
+                {
+                    isLoading && (
+                        <p className='font-semibold'>Votre facture est en cous d&apos;envoi, veuillez patienter...</p>
+                    )
+                }
 
             </form>
         </div>
