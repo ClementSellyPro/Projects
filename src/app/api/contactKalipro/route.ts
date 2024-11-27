@@ -3,7 +3,7 @@ import { Resend } from 'resend';
 
 require('dotenv').config();
 
-const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
   const {prenom, nom, commune, email, phone, message} = await request.json();
