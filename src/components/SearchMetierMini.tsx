@@ -93,7 +93,7 @@ function SearchMetierMini({setIsMetierActive, setMetierSecteur, setFilterMetierD
           </p> 
           
           <p onClick={(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>) => {metierSelection(event)}} className='group search-links-metier-item py-1 flex items-center justify-between font-normal hover:font-semibold cursor-pointer'>
-          Menuiserie
+          Menuiserie Aluminium
           <Image className='group-hover:scale-125 transition' src='/icon_metier/menuisier.png' alt="Menuiserie" height={15} width={15} />
           </p> 
   
