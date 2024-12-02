@@ -52,7 +52,7 @@ const Page = () => {
                     <option value="Carrelage">Carrelage</option>
                     <option value="Charpente/Couverture">Charpente/Couverture</option>
                     <option value="Climatisation">Climatisation</option>
-                    <option value="Cuisine">Cuisine</option>
+                    <option value="Cuisine/Dressing">Cuisine/Dressing</option>
                     <option value="Décoration intérieur">Décoration intérieur</option>
                     <option value="Dessin">Dessin (permis construire)</option>
                     <option value="Electricité">Electricité</option>

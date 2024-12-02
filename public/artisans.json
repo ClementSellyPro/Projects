@@ -440,7 +440,7 @@
     {
         "_id": 133456,
         "name": "MaCuisine",
-        "domaine_artisan": "Cuisine",
+        "domaine_artisan": "Cuisine/Dressing",
         "phone": "0692123467",
         "mail": "macuisine@gmail.com",
         "location": "Saint Leu",
@@ -459,7 +459,7 @@
             "Assurance RCP et décennale"
         ],
         "photo": [],
-        "logo": "/logo_example/logo_16.png",
+        "logo": "/logo_example/logo_16.jpg",
         "note": "4,8",
         "avis": [
             {
@@ -468,8 +468,8 @@
                 "secteur": "Saint Denis",
                 "avis": "Ma nouvelle cuisine est tout simplement magnifique ! Le cuisiniste a parfaitement compris mes envies et le résultat est à la hauteur de mes attentes.",
                 "artisan": "MaCuisine",
-                "domaine_artisan": "Cuisine",
-                "logo": "/logo_example/logo_16.png"
+                "domaine_artisan": "Cuisine/Dressing",
+                "logo": "/logo_example/logo_16.jpg"
             },
             {
                 "_id": 1,
@@ -477,8 +477,8 @@
                 "secteur": "Saint Leu",
                 "avis": "Service exceptionnel du début à la fin. La conception, la qualité des matériaux et la pose ont été réalisées avec beaucoup de professionnalisme. Je suis ravi.",
                 "artisan": "MaCuisine",
-                "domaine_artisan": "Cuisine",
-                "logo": "/logo_example/logo_16.png"
+                "domaine_artisan": "Cuisine/Dressing",
+                "logo": "/logo_example/logo_16.jpg"
             },
             {
                 "_id": 2,
@@ -486,8 +486,8 @@
                 "secteur": "Saint Pierre",
                 "avis": "Très satisfait de la transformation de ma cuisine. L’équipe a été attentive à chaque détail et le projet a été réalisé dans les délais impartis.",
                 "artisan": "MaCuisine",
-                "domaine_artisan": "Cuisine",
-                "logo": "/logo_example/logo_16.png"
+                "domaine_artisan": "Cuisine/Dressing",
+                "logo": "/logo_example/logo_16.jpg"
             },
             {
                 "_id": 3,
@@ -495,8 +495,8 @@
                 "secteur": "Saint Pierre",
                 "avis": "Une expérience très positive avec ce cuisiniste. Les conseils étaient pertinents et la cuisine a été installée avec soin et précision. Je recommande vivement.",
                 "artisan": "MaCuisine",
-                "domaine_artisan": "Cuisine",
-                "logo": "/logo_example/logo_16.png"
+                "domaine_artisan": "Cuisine/Dressing",
+                "logo": "/logo_example/logo_16.jpg"
             },
             {
                 "_id": 4,
@@ -504,8 +504,8 @@
                 "secteur": "Saint Denis",
                 "avis": "Un travail impeccable ! La cuisine est fonctionnelle et élégante, exactement comme je l’avais imaginée. L’équipe a été professionnelle et à l’écoute de mes besoins.",
                 "artisan": "MaCuisine",
-                "domaine_artisan": "Cuisine",
-                "logo": "/logo_example/logo_16.png"
+                "domaine_artisan": "Cuisine/Dressing",
+                "logo": "/logo_example/logo_16.jpg"
             }
         ]
     },
@@ -747,7 +747,7 @@
             "Assurance RCP et décennale"
         ],
         "photo": [],
-        "logo": "/logo_example/logo_17.png",
+        "logo": "/logo_example/logo_17.jpg",
         "note": "4,8",
         "avis": [
             {
@@ -757,7 +757,7 @@
                 "avis": "Le terrassement a été réalisé rapidement et avec précision. Mon terrain est parfaitement nivelé, prêt pour la construction, je suis vraiment satisfait du résultat.",
                 "artisan": "CreuseTout",
                 "domaine_artisan": "Aménagement extérieur",
-                "logo": "/logo_example/logo_17.png"
+                "logo": "/logo_example/logo_17.jpg"
             },
             {
                 "_id": 1,
@@ -766,7 +766,7 @@
                 "avis": "Une équipe professionnelle qui a su répondre à mes attentes. Le terrassement a été fait proprement, et le chantier a été laissé en ordre. Je recommande vivement !",
                 "artisan": "CreuseTout",
                 "domaine_artisan": "Aménagement extérieur",
-                "logo": "/logo_example/logo_17.png"
+                "logo": "/logo_example/logo_17.jpg"
             },
             {
                 "_id": 2,
@@ -775,7 +775,7 @@
                 "avis": "Travail impeccable, mon terrain a été parfaitement aplanit et tout s'est déroulé dans les délais annoncés. Un service fiable et de qualité.",
                 "artisan": "CreuseTout",
                 "domaine_artisan": "Aménagement extérieur",
-                "logo": "/logo_example/logo_17.png"
+                "logo": "/logo_example/logo_17.jpg"
             },
             {
                 "_id": 3,
@@ -784,7 +784,7 @@
                 "avis": "Très satisfait du terrassement de mon terrain. L'équipe a su gérer les contraintes du terrain difficile et le résultat est au-delà de mes espérances.",
                 "artisan": "CreuseTout",
                 "domaine_artisan": "Aménagement extérieur",
-                "logo": "/logo_example/logo_17.png"
+                "logo": "/logo_example/logo_17.jpg"
             },
             {
                 "_id": 4,
@@ -793,7 +793,7 @@
                 "avis": "Le terrassement a été réalisé avec soin et efficacité. Tout a été fait comme convenu, terrain prêt et chantier propre. Excellent service !",
                 "artisan": "CreuseTout",
                 "domaine_artisan": "Aménagement extérieur",
-                "logo": "/logo_example/logo_17.png"
+                "logo": "/logo_example/logo_17.jpg"
             }
         ]
     },

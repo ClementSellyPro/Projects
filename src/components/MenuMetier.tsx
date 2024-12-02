@@ -64,7 +64,7 @@ const MenuMetier = ({hidden} : Props) => {
         </Link> 
         <Link href='/result'>
           <p onClick={(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>) => {metierSelection(event)}} className='group nav-links-metier-item flex items-center justify-between  font-normal hover:font-semibold'>
-            Cuisine
+            Cuisine/Dressing
             <Image className='group-hover:scale-125 transition' src='/icon_metier/cuisiniste.png' alt="cuisiniste" height={25} width={25} />
           </p>
         </Link> 

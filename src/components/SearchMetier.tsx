@@ -58,7 +58,7 @@ const SearchMetier = ({setIsMetierActive, setMetierSecteur, setFilterMetierDispl
         </p>
         
         <p onClick={(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>) => {metierSelection(event)}} className='group search-links-metier-item py-1 flex items-center justify-between  font-normal hover:font-semibold cursor-pointer'>
-        Cuisine
+        Cuisine/Dressing
         <Image className='group-hover:scale-125 transition' src='/icon_metier/cuisiniste.png' alt="cuisiniste" height={15} width={15} />
         </p>
     
