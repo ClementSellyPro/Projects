@@ -25,9 +25,9 @@ const Hero = () => {
 
                 {/* Images section*/}
                 <div className='hero-images-section flex'>
-                    <Image className='image-artisan basis-1/3 object-cover' src='/images/image1.png' alt='Artisans' height={600} width={400} priority={true} />
-                    <Image className='image-artisan basis-1/3 object-cover' src='/images/image2.png' alt='Artisans' height={600} width={400} priority={true} />
-                    <Image className='image-artisan basis-1/3 object-cover' src='/images/image3.png' alt='Artisans' height={600} width={400} priority={true} />
+                    <Image className='image-artisan basis-1/3 object-cover' src='/images/image1.jpg' alt='Artisans' height={600} width={400} priority={true} />
+                    <Image className='image-artisan basis-1/3 object-cover' src='/images/image2.jpg' alt='Artisans' height={600} width={400} priority={true} />
+                    <Image className='image-artisan basis-1/3 object-cover' src='/images/image3.jpg' alt='Artisans' height={600} width={400} priority={true} />
                 </div>
 
                 {/* Home message */}
