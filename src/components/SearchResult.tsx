@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import ResultCard from './resultPage/ResultCard';
 import NoArtisans from './resultPage/NoArtisans';
 import DataContext from '@/context/DataContext';
@@ -27,15 +27,17 @@ const SearchResult = () => {
   return (
     <>
         {
+          // If filterMetier "Autre projet" affiche <AutreProjet />
           filterMetier === "Autre projet" ? <AutreProjet /> :
 
-
+          // Else if display les artisans
           dataToDisplay.length > 0 ?
         
           dataToDisplay.map((result: Artisan) => {
               return <ResultCard key={result._id} _id={result._id} name={result.name} domaine_artisan={result.domaine_artisan} secteur={result.secteur} logo={result.logo} />
           })
           :
+          // Else prevent there is no artisan yet for this categorie or secteur.
           <NoArtisans />
         }
     </>

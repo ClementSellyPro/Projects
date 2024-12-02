@@ -12,11 +12,6 @@ function AutreProjet() {
   return (
     <div onClick={handleClick} className='relative ResultCard bg-white cursor-pointer border rounded-lg lg:w-wResultCardLg w-full h-44 p-3 shadow-md hover:shadow-xl'>
             <div className='flex items-center justify-center h-32'>
-                {/* logo */}
-                {
-                    // <Image className='rounded-full' src={'/logo.png'} alt="Logo" width={80} height={80} /> 
-                }
-                
 
                 <div className='info-section ml-4'>
                     <p className='text-xl'>Pour tout autre demande, contacter nous directement.</p>
