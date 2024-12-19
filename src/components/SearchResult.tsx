@@ -7,6 +7,7 @@ import DataContext from '@/context/DataContext';
 import { Artisan } from '@/type/ArtisanType';
 import FilterContext from '@/context/FilterContext';
 import AutreProjet from './AutreProjet';
+import ResultCardFictif from './resultPage/ResultCardFictif';
 
 
 const SearchResult = () => {
@@ -26,13 +27,13 @@ const SearchResult = () => {
 
   return (
     <>
+        {/* <ResultCardFictif  /> */}
         {
           // If filterMetier "Autre projet" affiche <AutreProjet />
           filterMetier === "Autre projet" ? <AutreProjet /> :
 
           // Else if display les artisans
           dataToDisplay.length > 0 ?
-        
           dataToDisplay.map((result: Artisan) => {
               return <ResultCard key={result._id} _id={result._id} name={result.name} domaine_artisan={result.domaine_artisan} secteur={result.secteur} logo={result.logo} />
           })

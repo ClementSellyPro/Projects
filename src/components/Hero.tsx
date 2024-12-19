@@ -64,7 +64,7 @@ const Hero = () => {
                     <option value="Maçonnerie">Maçonnerie</option>
                     <option value="Maison individuelle">Maison individuelle</option>
                     <option value="Maitre d'oeuvre">Maitre d&apos;oeuvre</option>
-                    <option value="Menuiserie">Menuiserie Aluminium</option>
+                    <option value="Menuiserie Aluminium">Menuiserie Aluminium</option>
                     <option value="Peinture">Peinture</option>
                     <option value="Piscine">Piscine</option>
                     <option value="Plaquiste">Plaquiste</option>

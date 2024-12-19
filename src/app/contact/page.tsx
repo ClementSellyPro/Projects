@@ -114,7 +114,7 @@ const Contact = () => {
         <h1 className='md:text-4xl text-2xl font-semibold'>Contacter <strong className='text-kalipro'>KALIPRO</strong></h1>
 
         {
-          isNumberDisplay ? <ClickablePhone phoneNumber="0692 123456" />
+          isNumberDisplay ? <ClickablePhone phoneNumber="0692 041262" />
           : 
           <button onClick={() => setIsNumberDisplay(true)} className='py-2 px-6 rounded-full border border-kalipro hover:bg-kalipro text-kalipro hover:text-white w-fit'>Nous appeler</button>
         }

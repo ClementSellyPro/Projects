@@ -18,8 +18,6 @@ export interface Artisan {
   location: string,
   secteur: string[],
   intervention_img: string,
-  disponibilite: boolean,
-  temps_disponibilite: number,
   competences: string[],
   presentation: string,
   qualifications_assurances: string[],

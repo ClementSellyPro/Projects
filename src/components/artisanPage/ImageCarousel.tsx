@@ -8,10 +8,7 @@ import { ChevronLeft, ChevronRight, X } from 'lucide-react'
 import { DialogTitle } from '@radix-ui/react-dialog'
 
 interface PhotoType {
-  src: string,
-  alt: string,
-  height: number,
-  width: number
+  src: string
 }
 
 interface PhotosType {
@@ -26,7 +23,7 @@ export default function ImageCarousel({photos} : PhotosType) {
   useEffect(() => {
     const updateImageStyle = () => {
       const image = photos[currentImageIndex]
-      const aspectRatio = image.width / image.height
+      const aspectRatio = 400 / 400
       const isLandscape = aspectRatio > 1
 
       if (isLandscape) {
@@ -80,9 +77,9 @@ export default function ImageCarousel({photos} : PhotosType) {
           {photos &&
             <Image
               src={photo.src}
-              alt={photo.alt}
-              width={photo.width}
-              height={photo.height}
+              alt="Photo"
+              width={400}
+              height={400}
               style={{ width: '100%', height: '100%' }}
               className="object-cover w-full h-full transition-transform duration-300 hover:scale-110"
             />
@@ -102,9 +99,9 @@ export default function ImageCarousel({photos} : PhotosType) {
               <Image
                 className='rounded-md'
                 src={photos[currentImageIndex].src}
-                alt={photos[currentImageIndex].alt}
-                width={photos[currentImageIndex].width}
-                height={photos[currentImageIndex].height}
+                alt= "Photo"
+                width={400}
+                height={400}
                 style={imageStyle}
                 priority
               />

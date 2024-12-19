@@ -14,14 +14,14 @@ interface Props {
 
 function NewArtisanCard({_id, name, domaine_artisan, secteur, logo, competences, note}: Props) {
   return (
-    <div className='flex-shrink-0 md:w-72 w-52 bg-white rounded-lg border'>
+    <div className='flex-shrink-0 md:w-72 w-52 bg-white rounded-lg border group hover:shadow-md'>
 
         {/* section artisan */}
         <div className='testimonial-artisan flex'>
             {/* logo */}
             <Link className='w-full overflow-hidden rounded-tr-md rounded-tl-md' href={`/artisan/${_id}`}>
             {
-                logo ? <Image className='w-full rounded-tr-md rounded-tl-md transition-transform duration-300 hover:scale-110' src={logo} alt="Logo" width={60} height={60} />
+                logo ? <Image className='w-full rounded-tr-md rounded-tl-md transition-transform duration-300 group-hover:scale-110' src={logo} alt="Logo" width={60} height={60} />
                 : 
                 <div className='w-full rounded-md flex items-center justify-center bg-slate-500'>logo</div>
             }

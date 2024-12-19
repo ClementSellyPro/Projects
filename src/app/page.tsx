@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Hero from '@/components/Hero';
 import Marquee from "@/components/Marquee";
-import Testimonials from '@/components/Testimonials';
+import TestimonialsBeta from '@/components/TestimonialsBeta';
 import NewArtisans from "@/components/NewArtisans";
 import Rejoins from "@/components/Rejoins";
 
@@ -27,7 +27,7 @@ const Home = () => {
       {/* <Rejoins /> */}
 
       {/* Les temoignages a l'accueil */}
-      <Testimonials />
+      <TestimonialsBeta />
     </div>
   )
 }

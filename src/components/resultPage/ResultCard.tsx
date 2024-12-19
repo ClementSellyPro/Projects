@@ -25,7 +25,7 @@ const ResultCard = ({_id, name, domaine_artisan, secteur, logo}: propsType) => {
             <div className='flex items-center'>
                 {/* logo */}
                 {
-                    logo ? <Image className='rounded-full' src={logo} alt="Logo" width={80} height={80} /> 
+                    logo ? <Image className='flex items-center justify-center rounded-full border' src={logo} alt="Logo" width={80} height={80} /> 
                     : 
                     <div className='w-20 h-20 flex items-center justify-center rounded-full bg-slate-500'>logo</div>
                 }

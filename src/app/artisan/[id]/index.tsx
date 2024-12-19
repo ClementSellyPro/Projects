@@ -11,6 +11,7 @@ import ModalAvis from "@/components/artisanPage/ModalAvis";
 import { AvisType } from "@/type/AvisType";
 import { notFound } from "next/navigation";
 import { Artisan } from "@/type/ArtisanType";
+import AvisVerif from "@/components/AvisVerif";
 
 
 interface paramsType {
@@ -23,10 +24,7 @@ interface paramsType {
 }
 
 interface PhotoType {
-    src: string,
-    alt: string,
-    height: number,
-    width: number
+    src: string
 }
 
 const ArtisanDetail = ({ params, data }: paramsType) => {
@@ -36,19 +34,19 @@ const ArtisanDetail = ({ params, data }: paramsType) => {
     // get all data and filter according the params id
     // const { data } = useContext(DataContext);
     const dataToDisplay = data.filter(data => (data._id.toString() === id));
+    console.log(dataToDisplay);
     
     const competences = dataToDisplay[0]?.competences.slice(1, dataToDisplay[0]?.competences.length);
     const avisClient = dataToDisplay[0]?.avis.map(avis => avis);
 
     // Sample image data
     const imagesSample: PhotoType[] = [
-        { src: '/photo_example/photography_1.jpg', height:400, width:600, alt: 'Sample image 1' },
-        { src: '/photo_example/photography_2.jpg', height:400, width:600, alt: 'Sample image 2' },
-        { src: '/photo_example/photography_3.jpg', height:400, width:600, alt: 'Sample image 3' },
-        { src: '/photo_example/photography_4.jpg', height:400, width:600, alt: 'Sample image 4' },
-        { src: '/photo_example/photography_5.jpg', height:400, width:600, alt: 'Sample image 5' },
-        { src: '/photo_example/photography_6.jpg', height:400, width:600, alt: 'Sample image 6' },
-        { src: '/photo_example/photography_7.jpg', height:400, width:600, alt: 'Sample image 7' },
+        { src: `/photo/${dataToDisplay[0]._id}/photography_1.jpg`},
+        { src: `/photo/${dataToDisplay[0]._id}/photography_2.jpg`},
+        { src: `/photo/${dataToDisplay[0]._id}/photography_3.jpg`},
+        { src: `/photo/${dataToDisplay[0]._id}/photography_4.jpg`},
+        { src: `/photo/${dataToDisplay[0]._id}/photography_5.jpg`},
+        { src: `/photo/${dataToDisplay[0]._id}/photography_6.jpg`},
     ];
 
     return (
@@ -99,8 +97,11 @@ const ArtisanDetail = ({ params, data }: paramsType) => {
                     <div className='hover:bg-subtleKalipro p-7 border rounded-xl'>
                         <h2 className='font-semibold text-2xl  mb-5'>Qualifications assurances*</h2>
                         <ul>
-                            <li>Certification AAA</li>
-                            <li>Assurance RCP et décennale</li>
+                            {
+                                dataToDisplay[0].qualifications_assurances.map((item, index) => {
+                                    return <li key={index}>{item}</li>
+                                })
+                            }
                         </ul>
                         <p className='mt-2 text-sm'>* A charge pour vous de vérifier ces informations en le demandant directement au professionels. </p>
                     </div>
@@ -127,7 +128,12 @@ const ArtisanDetail = ({ params, data }: paramsType) => {
                 </div>
 
                 {/* Afficher tous les avis */}
-                <ModalAvis avisClient={avisClient} />
+                {
+                    dataToDisplay[0].avis.length > 0 ? 
+                    <ModalAvis avisClient={avisClient} />
+                    :
+                    <AvisVerif />
+                }
             </div>
         </div>
     )
