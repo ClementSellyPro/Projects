@@ -9,82 +9,82 @@ import Link from 'next/link';
 
 function ResultCardFictif() {
 
-    const data : Artisan = [
-        [
-            {
-                "_id": 525252,
-                "name": "Architectura",
-                "domaine_artisan": "Architecture",
-                "phone": "0692123467",
-                "mail": "architectura@gmail.com",
-                "location": "Saint Denis",
-                "secteur": ["Est", "Nord", "Ouest", "Sud"],
-                "intervention_img": "",
-                "disponibilite": true,
-                "temps_disponibilite": 0,
-                "competences": [
-                    "Spécialiste dans l'architecture de maison",
-                    "Plan de maison",
-                    "Design sur mesure"
-                ],
-                "presentation": "Notre cabinet d'architecture conçoit des projets innovants et sur mesure, alliant esthétisme, fonctionnalité et respect de l'environnement. Nous accompagnons nos clients de la conception à la réalisation, pour donner vie à leurs espaces.",
-                "qualifications_assurances": [
-                    "Certification AAA",
-                    "Assurance RCP et décennale"
-                ],
-                "photo": [],
-                "logo":"/logo_example/logo_5.jpg",
-                "note": "4,8",
-                "avis": [
-                    {
-                        "_id": 0,
-                        "client": "Nicolas Lefevre",
-                        "secteur": "Saint Denis",
-                        "avis": "Un travail remarquable du début à la fin, le cabinet a parfaitement compris mes attentes et a su les transformer en un projet architectural unique.",
-                        "artisan": "Architectura",
-                        "domaine_artisan": "Architecture",
-                        "logo":"/logo_example/logo_5.jpg"
-                    },
-                    {
-                        "_id": 1,
-                        "client": "Jean Dupuis",
-                        "secteur": "Sainte Marie",
-                        "avis": "Excellente collaboration, les architectes ont su allier créativité et respect des contraintes techniques. Le résultat est tout simplement magnifique.",
-                        "artisan": "Architectura",
-                        "domaine_artisan": "Architecture",
-                        "logo":"/logo_example/logo_5.jpg"
-                    },
-                    {
-                        "_id": 2,
-                        "client": "Claire Martin",
-                        "secteur": "Saint Suzanne",
-                        "avis": "Je suis très satisfait du projet réalisé, le cabinet a été à l'écoute tout au long du processus et le résultat final est à la hauteur de mes espérances.",
-                        "artisan": "Architectura",
-                        "domaine_artisan": "Architecture",
-                        "logo":"/logo_example/logo_5.jpg"
-                    },
-                    {
-                        "_id": 3,
-                        "client": "Sophie Bernard",
-                        "secteur": "Saint Denis",
-                        "avis": "Une équipe professionnelle et réactive. Leurs idées innovantes ont complètement transformé mon espace, je recommande sans hésitation.",
-                        "artisan": "Architectura",
-                        "domaine_artisan": "Architecture",
-                        "logo":"/logo_example/logo_5.jpg"
-                    },
-                    {
-                        "_id": 4,
-                        "client": "Thomas Girault",
-                        "secteur": "Sainte Marie",
-                        "avis": "Le cabinet d'architecture a su créer un design fonctionnel et esthétique, tout en respectant mon budget. Je ne pouvais pas espérer mieux !",
-                        "artisan": "Architectura",
-                        "domaine_artisan": "Architecture",
-                        "logo":"/logo_example/logo_5.jpg"
-                    }
-                ]
-            }
-        ]
-    ];
+    // const data : Artisan = [
+    //     [
+    //         {
+    //             "_id": 525252,
+    //             "name": "Architectura",
+    //             "domaine_artisan": "Architecture",
+    //             "phone": "0692123467",
+    //             "mail": "architectura@gmail.com",
+    //             "location": "Saint Denis",
+    //             "secteur": ["Est", "Nord", "Ouest", "Sud"],
+    //             "intervention_img": "",
+    //             "disponibilite": true,
+    //             "temps_disponibilite": 0,
+    //             "competences": [
+    //                 "Spécialiste dans l'architecture de maison",
+    //                 "Plan de maison",
+    //                 "Design sur mesure"
+    //             ],
+    //             "presentation": "Notre cabinet d'architecture conçoit des projets innovants et sur mesure, alliant esthétisme, fonctionnalité et respect de l'environnement. Nous accompagnons nos clients de la conception à la réalisation, pour donner vie à leurs espaces.",
+    //             "qualifications_assurances": [
+    //                 "Certification AAA",
+    //                 "Assurance RCP et décennale"
+    //             ],
+    //             "photo": [],
+    //             "logo":"/logo_example/logo_5.jpg",
+    //             "note": "4,8",
+    //             "avis": [
+    //                 {
+    //                     "_id": 0,
+    //                     "client": "Nicolas Lefevre",
+    //                     "secteur": "Saint Denis",
+    //                     "avis": "Un travail remarquable du début à la fin, le cabinet a parfaitement compris mes attentes et a su les transformer en un projet architectural unique.",
+    //                     "artisan": "Architectura",
+    //                     "domaine_artisan": "Architecture",
+    //                     "logo":"/logo_example/logo_5.jpg"
+    //                 },
+    //                 {
+    //                     "_id": 1,
+    //                     "client": "Jean Dupuis",
+    //                     "secteur": "Sainte Marie",
+    //                     "avis": "Excellente collaboration, les architectes ont su allier créativité et respect des contraintes techniques. Le résultat est tout simplement magnifique.",
+    //                     "artisan": "Architectura",
+    //                     "domaine_artisan": "Architecture",
+    //                     "logo":"/logo_example/logo_5.jpg"
+    //                 },
+    //                 {
+    //                     "_id": 2,
+    //                     "client": "Claire Martin",
+    //                     "secteur": "Saint Suzanne",
+    //                     "avis": "Je suis très satisfait du projet réalisé, le cabinet a été à l'écoute tout au long du processus et le résultat final est à la hauteur de mes espérances.",
+    //                     "artisan": "Architectura",
+    //                     "domaine_artisan": "Architecture",
+    //                     "logo":"/logo_example/logo_5.jpg"
+    //                 },
+    //                 {
+    //                     "_id": 3,
+    //                     "client": "Sophie Bernard",
+    //                     "secteur": "Saint Denis",
+    //                     "avis": "Une équipe professionnelle et réactive. Leurs idées innovantes ont complètement transformé mon espace, je recommande sans hésitation.",
+    //                     "artisan": "Architectura",
+    //                     "domaine_artisan": "Architecture",
+    //                     "logo":"/logo_example/logo_5.jpg"
+    //                 },
+    //                 {
+    //                     "_id": 4,
+    //                     "client": "Thomas Girault",
+    //                     "secteur": "Sainte Marie",
+    //                     "avis": "Le cabinet d'architecture a su créer un design fonctionnel et esthétique, tout en respectant mon budget. Je ne pouvais pas espérer mieux !",
+    //                     "artisan": "Architectura",
+    //                     "domaine_artisan": "Architecture",
+    //                     "logo":"/logo_example/logo_5.jpg"
+    //                 }
+    //             ]
+    //         }
+    //     ]
+    // ];
 
     const secteur = ["Nord", "Est", "Sud", "Nord"];
 
@@ -114,14 +114,14 @@ function ResultCardFictif() {
             <div className='flex items-center'>
                 {/* logo */}
                 {
-                    <Image className='flex items-center justify-center rounded-full border' src={data?.logo} alt="Logo" width={80} height={80} /> 
+                    // <Image className='flex items-center justify-center rounded-full border' src={data?.logo} alt="Logo" width={80} height={80} /> 
                 }
                 
 
                 <div className='info-section ml-4'>
-                    <p className='text-xl font-semibold'>{data?.name}</p>
+                    {/* <p className='text-xl font-semibold'>{data?.name}</p>
                     <p className='text-xs text-slate-500'>{data?.domaine_artisan}</p>
-                    <p className='mt-6 text-sm'>Zone intervention: {secteur.map(secteur => secteur + ', ')}</p>
+                    <p className='mt-6 text-sm'>Zone intervention: {secteur.map(secteur => secteur + ', ')}</p> */}
                 </div>
             </div>
 

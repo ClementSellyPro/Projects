@@ -7,7 +7,7 @@
         "mail": "service-commercial@lcm.re",
         "location": "Saint Paul",
         "secteur": ["Sud", "Ouest"],
-        "intervention_img": "",
+        "intervention_img": "/secteur-sud-ouest.jpg",
         "competences": [
             "Construction de maison",
             "Construction de maison individuelle clé en main",
@@ -37,7 +37,7 @@
         "mail": "saintandre@interieurs-prives.com",
         "location": "Saint André",
         "secteur": ["Nord", "Est"],
-        "intervention_img": "",
+        "intervention_img": "/secteur-nord-est.jpg",
         "competences": [
             "Agencement intérieur sur mesure",
             "Cuisnie de qualité sur-mesure: neuf et rénovation",
@@ -68,7 +68,7 @@
         "mail": "contact.car974@gmail.com",
         "location": "Le Tampon",
         "secteur": ["Sud", "Ouest"],
-        "intervention_img": "",
+        "intervention_img": "/secteur-sud-ouest.jpg",
         "competences": [
             "Menuiserie aluminium d'extérieure",
             "Installation et dépannage",
@@ -99,7 +99,7 @@
         "mail": "contact@designpiscinesoi.fr",
         "location": "Saint Denis",
         "secteur": ["Nord", "Est"],
-        "intervention_img": "",
+        "intervention_img": "/secteur-nord-est.jpg",
         "competences": [
             "Spécialiste de la piscine",
             "Conception personnalisée de piscines",
@@ -131,7 +131,7 @@
         "mail": "fabien.seychelles@tropitekture.re",
         "location": "Etang-Salé",
         "secteur": ["Sud", "Ouest"],
-        "intervention_img": "",
+        "intervention_img": "/secteur-sud-ouest.jpg",
         "competences": [
             "Spécialiste en dessin du bâtiment",
             "Dépôt et suivi des demandes de permis de construire",
@@ -162,7 +162,7 @@
         "mail": "dcm.97430@gmail.com",
         "location": "Le Tampon",
         "secteur": ["Sud", "Ouest"],
-        "intervention_img": "",
+        "intervention_img": "/secteur-sud-ouest.jpg",
         "competences": [
             "Maçonnerie générale, rénovation",
             "Extension et construction de maison individuelle",
@@ -193,7 +193,7 @@
         "mail": "eliteclimatisation974@gmail.com",
         "location": "Saint André",
         "secteur": ["Nord", "Est"],
-        "intervention_img": "",
+        "intervention_img": "/secteur-nord-est.jpg",
         "competences": [
             "Spécialiste dans la climatisation",
             "Installation climatiseur",
@@ -225,7 +225,7 @@
         "mail": "shayaconception@gmail.com",
         "location": "Saint André",
         "secteur": ["Nord", "Est"],
-        "intervention_img": "",
+        "intervention_img": "/secteur-nord-est.jpg",
         "competences": [
             "Maitrise d'oeuvre",
             "Mission partielle ou complète",
@@ -258,7 +258,7 @@
         "mail": "mickael@layemard-e.fr",
         "location": "Saint Benoit",
         "secteur": ["Nord", "Est"],
-        "intervention_img": "",
+        "intervention_img": "/secteur-nord-est.jpg",
         "competences": [
             "Projet clé en main",
             "Construction de maison individuelle clé en main",
@@ -288,7 +288,7 @@
         "mail": "pouniandy.yannick@gmail.com",
         "location": "Saint André",
         "secteur": ["Nord", "Est"],
-        "intervention_img": "",
+        "intervention_img": "/secteur-nord-est.jpg",
         "competences": [
             "Spécialiste electricité: Neuf et rénovation",
             "Réalisation de projet complet (maison, appartement)",
@@ -319,7 +319,7 @@
         "mail": "",
         "location": "Saint Leu",
         "secteur": ["Sud", "Ouest"],
-        "intervention_img": "",
+        "intervention_img": "/secteur-sud-ouest.jpg",
         "competences": [
             "Spécialiste dans la maçonnerie",
             "Construction maison, terrasse en béton",
@@ -349,7 +349,7 @@
         "mail": "rob.renov@orange.fr",
         "location": "Salazie",
         "secteur": ["Nord", "Est"],
-        "intervention_img": "",
+        "intervention_img": "/secteur-nord-est.jpg",
         "competences": [
             "Rénovation complète",
             "Démolition, évacuation",
@@ -381,7 +381,7 @@
         "mail": "soudalu.jg@gmail.com",
         "location": "Saint André",
         "secteur": ["Nord", "Est"],
-        "intervention_img": "",
+        "intervention_img": "/secteur-nord-est.jpg",
         "competences": [
             "Spécialiste dans l'installation de portail",
             "Installation de portail automatique",
@@ -411,7 +411,7 @@
         "mail": "protegetoit974@gmail.com",
         "location": "Saint André",
         "secteur": ["Nord", "Est"],
-        "intervention_img": "",
+        "intervention_img": "/secteur-nord-est.jpg",
         "competences": [
             "Spécialiste de la toiture",
             "Conception et montage de charpente et couverture métallique",
@@ -442,7 +442,7 @@
         "mail": "thomas.carrelage974@gmail.com",
         "location": "Salazie",
         "secteur": ["Nord", "Est"],
-        "intervention_img": "",
+        "intervention_img": "/secteur-nord-est.jpg",
         "competences": [
             "Spécialiste dans la pose de carrelage",
             "Carrelage intérieur et extérieur, rénovation et neuf",
@@ -473,7 +473,7 @@
         "mail": "malet.electric.system@gmail.com",
         "location": "Saint Louis",
         "secteur": ["Sud", "Ouest"],
-        "intervention_img": "",
+        "intervention_img": "/secteur-sud-ouest.jpg",
         "competences": [
             "Electricité Générale",
             "Rénovation, mise en conformité/sécurité",
@@ -505,7 +505,7 @@
         "mail": "secreteriat.bgpmc@gmail.com",
         "location": "Saint Pierre",
         "secteur": ["Sud", "Ouest"],
-        "intervention_img": "",
+        "intervention_img": "/secteur-sud-ouest.jpg",
         "competences": [
             "Spécialiste dans la plomberie",
             "Installation neuf, réparation",
