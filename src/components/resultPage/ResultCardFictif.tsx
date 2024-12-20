@@ -20,8 +20,6 @@ function ResultCardFictif() {
     //             "location": "Saint Denis",
     //             "secteur": ["Est", "Nord", "Ouest", "Sud"],
     //             "intervention_img": "",
-    //             "disponibilite": true,
-    //             "temps_disponibilite": 0,
     //             "competences": [
     //                 "Spécialiste dans l'architecture de maison",
     //                 "Plan de maison",
@@ -29,7 +27,6 @@ function ResultCardFictif() {
     //             ],
     //             "presentation": "Notre cabinet d'architecture conçoit des projets innovants et sur mesure, alliant esthétisme, fonctionnalité et respect de l'environnement. Nous accompagnons nos clients de la conception à la réalisation, pour donner vie à leurs espaces.",
     //             "qualifications_assurances": [
-    //                 "Certification AAA",
     //                 "Assurance RCP et décennale"
     //             ],
     //             "photo": [],
@@ -88,19 +85,19 @@ function ResultCardFictif() {
 
     const secteur = ["Nord", "Est", "Sud", "Nord"];
 
-//     useEffect(() => {
-//     async function fetchData() {
-//       const response = await fetch('/artisanFictif.json')
-//       const jsonData: Artisan = await response.json()
-//       if(!jsonData){
-//         return console.error("Can't retrieve fictive data")
-//       }
-//       setData(jsonData);
-//       console.log(jsonData);
-//     }
+    //     useEffect(() => {
+    //     async function fetchData() {
+    //       const response = await fetch('/artisanFictif.json')
+    //       const jsonData: Artisan = await response.json()
+    //       if(!jsonData){
+    //         return console.error("Can't retrieve fictive data")
+    //       }
+    //       setData(jsonData);
+    //       console.log(jsonData);
+    //     }
 
-//     fetchData()
-//   }, [])
+    //     fetchData()
+    //   }, [])
   
     // const router = useRouter();onClick={handleClick}
 
@@ -114,14 +111,14 @@ function ResultCardFictif() {
             <div className='flex items-center'>
                 {/* logo */}
                 {
-                    // <Image className='flex items-center justify-center rounded-full border' src={data?.logo} alt="Logo" width={80} height={80} /> 
+                    <Image className='flex items-center justify-center rounded-full border' src={'/logo_example/logo_5.jpg'} alt="Logo" width={80} height={80} /> 
                 }
                 
 
                 <div className='info-section ml-4'>
-                    {/* <p className='text-xl font-semibold'>{data?.name}</p>
-                    <p className='text-xs text-slate-500'>{data?.domaine_artisan}</p>
-                    <p className='mt-6 text-sm'>Zone intervention: {secteur.map(secteur => secteur + ', ')}</p> */}
+                    <p className='text-xl font-semibold'>Architectura <span className='font-medium text-sm'>(Entreprise fictive pour exemple)</span></p>
+                    <p className='text-xs text-slate-500'>Architecture</p>
+                    <p className='mt-6 text-sm'>Zone intervention: {secteur.map(secteur => secteur + ', ')}</p>
                 </div>
             </div>
 
