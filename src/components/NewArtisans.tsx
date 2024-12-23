@@ -9,7 +9,7 @@ function NewArtisans() {
 
   const {data} = useContext(DataContext);
 
-  const dataToDisplay = data.slice(0, 10);
+  const dataToDisplay = data.slice(1, 10);
 
   return (
     // pb-20 when adding the Rejoins.tsx part

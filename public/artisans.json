@@ -1,4 +1,93 @@
 [
+    
+    {
+        "_id": 525252,
+        "name": "Architectura (entreprise fictive)",
+        "domaine_artisan": "Architecture",
+        "phone": "0692123467",
+        "mail": "architectura@gmail.com",
+        "location": "Saint Denis",
+        "secteur": ["Est", "Nord", "Ouest", "Sud"],
+        "intervention_img": "/secteur-ile.jpg",
+        "disponibilite": true,
+        "temps_disponibilite": 0,
+        "competences": [
+            "Spécialiste dans l'architecture de maison",
+            "Plan de maison",
+            "Design sur mesure"
+        ],
+        "presentation": "Notre cabinet d'architecture conçoit des projets innovants et sur mesure, alliant esthétisme, fonctionnalité et respect de l'environnement. Nous accompagnons nos clients de la conception à la réalisation, pour donner vie à leurs espaces.",
+        "qualifications_assurances": [
+            "Certification AAA",
+            "Assurance RCP et décennale"
+        ],
+        "photo": [
+            "/photo_example/photography_1.jpg", 
+            "/photo_example/photography_2.jpg", 
+            "/photo_example/photography_3.jpg", 
+            "/photo_example/photography_4.jpg", 
+            "/photo_example/photography_5.jpg", 
+            "/photo_example/photography_6.jpg"
+        ],
+        "logo":"/logo_example/logo_5.jpg",
+        "note": "4,8",
+        "avis": [
+            {
+                "_id": 0,
+                "client": "Nicolas Lefevre",
+                "secteur": "Saint Denis",
+                "avis": "Un travail remarquable du début à la fin, le cabinet a parfaitement compris mes attentes et a su les transformer en un projet architectural unique.",
+                "artisan": "Architectura",
+                "domaine_artisan": "Architecture",
+                "logo":"/logo_example/logo_5.jpg"
+            },
+            {
+                "_id": 1,
+                "client": "Jean Dupuis",
+                "secteur": "Sainte Marie",
+                "avis": "Excellente collaboration, les architectes ont su allier créativité et respect des contraintes techniques. Le résultat est tout simplement magnifique.",
+                "artisan": "Architectura",
+                "domaine_artisan": "Architecture",
+                "logo":"/logo_example/logo_5.jpg"
+            },
+            {
+                "_id": 2,
+                "client": "Claire Martin",
+                "secteur": "Saint Suzanne",
+                "avis": "Je suis très satisfait du projet réalisé, le cabinet a été à l'écoute tout au long du processus et le résultat final est à la hauteur de mes espérances.",
+                "artisan": "Architectura",
+                "domaine_artisan": "Architecture",
+                "logo":"/logo_example/logo_5.jpg"
+            },
+            {
+                "_id": 3,
+                "client": "Sophie Bernard",
+                "secteur": "Saint Denis",
+                "avis": "Une équipe professionnelle et réactive. Leurs idées innovantes ont complètement transformé mon espace, je recommande sans hésitation.",
+                "artisan": "Architectura",
+                "domaine_artisan": "Architecture",
+                "logo":"/logo_example/logo_5.jpg"
+            },
+            {
+                "_id": 4,
+                "client": "Thomas Girault",
+                "secteur": "Sainte Marie",
+                "avis": "Le cabinet d'architecture a su créer un design fonctionnel et esthétique, tout en respectant mon budget. Je ne pouvais pas espérer mieux !",
+                "artisan": "Architectura",
+                "domaine_artisan": "Architecture",
+                "logo":"/logo_example/logo_5.jpg"
+            },
+            {
+                "_id": 5,
+                "client": "Martine",
+                "secteur": "Sainte Pierre",
+                "avis": "Le cabinet d'architecture Architectura a su créer un design fonctionnel et esthétique, tout en respectant mon budget. Je ne pouvais pas espérer mieux de leur part !",
+                "artisan": "Architectura",
+                "domaine_artisan": "Architecture",
+                "logo":"/logo_example/logo_5.jpg"
+            }
+        ]
+    },
     {
         "_id": 223472,
         "name": "Le Constructeur Moderne",
@@ -138,7 +227,7 @@
             "Plan en 3D réaliste",
             "Conforme aux PLU local"
         ],
-        "presentation": "Spécialiste dans la conception d'habitats bioclimatiques sur le Réunion, la mission de TROPITEKTURE sera de vous aider à concevoir votre futur lieu de vie en créant des espaces plus durables, plus confortables, adaptés à vos besoins et vos habitudes.",
+        "presentation": "Expert en conception bioclimatique à la Réunion, notre mission est de vous aider à façonner votre futur espace de vie durable selon vos besoins et vos habitudes. Que vous envisagiez une construction neuve ou une rénovation, Tropitekture vous guide à chaque étape de votre projet, allant de la conception des plans à l’obtention du permis de construire. Notre approche bioclimatique vise à maximiser l’efficacité énergétique de votre habitat tout en assurant un confort optimal. Nous prenons en compte les spécificités de votre site, comme l’orientation, le climat et la végétation environnante, pour concevoir un habitat qui tire le meilleur parti des ressources naturelles disponibles.",
         "qualifications_assurances": [
             "Assurance décennale et RC Pro en attente de vérification"
         ],
@@ -264,7 +353,7 @@
             "Construction de maison individuelle clé en main",
             "Conseil et accompagnement jusqu'à la reception du chantier"
         ],
-        "presentation": "Avec plus de 20 ans d'expérience et plus de 10 ans d'activité au sein de Layemard-e, nos clients sont au centre de nos préoccupations et nous nous y engageons quotidiennement. En effet, avant chaque début de chantier, nous organisons une rencontre entre le client et l'ensemble de l'équipe afin de discuter et de travailler ensemble ans des conditions propices à la réussite du chantier. Sachez que l'ensemble de nos clients apprécient la qualité de nos chantiers et des suivis. Layemard-e, constructeur de maisons de vos rêves sur l'île de La Réunion, vous propose un service au meilleur rapport qualité-prix.",
+        "presentation": "Avec plus de 20 ans d’expérience et plus de 10 ans d'activité au sein de Layemard-e, nos clients sont au centre de nos préoccupations et nous nous y engageons quotidiennement. En effet, avant chaque début de chantier, nous organisons une rencontre entre le client et l'ensemble de l’équipe afin de discuter et de travailler ensemble dans des conditions propices à la réussite du chantier. Sachez que l'ensemble de nos clients apprécient la qualité de nos chantiers et des suivis. Layemard-e, constructeur de maisons de vos rêves sur l’île La Réunion, vous propose un service au meilleur rapport qualité-prix.",
         "qualifications_assurances": [
             "Assurance décennale et RC Pro en attente de vérification"
         ],
@@ -449,7 +538,7 @@
             "Tout type de carrelage",
             "Crédence de cuisine, pierre naturelle, chape"
         ],
-        "presentation": "????",
+        "presentation": "L’entreprise Thomas Carrelage est experte dans la pose de carrelage, aussi bien en intérieur qu’en extérieur, pour des projets de construction neuve ou de rénovation. Grâce à son savoir-faire, elle transforme vos espaces avec des finitions soignées et des matériaux de qualité. Qu’il s’agisse de créer un sol élégant pour votre intérieur, d’aménager une terrasse ou une plage de piscine, Thomas Carrelage propose des solutions sur-mesure, adaptées à vos goûts et à vos besoins. L’entreprise s’engage à fournir un travail précis et durable, respectant vos attentes et les délais impartis. Faites confiance à Thomas Carrelage pour sublimer vos espaces avec un carrelage impeccable, alliant esthétisme et robustesse.",
         "qualifications_assurances": [
             "Assurance décennale et RC Pro en attente de vérification"
         ],
@@ -481,7 +570,7 @@
             "Courant fort et courant faible",
             "Particulier, petit commerce, petite entreprise"
         ],
-        "presentation": "????",
+        "presentation": "La société MES - Malet Electric System est spécialisée dans les travaux électriques et l’installation de systèmes d’alarme. Forte de son expertise, elle propose des solutions adaptées aux besoins des particuliers et des professionnels, garantissant sécurité et performance. Qu’il s’agisse d’installer ou de rénover vos équipements électriques, ou encore de sécuriser vos espaces avec des alarmes performantes, MES - Malet Electric System met un point d’honneur à offrir un service de qualité, respectant les normes en vigueur. Faites confiance à MES - Malet Electric System pour vos projets électriques et de sécurité, avec des prestations sur-mesure qui allient fiabilité, innovation et satisfaction client.",
         "qualifications_assurances": [
             "Assurance décennale et RC Pro en attente de vérification"
         ],
@@ -512,7 +601,7 @@
             "Raccordement et dérivation de la plomberie",
             "Remplacement baignoire, receveur/paroi de douche, WC"
         ],
-        "presentation": "????",
+        "presentation": "La société BGPMC est spécialisée dans les travaux de plomberie et la rénovation. Que ce soit pour une installation ou une réparation de votre plomberie, l’entreprise propose des solutions adaptées à vos besoins pour améliorer votre confort au quotidien. Grâce à son savoir-faire et à son sens du détail, BGPMC intervient avec professionnalisme pour garantir des prestations de qualité, qu’il s’agisse de travaux de plomberie, d’aménagement intérieur ou de petites rénovations. Faites confiance à BGPMC pour transformer votre habitat avec des interventions rapides, fiables et soignées, tout en respectant vos attentes et votre budget.",
         "qualifications_assurances": [
             "Assurance décennale et RC Pro en attente de vérification"
         ],
@@ -527,84 +616,5 @@
         ],
         "note": "??",
         "avis": []
-    },
-    {
-        "_id": 525252,
-        "name": "Architectura",
-        "domaine_artisan": "Architecture",
-        "phone": "0692123467",
-        "mail": "architectura@gmail.com",
-        "location": "Saint Denis",
-        "secteur": ["Est", "Nord", "Ouest", "Sud"],
-        "intervention_img": "/secteur-ile.jpg",
-        "disponibilite": true,
-        "temps_disponibilite": 0,
-        "competences": [
-            "Spécialiste dans l'architecture de maison",
-            "Plan de maison",
-            "Design sur mesure"
-        ],
-        "presentation": "Notre cabinet d'architecture conçoit des projets innovants et sur mesure, alliant esthétisme, fonctionnalité et respect de l'environnement. Nous accompagnons nos clients de la conception à la réalisation, pour donner vie à leurs espaces.",
-        "qualifications_assurances": [
-            "Certification AAA",
-            "Assurance RCP et décennale"
-        ],
-        "photo": [
-            "/photo_example/photography_1.jpg", 
-            "/photo_example/photography_2.jpg", 
-            "/photo_example/photography_3.jpg", 
-            "/photo_example/photography_4.jpg", 
-            "/photo_example/photography_5.jpg", 
-            "/photo_example/photography_6.jpg"
-        ],
-        "logo":"/logo_example/logo_5.jpg",
-        "note": "4,8",
-        "avis": [
-            {
-                "_id": 0,
-                "client": "Nicolas Lefevre",
-                "secteur": "Saint Denis",
-                "avis": "Un travail remarquable du début à la fin, le cabinet a parfaitement compris mes attentes et a su les transformer en un projet architectural unique.",
-                "artisan": "Architectura",
-                "domaine_artisan": "Architecture",
-                "logo":"/logo_example/logo_5.jpg"
-            },
-            {
-                "_id": 1,
-                "client": "Jean Dupuis",
-                "secteur": "Sainte Marie",
-                "avis": "Excellente collaboration, les architectes ont su allier créativité et respect des contraintes techniques. Le résultat est tout simplement magnifique.",
-                "artisan": "Architectura",
-                "domaine_artisan": "Architecture",
-                "logo":"/logo_example/logo_5.jpg"
-            },
-            {
-                "_id": 2,
-                "client": "Claire Martin",
-                "secteur": "Saint Suzanne",
-                "avis": "Je suis très satisfait du projet réalisé, le cabinet a été à l'écoute tout au long du processus et le résultat final est à la hauteur de mes espérances.",
-                "artisan": "Architectura",
-                "domaine_artisan": "Architecture",
-                "logo":"/logo_example/logo_5.jpg"
-            },
-            {
-                "_id": 3,
-                "client": "Sophie Bernard",
-                "secteur": "Saint Denis",
-                "avis": "Une équipe professionnelle et réactive. Leurs idées innovantes ont complètement transformé mon espace, je recommande sans hésitation.",
-                "artisan": "Architectura",
-                "domaine_artisan": "Architecture",
-                "logo":"/logo_example/logo_5.jpg"
-            },
-            {
-                "_id": 4,
-                "client": "Thomas Girault",
-                "secteur": "Sainte Marie",
-                "avis": "Le cabinet d'architecture a su créer un design fonctionnel et esthétique, tout en respectant mon budget. Je ne pouvais pas espérer mieux !",
-                "artisan": "Architectura",
-                "domaine_artisan": "Architecture",
-                "logo":"/logo_example/logo_5.jpg"
-            }
-        ]
     }
 ]

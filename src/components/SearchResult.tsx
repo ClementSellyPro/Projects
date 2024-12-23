@@ -27,7 +27,7 @@ const SearchResult = () => {
 
   return (
     <>
-        <ResultCardFictif  />
+        {/* <ResultCardFictif  /> */}
         {
           // If filterMetier "Autre projet" affiche <AutreProjet />
           filterMetier === "Autre projet" ? <AutreProjet /> :
