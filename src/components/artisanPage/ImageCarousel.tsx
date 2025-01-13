@@ -66,7 +66,7 @@ export default function ImageCarousel({photos} : PhotosType) {
 
   return (
     <div className="container pb-10 border-b">
-      <h2 className='font-semibold mb-5 text-2xl'>Photos <span className="text-sm font-thin">(images généré par AI comme exemple)</span></h2>
+      <h2 className='font-semibold mb-5 text-2xl'>Photos</h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {photos.map((photo: PhotoType , index: number) => (
           <button

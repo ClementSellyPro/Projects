@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='footer-credit font-extralight text-xs pb-7 pt-12'>
-        2024 KALIPRO . <Link href='/cgu'>Confidentialité</Link> . <Link href='/cgu'>CGU</Link> . <Link href={'/mentions'}>Mentions légales</Link> 
+        2025 KALIPRO . <Link href='/cgu'>Confidentialité</Link> . <Link href='/cgu'>CGU</Link> . <Link href={'/mentions'}>Mentions légales</Link> 
       </div>
     </div>
   )

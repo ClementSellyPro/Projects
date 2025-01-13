@@ -1,4 +1,5 @@
-import { Html } from "@react-email/components";
+import { Html, Img } from "@react-email/components";
+import Link from "next/link";
 import * as React from 'react';
 
 interface ContactEmailProps{
@@ -14,17 +15,32 @@ interface ContactEmailProps{
 export default function ContactEmail({nom, prenom, email, commune, phone, message, mailArtisan}:ContactEmailProps){
     return(
         <Html>
-        <div>
-            <h1>Nouveau message depuis le site KALIPRO</h1>
+        <div style={main}>
+            <h1>Vous avez reçu un nouveau message depuis le site KALIPRO.</h1>
+            <br/>
 
-            <p>Nom: {nom}</p>
-            <p>Prénom: {prenom}</p>
-            <p>Email: {email}</p>
-            <p>Mail Artisan: {mailArtisan}</p>
-            <p>Téléphone: {phone}</p>
-            <p>Commune: {commune}</p>
-            <p>Message: {message}</p>
+            <p><span style={bold}>Prénom: </span> {prenom}</p>
+            <p><span style={bold}>Commune: </span> {commune}</p>
+            <p><span style={bold}>Message: </span> {message}</p>
+            <br/>
+
+            <p>Vous pouvez répondre à ce message à  l&apos;adresse suivante: {email}
+            <Link href={`mailto:${email}`}>
+            {email}
+          </Link>
+          </p>
+            <p>Ou contacter la personne directement par téléphone : {phone}</p>
         </div>
         </Html>
     )
 };
+
+const main = {
+    backgroundColor: '#ffffff',
+    fontFamily:
+      '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
+};
+
+const bold = {
+    fontWeight: "bold"
+}
