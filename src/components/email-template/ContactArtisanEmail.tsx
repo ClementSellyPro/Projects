@@ -25,11 +25,15 @@ export default function ContactEmail({nom, prenom, email, commune, phone, messag
             <br/>
 
             <p>Vous pouvez répondre à ce message à  l&apos;adresse suivante: {email}
-            <Link href={`mailto:${email}`}>
-            {email}
-          </Link>
-          </p>
-            <p>Ou contacter la personne directement par téléphone : {phone}</p>
+                <Link href={`mailto:${email}`}>
+                    {email}
+                </Link>
+            </p>
+            <p>Ou contacter la personne directement par téléphone : 
+                <Link href={`tel:${phone}`}>
+                    {phone}
+                </Link>
+            </p>
         </div>
         </Html>
     )
