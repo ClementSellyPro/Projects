@@ -168,7 +168,7 @@
     {
         "_id": 223472,
         "name": "Le Constructeur Moderne",
-        "domaine_artisan": "Maison Individuelle",
+        "domaine_artisan": "Maison individuelle",
         "phone": "0692564438",
         "mail": "service-commercial@lcm.re",
         "location": "Saint Paul",
@@ -229,7 +229,7 @@
     {
         "_id": 223459,
         "name": "Création Alu Réunion",
-        "domaine_artisan": "Menuiserie Aluminium",
+        "domaine_artisan": "Menuiserie aluminium",
         "phone": "0692361937",
         "mail": "contact.car974@gmail.com",
         "location": "Le Tampon",
@@ -358,7 +358,7 @@
         "phone": "0692527735",
         "mail": "eliteclimatisation974@gmail.com",
         "location": "Saint André",
-        "secteur": ["Nord", "Est"],
+        "secteur": ["Nord", "Est", "Sud", "Ouest"],
         "intervention_img": "/secteur-nord-est.jpg",
         "competences": [
             "Spécialiste dans la climatisation",
@@ -419,7 +419,7 @@
     {
         "_id": 223463,
         "name": "Layemard-e",
-        "domaine_artisan": "Maison Individuelle",
+        "domaine_artisan": "Maison individuelle",
         "phone": "0692956520",
         "mail": "mickael@layemard-e.fr",
         "location": "Saint Benoit",
@@ -511,7 +511,7 @@
     {
         "_id": 223466,
         "name": "Soud'Alu' Automatisme",
-        "domaine_artisan": "Portail/automatisme",
+        "domaine_artisan": "Portail/Automatisme",
         "phone": "0262238609",
         "mail": "soudalu.jg@gmail.com",
         "location": "Saint André",
