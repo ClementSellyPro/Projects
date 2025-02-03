@@ -122,7 +122,7 @@
                 "_id": 0,
                 "client": "Jean Bernard M.",
                 "secteur": "Saint André",
-                "avis": "Disponible, intervient rapidement, boulot propre. Intervient meme le weekend. Diagnostic impeccable. Changer ce qui n'aller. Efficace.",
+                "avis": "Disponible, intervient rapidement, boulot propre. Intervient même le weekend. Diagnostic impeccable. Efficace.",
                 "artisan": "Elec 974",
                 "domaine_artisan": "Electricité",
                 "logo":"/photo/223456/logo.jpg"
@@ -131,7 +131,7 @@
                 "_id": 1,
                 "client": "Jean Louis R.",
                 "secteur": "Saint Gilles les hauts",
-                "avis": "Du très bon travail",
+                "avis": "Du très bon travail.",
                 "artisan": "Elec 974",
                 "domaine_artisan": "Electricité",
                 "logo":"/photo/223456/logo.jpg"
@@ -158,7 +158,7 @@
                 "_id": 4,
                 "client": "Cédric V.",
                 "secteur": "Saint Benoit",
-                "avis": "Gérant réactif à l'écoute, et de bon conseils. Travaille de qualité.",
+                "avis": "Gérant réactif à l'écoute, et de bon conseils. Travail de qualité.",
                 "artisan": "Elec 974",
                 "domaine_artisan": "Electricité",
                 "logo":"/photo/223456/logo.jpg"
