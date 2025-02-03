@@ -118,7 +118,7 @@ const ArtisanDetail = ({ params, data }: paramsType) => {
             
             {/* Avis clients */}
             <div className='mt-10'>
-                <h2 className='font-semibold text-2xl mb-5'>Avis clients {dataToDisplay[0]._id === 525252 ? '(vérifiés par facture)' : ''}</h2>
+                <h2 className='font-semibold text-2xl mb-5'>Avis clients vérifiés par facture</h2>
                 
                 <div className='flex md:justify-between justify-center flex-wrap gap-5'>
                     {
