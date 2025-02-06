@@ -110,10 +110,10 @@ const MenuMetier = ({hidden} : Props) => {
       </Link>
       <Link href='/result'>
         <p onClick={(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>) => {metierSelection(event)}} className='group nav-links-metier-item flex items-center justify-between font-normal hover:font-semibold'>
-          Menuiserie Aluminium
+          Menuiserie aluminium
           <Image className='group-hover:scale-125 transition' src='/icon_metier/menuisier.png' alt="menuisier" height={20} width={20} />
         </p> 
-      </Link> 
+      </Link>
       <Link href='/result'>
         <p onClick={(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>) => {metierSelection(event)}} className='group nav-links-metier-item flex items-center justify-between font-normal hover:font-semibold'>
           Peinture
@@ -144,7 +144,7 @@ const MenuMetier = ({hidden} : Props) => {
       </Link> 
       <Link href='/result'>
         <p onClick={(event: React.MouseEvent<HTMLParagraphElement, MouseEvent>) => {metierSelection(event)}} className='group nav-links-metier-item flex items-center justify-between font-normal hover:font-semibold'>
-          Portail/automatisme
+          Portail/Automatisme
           <Image className='group-hover:scale-125 transition' src='/icon_metier/portail.png' alt="portail" height={20} width={20} />
         </p> 
       </Link> 
