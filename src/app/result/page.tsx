@@ -59,12 +59,12 @@ const Page = () => {
                     <option value="Maçonnerie">Maçonnerie</option>
                     <option value="Maison individuelle">Maison individuelle</option>
                     <option value="Maitre d'oeuvre">Maitre d&apos;oeuvre</option>
-                    <option value="Menuiserie">Menuiserie aluminium</option>
+                    <option value="Menuiserie aluminium">Menuiserie aluminium</option>
                     <option value="Peinture">Peinture</option>
                     <option value="Piscine">Piscine</option>
                     <option value="Plaquiste">Plaquiste</option>
                     <option value="Plomberie">Plomberie</option>
-                    <option value="Portail/automatisme">Portail/automatisme</option>
+                    <option value="Portail/Automatisme">Portail/Automatisme</option>
                     <option value="Rénovation">Rénovation</option>
                     <option value="Terrassement">Terrassement</option>
                     <option value="Autre projet">Autre projet</option>
