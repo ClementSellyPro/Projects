@@ -4,7 +4,7 @@ import { useFilterContext } from '@/context/FilterContext'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { metierList } from '@/data/metierList'
+// import { metierList } from '@/data/metierList'
 
 type Props = {
     hidden: boolean
