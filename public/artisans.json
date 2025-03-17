@@ -1,666 +1,262 @@
 [
-    {
-        "_id": 525252,
-        "name": "Architectura (entreprise fictive)",
+  {
+    "_id": 525252,
+    "name": "Architectura (entreprise fictive)",
+    "domaine_artisan": "Architecture",
+    "phone": "0692000000",
+    "mail": "clement.selly@gmail.com",
+    "location": "Saint Denis",
+    "secteur": ["Est", "Nord", "Ouest", "Sud"],
+    "intervention_img": "/secteur-ile.jpg",
+    "disponibilite": true,
+    "temps_disponibilite": 0,
+    "competences": [
+      "Spécialiste dans l'architecture de maison",
+      "Plan de maison",
+      "Design sur mesure"
+    ],
+    "presentation": "Notre cabinet d'architecture conçoit des projets innovants et sur mesure, alliant esthétisme, fonctionnalité et respect de l'environnement. Nous accompagnons nos clients de la conception à la réalisation, pour donner vie à leurs espaces.",
+    "qualifications_assurances": [
+      "Certification AAA",
+      "Assurance RCP et décennale"
+    ],
+    "photo": [
+      "/photo_example/photography_1.jpg",
+      "/photo_example/photography_2.jpg",
+      "/photo_example/photography_3.jpg",
+      "/photo_example/photography_4.jpg",
+      "/photo_example/photography_5.jpg",
+      "/photo_example/photography_6.jpg"
+    ],
+    "logo": "/logo_example/logo_5.jpg",
+    "note": "4,8",
+    "avis": [
+      {
+        "_id": 0,
+        "client": "Nicolas Lefevre",
+        "secteur": "Saint Denis",
+        "avis": "Un travail remarquable du début à la fin, le cabinet a parfaitement compris mes attentes et a su les transformer en un projet architectural unique.",
+        "artisan": "Architectura",
         "domaine_artisan": "Architecture",
-        "phone": "0692000000",
-        "mail": "clement.selly@gmail.com",
-        "location": "Saint Denis",
-        "secteur": ["Est", "Nord", "Ouest", "Sud"],
-        "intervention_img": "/secteur-ile.jpg",
-        "disponibilite": true,
-        "temps_disponibilite": 0,
-        "competences": [
-            "Spécialiste dans l'architecture de maison",
-            "Plan de maison",
-            "Design sur mesure"
-        ],
-        "presentation": "Notre cabinet d'architecture conçoit des projets innovants et sur mesure, alliant esthétisme, fonctionnalité et respect de l'environnement. Nous accompagnons nos clients de la conception à la réalisation, pour donner vie à leurs espaces.",
-        "qualifications_assurances": [
-            "Certification AAA",
-            "Assurance RCP et décennale"
-        ],
-        "photo": [
-            "/photo_example/photography_1.jpg", 
-            "/photo_example/photography_2.jpg", 
-            "/photo_example/photography_3.jpg", 
-            "/photo_example/photography_4.jpg", 
-            "/photo_example/photography_5.jpg", 
-            "/photo_example/photography_6.jpg"
-        ],
-        "logo":"/logo_example/logo_5.jpg",
-        "note": "4,8",
-        "avis": [
-            {
-                "_id": 0,
-                "client": "Nicolas Lefevre",
-                "secteur": "Saint Denis",
-                "avis": "Un travail remarquable du début à la fin, le cabinet a parfaitement compris mes attentes et a su les transformer en un projet architectural unique.",
-                "artisan": "Architectura",
-                "domaine_artisan": "Architecture",
-                "logo":"/logo_example/logo_5.jpg"
-            },
-            {
-                "_id": 1,
-                "client": "Jean Dupuis",
-                "secteur": "Sainte Marie",
-                "avis": "Excellente collaboration, les architectes ont su allier créativité et respect des contraintes techniques. Le résultat est tout simplement magnifique.",
-                "artisan": "Architectura",
-                "domaine_artisan": "Architecture",
-                "logo":"/logo_example/logo_5.jpg"
-            },
-            {
-                "_id": 2,
-                "client": "Claire Martin",
-                "secteur": "Saint Suzanne",
-                "avis": "Je suis très satisfait du projet réalisé, le cabinet a été à l'écoute tout au long du processus et le résultat final est à la hauteur de mes espérances.",
-                "artisan": "Architectura",
-                "domaine_artisan": "Architecture",
-                "logo":"/logo_example/logo_5.jpg"
-            },
-            {
-                "_id": 3,
-                "client": "Sophie Bernard",
-                "secteur": "Saint Denis",
-                "avis": "Une équipe professionnelle et réactive. Leurs idées innovantes ont complètement transformé mon espace, je recommande sans hésitation.",
-                "artisan": "Architectura",
-                "domaine_artisan": "Architecture",
-                "logo":"/logo_example/logo_5.jpg"
-            },
-            {
-                "_id": 4,
-                "client": "Thomas Girault",
-                "secteur": "Sainte Marie",
-                "avis": "Le cabinet d'architecture a su créer un design fonctionnel et esthétique, tout en respectant mon budget. Je ne pouvais pas espérer mieux !",
-                "artisan": "Architectura",
-                "domaine_artisan": "Architecture",
-                "logo":"/logo_example/logo_5.jpg"
-            },
-            {
-                "_id": 5,
-                "client": "Martine",
-                "secteur": "Sainte Pierre",
-                "avis": "Le cabinet d'architecture Architectura a su créer un design fonctionnel et esthétique, tout en respectant mon budget. Je ne pouvais pas espérer mieux de leur part !",
-                "artisan": "Architectura",
-                "domaine_artisan": "Architecture",
-                "logo":"/logo_example/logo_5.jpg"
-            }
-        ]
-    },
-    
-    {
-        "_id": 223456,
-        "name": "Elec 974",
+        "logo": "/logo_example/logo_5.jpg"
+      },
+      {
+        "_id": 1,
+        "client": "Jean Dupuis",
+        "secteur": "Sainte Marie",
+        "avis": "Excellente collaboration, les architectes ont su allier créativité et respect des contraintes techniques. Le résultat est tout simplement magnifique.",
+        "artisan": "Architectura",
+        "domaine_artisan": "Architecture",
+        "logo": "/logo_example/logo_5.jpg"
+      },
+      {
+        "_id": 2,
+        "client": "Claire Martin",
+        "secteur": "Saint Suzanne",
+        "avis": "Je suis très satisfait du projet réalisé, le cabinet a été à l'écoute tout au long du processus et le résultat final est à la hauteur de mes espérances.",
+        "artisan": "Architectura",
+        "domaine_artisan": "Architecture",
+        "logo": "/logo_example/logo_5.jpg"
+      },
+      {
+        "_id": 3,
+        "client": "Sophie Bernard",
+        "secteur": "Saint Denis",
+        "avis": "Une équipe professionnelle et réactive. Leurs idées innovantes ont complètement transformé mon espace, je recommande sans hésitation.",
+        "artisan": "Architectura",
+        "domaine_artisan": "Architecture",
+        "logo": "/logo_example/logo_5.jpg"
+      },
+      {
+        "_id": 4,
+        "client": "Thomas Girault",
+        "secteur": "Sainte Marie",
+        "avis": "Le cabinet d'architecture a su créer un design fonctionnel et esthétique, tout en respectant mon budget. Je ne pouvais pas espérer mieux !",
+        "artisan": "Architectura",
+        "domaine_artisan": "Architecture",
+        "logo": "/logo_example/logo_5.jpg"
+      },
+      {
+        "_id": 5,
+        "client": "Martine",
+        "secteur": "Sainte Pierre",
+        "avis": "Le cabinet d'architecture Architectura a su créer un design fonctionnel et esthétique, tout en respectant mon budget. Je ne pouvais pas espérer mieux de leur part !",
+        "artisan": "Architectura",
+        "domaine_artisan": "Architecture",
+        "logo": "/logo_example/logo_5.jpg"
+      }
+    ]
+  },
+
+  {
+    "_id": 223456,
+    "name": "Elec 974",
+    "domaine_artisan": "Electricité",
+    "phone": "0693506967",
+    "mail": "pouniandy.yannick@gmail.com",
+    "location": "Saint André",
+    "secteur": ["Nord", "Est"],
+    "intervention_img": "/secteur-nord-est.jpg",
+    "competences": [
+      "Spécialiste electricité: Neuf et rénovation",
+      "Réalisation de projet complet (maison, appartement)",
+      "Installation et remplacement de tableau électrique",
+      "Dépannage, câblage, prise, interrupteur, luminaire"
+    ],
+    "presentation": "La société Elec974 met son expertise au service de vos besoins en électricité. Spécialisée dans l’installation, la rénovation, et le dépannage électrique, elle intervient avec professionnalisme pour garantir votre sécurité et assurer le bon fonctionnement de vos équipements électriques. Que ce soit pour des installations domestiques, commerciales ou industrielles, Elec974 propose des solutions sur-mesure, conformes aux normes en vigueur. Réactive et à l’écoute de vos attentes, l’équipe veille à fournir un service de qualité avec des délais maîtrisés et des tarifs compétitifs. Faites confiance à Elec974, une entreprise passionnée par son métier, pour tous vos projets électriques.",
+    "qualifications_assurances": [
+      "Assurance décennale et RC Pro en attente de vérification"
+    ],
+    "logo": "/photo/223456/logo.jpg",
+    "photo": [
+      "/photo/223456/photography_1.jpg",
+      "/photo/223456/photography_2.jpg",
+      "/photo/223456/photography_3.jpg",
+      "/photo/223456/photography_4.jpg",
+      "/photo/223456/photography_5.jpg",
+      "/photo/223456/photography_6.jpg"
+    ],
+    "note": "4.9",
+    "avis": [
+      {
+        "_id": 0,
+        "client": "Jean Bernard M.",
+        "secteur": "Saint André",
+        "avis": "Disponible, intervient rapidement, boulot propre. Intervient même le weekend. Diagnostic impeccable. Efficace.",
+        "artisan": "Elec 974",
         "domaine_artisan": "Electricité",
-        "phone": "0693506967",
-        "mail": "pouniandy.yannick@gmail.com",
-        "location": "Saint André",
-        "secteur": ["Nord", "Est"],
-        "intervention_img": "/secteur-nord-est.jpg",
-        "competences": [
-            "Spécialiste electricité: Neuf et rénovation",
-            "Réalisation de projet complet (maison, appartement)",
-            "Installation et remplacement de tableau électrique",
-            "Dépannage, câblage, prise, interrupteur, luminaire"
-        ],
-        "presentation": "La société Elec974 met son expertise au service de vos besoins en électricité. Spécialisée dans l’installation, la rénovation, et le dépannage électrique, elle intervient avec professionnalisme pour garantir votre sécurité et assurer le bon fonctionnement de vos équipements électriques. Que ce soit pour des installations domestiques, commerciales ou industrielles, Elec974 propose des solutions sur-mesure, conformes aux normes en vigueur. Réactive et à l’écoute de vos attentes, l’équipe veille à fournir un service de qualité avec des délais maîtrisés et des tarifs compétitifs. Faites confiance à Elec974, une entreprise passionnée par son métier, pour tous vos projets électriques.",
-        "qualifications_assurances": [
-            "Assurance décennale et RC Pro en attente de vérification"
-        ],
-        "logo": "/photo/223456/logo.jpg",
-        "photo": [
-            "/photo/223456/photography_1.jpg", 
-            "/photo/223456/photography_2.jpg", 
-            "/photo/223456/photography_3.jpg", 
-            "/photo/223456/photography_4.jpg", 
-            "/photo/223456/photography_5.jpg", 
-            "/photo/223456/photography_6.jpg"
-        ],
-        "note": "4.9",
-        "avis": [
-            {
-                "_id": 0,
-                "client": "Jean Bernard M.",
-                "secteur": "Saint André",
-                "avis": "Disponible, intervient rapidement, boulot propre. Intervient même le weekend. Diagnostic impeccable. Efficace.",
-                "artisan": "Elec 974",
-                "domaine_artisan": "Electricité",
-                "logo":"/photo/223456/logo.jpg"
-            },
-            {
-                "_id": 1,
-                "client": "Jean Louis R.",
-                "secteur": "Saint Gilles les hauts",
-                "avis": "Du très bon travail.",
-                "artisan": "Elec 974",
-                "domaine_artisan": "Electricité",
-                "logo":"/photo/223456/logo.jpg"
-            },
-            {
-                "_id": 2,
-                "client": "Kévin N.",
-                "secteur": "Saint Leu",
-                "avis": "Qu'il continue comme ça.",
-                "artisan": "Elec 974",
-                "domaine_artisan": "Electricité",
-                "logo":"/photo/223456/logo.jpg"
-            },
-            {
-                "_id": 3,
-                "client": "Sébastien D.",
-                "secteur": "Saint Denis",
-                "avis": "Disponible, efficace. Quelqu'un de consciencieux, je referrai appel à lui.",
-                "artisan": "Elec 974",
-                "domaine_artisan": "Electricité",
-                "logo":"/photo/223456/logo.jpg"
-            },
-            {
-                "_id": 4,
-                "client": "Cédric V.",
-                "secteur": "Saint Benoit",
-                "avis": "Gérant réactif à l'écoute, et de bon conseils. Travail de qualité.",
-                "artisan": "Elec 974",
-                "domaine_artisan": "Electricité",
-                "logo":"/photo/223456/logo.jpg"
-            }
-        ]
-    },
-    {
-        "_id": 223472,
-        "name": "Le Constructeur Moderne",
-        "domaine_artisan": "Maison individuelle",
-        "phone": "0692564438",
-        "mail": "service-commercial@lcm.re",
-        "location": "Saint Paul",
-        "secteur": ["Sud", "Ouest"],
-        "intervention_img": "/secteur-sud-ouest.jpg",
-        "competences": [
-            "Construction de maison",
-            "Construction de maison individuelle clé en main",
-            "Conseil et accompagnement jusqu'à reception de chantier"
-        ],
-        "presentation": "Le Constructeur moderne, constructeur de maisons à La Réunion 974, c'est avant tout, un style, des propositions et une écoute de vos envies.  Depuis sa création en 2019, LCM s'est renforcé malgré les aléas de la crise sanitaire et économique. Fort de l'expérience de ses dirigeants qui comptent à leur actif 20 ans de métier, LCM est une entreprise solide dont la seule volonté est de commencer et de terminer chaque projet. L'ensemble de nos clients apprécient la qualité des chantiers (entretiens, suivis, échanges). Par exemple, LCM organise avant chaque début de chantier, une rencontre entre le client et l'ensemble des techniciens, ouvriers, prestataires extérieurs afin de travailler tous ensemble dans des conditions propices à la réussite du chantier. LCM est aussi votre accompagnateur concernant le suivi de l'avancement des travaux sur votre chantier. Il n'hésite pas à vous conseiller et fait part de son expertise à chaque étape de la construction. Présent sur le marché de la construction individuelle à La Réunion, LCM vous accueille sur rendez-vous dans ses locaux situés à Saint-Paul ou à Saint-Benoît. Construire une maison est un véritable challenge. Chaque étape du projet a son importance et notre mission est de vous la faire vivre le plus sereinement possible.",
-        "qualifications_assurances": [
-            "Assurance décennale et RC Pro en attente de vérification"
-        ],
-        "logo": "/photo/223472/logo.jpg",
-        "photo": [
-            "/photo/223472/photography_1.jpg", 
-            "/photo/223472/photography_2.jpg", 
-            "/photo/223472/photography_3.jpg", 
-            "/photo/223472/photography_4.jpg", 
-            "/photo/223472/photography_5.jpg", 
-            "/photo/223472/photography_6.jpg"
-        ],
-        "note": "??",
-        "avis": []
-    },
-    {
-        "_id": 223457,
-        "name": "Intérieurs Privés - La Réunion",
-        "domaine_artisan": "Cuisine/Dressing",
-        "phone": "0693050501",
-        "mail": "saintandre@interieurs-prives.com",
-        "location": "Saint André",
-        "secteur": ["Nord", "Est"],
-        "intervention_img": "/secteur-nord-est.jpg",
-        "competences": [
-            "Agencement intérieur sur mesure",
-            "Cuisnie de qualité sur-mesure: neuf et rénovation",
-            "Etude personnalisée",
-            "Conception, projection 3D, coordination et suivi chantier"
-        ],
-        "presentation": "La société Intérieur Privé est spécialisée dans l'aménagement intérieur, avec une expertise particulière dans la conception et l'installation de cuisines sur-mesure. Chaque projet est pensé pour allier esthétisme, fonctionnalité et ergonomie, en s’adaptant aux envies et aux besoins spécifiques de chaque client. Avec un souci du détail et un savoir-faire éprouvé, Intérieur Privé vous accompagne à chaque étape, du choix des matériaux et équipements jusqu’à la réalisation finale. L’objectif : transformer vos espaces de vie en lieux uniques, chaleureux et parfaitement adaptés à votre style de vie. Faites confiance à Intérieur Privé pour donner vie à vos projets d’aménagement intérieur et sublimer votre cuisine avec des solutions innovantes et élégantes.",
-        "qualifications_assurances": [
-            "Assurance décennale et RC Pro en attente de vérification"
-        ],
-        "logo": "/photo/223457/logo.jpg",
-        "photo": [
-            "/photo/223457/photography_1.jpg", 
-            "/photo/223457/photography_2.jpg", 
-            "/photo/223457/photography_3.jpg", 
-            "/photo/223457/photography_4.jpg", 
-            "/photo/223457/photography_5.jpg", 
-            "/photo/223457/photography_6.jpg"
-        ],
-        "note": "??",
-        "avis": []
-    },
-    {
-        "_id": 223459,
-        "name": "Création Alu Réunion",
-        "domaine_artisan": "Menuiserie aluminium",
-        "phone": "0692361937",
-        "mail": "contact.car974@gmail.com",
-        "location": "Le Tampon",
-        "secteur": ["Sud", "Ouest"],
-        "intervention_img": "/secteur-sud-ouest.jpg",
-        "competences": [
-            "Menuiserie aluminium d'extérieure",
-            "Installation et dépannage",
-            "Fenêtre, porte d'entrée, baie vitrée, porte de service",
-            "Portail, portail de garage et clôture"
-        ],
-        "presentation": "La société Création Alu Réunion est experte dans la fabrication et la pose de menuiseries en aluminium. Forte de son expertise, elle propose une large gamme de produits sur-mesure : fenêtres, baies vitrées, portes, vérandas, garde-corps et autres structures en aluminium, alliant design moderne et robustesse. L’équipe de Création Alu Réunion s’engage à offrir des solutions adaptées à vos besoins, en mettant l’accent sur la qualité des matériaux, la précision des finitions, et le respect des délais. Que ce soit pour des projets résidentiels, commerciaux ou industriels, la société garantit des réalisations esthétiques, fonctionnelles et durables. Faites confiance à Création Alu Réunion pour sublimer vos espaces avec des menuiseries aluminium qui répondent à vos attentes en termes de style et de performance.",
-        "qualifications_assurances": [
-            "Assurance décennale et RC Pro en attente de vérification"
-        ],
-        "logo": "/photo/223459/logo.jpg",
-        "photo": [
-            "/photo/223459/photography_1.jpg", 
-            "/photo/223459/photography_2.jpg", 
-            "/photo/223459/photography_3.jpg", 
-            "/photo/223459/photography_4.jpg", 
-            "/photo/223459/photography_5.jpg", 
-            "/photo/223459/photography_6.jpg"
-        ],
-        "note": "??",
-        "avis": []
-    },
-    {
-        "_id": 223460,
-        "name": "Design Piscine OI",
-        "domaine_artisan": "Piscine",
-        "phone": "0262206297",
-        "mail": "contact@designpiscinesoi.fr",
-        "location": "Saint Denis",
-        "secteur": ["Nord", "Est"],
-        "intervention_img": "/secteur-nord-est.jpg",
-        "competences": [
-            "Spécialiste de la piscine",
-            "Conception personnalisée de piscines",
-            "Intallation de systèmes de filtration et de chauffage écologiques",
-            "Construction de piscine sur mesure et rénovation de piscines existantes",
-            "Diagnostic et réparation rapide des équipements"
-        ],
-        "presentation": "La société Design Piscine OI est experte dans la conception, la construction et la rénovation de piscines en béton armé. Grâce à son savoir-faire et son expérience, elle réalise des piscines sur-mesure, alliant solidité, esthétisme et durabilité. Que ce soit pour créer une piscine unique adaptée à votre espace ou pour rénover un bassin existant, Design Piscine OI propose des solutions personnalisées, respectant les normes les plus exigeantes. Son équipe met un point d’honneur à vous accompagner à chaque étape, de l’étude de votre projet jusqu’à la livraison clé en main. Faites confiance à Design Piscine OI pour concrétiser vos rêves et transformer vos extérieurs avec des piscines en béton armé conçues pour durer et embellir votre cadre de vie.",
-        "qualifications_assurances": [
-            "Assurance décennale et RC Pro en attente de vérification"
-        ],
-        "logo": "/photo/223460/logo.jpg",
-        "photo": [
-            "/photo/223460/photography_1.jpg", 
-            "/photo/223460/photography_2.jpg", 
-            "/photo/223460/photography_3.jpg", 
-            "/photo/223460/photography_4.jpg", 
-            "/photo/223460/photography_5.jpg", 
-            "/photo/223460/photography_6.jpg"
-        ],
-        "note": "??",
-        "avis": []
-    },
-    {
-        "_id": 223461,
-        "name": "Tropitekture",
-        "domaine_artisan": "Dessin",
-        "phone": "0693511932",
-        "mail": "fabien.seychelles@tropitekture.re",
-        "location": "Etang-Salé",
-        "secteur": ["Sud", "Ouest"],
-        "intervention_img": "/secteur-sud-ouest.jpg",
-        "competences": [
-            "Spécialiste en dessin du bâtiment",
-            "Dépôt et suivi des demandes de permis de construire",
-            "Plan en 3D réaliste",
-            "Conforme aux PLU local"
-        ],
-        "presentation": "Expert en conception bioclimatique à la Réunion, notre mission est de vous aider à façonner votre futur espace de vie durable selon vos besoins et vos habitudes. Que vous envisagiez une construction neuve ou une rénovation, Tropitekture vous guide à chaque étape de votre projet, allant de la conception des plans à l’obtention du permis de construire. Notre approche bioclimatique vise à maximiser l’efficacité énergétique de votre habitat tout en assurant un confort optimal. Nous prenons en compte les spécificités de votre site, comme l’orientation, le climat et la végétation environnante, pour concevoir un habitat qui tire le meilleur parti des ressources naturelles disponibles.",
-        "qualifications_assurances": [
-            "Assurance décennale et RC Pro en attente de vérification"
-        ],
-        "logo": "/photo/223461/logo.jpg",
-        "photo": [
-            "/photo/223461/photography_1.jpg", 
-            "/photo/223461/photography_2.jpg", 
-            "/photo/223461/photography_3.jpg", 
-            "/photo/223461/photography_4.jpg", 
-            "/photo/223461/photography_5.jpg", 
-            "/photo/223461/photography_6.jpg"
-        ],
-        "note": "??",
-        "avis": []
-    },
-    {
-        "_id": 223458,
-        "name": "Deslandes Création Maçonnerie",
-        "domaine_artisan": "Maçonnerie",
-        "phone": "0692644977",
-        "mail": "dcm.97430@gmail.com",
-        "location": "Le Tampon",
-        "secteur": ["Sud", "Ouest"],
-        "intervention_img": "/secteur-sud-ouest.jpg",
-        "competences": [
-            "Maçonnerie générale, rénovation",
-            "Extension et construction de maison individuelle",
-            "Rénovation d'habitation, aménagement extérieur",
-            "Piscine, clôture, muret, maçonnerie pour portail"
-        ],
-        "presentation": "La société Deslandes Création Maçonnerie est spécialisée dans l'aménagement extérieur et tous les travaux de maçonnerie. Forte d’un savoir-faire reconnu, elle propose des prestations sur-mesure pour valoriser vos espaces : création de terrasses, allées, maison, piscines, et bien plus encore. L’équipe de Deslandes Création Maçonnerie met un point d’honneur à combiner esthétisme, robustesse et durabilité dans chacune de ses réalisations, en utilisant des matériaux de qualité et en respectant les normes en vigueur. Faites confiance à Deslandes Création Maçonnerie pour donner vie à vos projets d’aménagement extérieur, en transformant vos idées en espaces harmonieux et fonctionnels.",
-        "qualifications_assurances": [
-            "Assurance décennale et RC Pro en attente de vérification"
-        ],
-        "logo": "/photo/223458/logo.jpg",
-        "photo": [
-            "/photo/223458/photography_1.jpg", 
-            "/photo/223458/photography_2.jpg", 
-            "/photo/223458/photography_3.jpg", 
-            "/photo/223458/photography_4.jpg", 
-            "/photo/223458/photography_5.jpg", 
-            "/photo/223458/photography_6.jpg"
-        ],
-        "note": "??",
-        "avis": []
-    },
-    {
-        "_id": 223462,
-        "name": "Elite Climatisation",
-        "domaine_artisan": "Climatisation",
-        "phone": "0692527735",
-        "mail": "eliteclimatisation974@gmail.com",
-        "location": "Saint André",
-        "secteur": ["Nord", "Est", "Sud", "Ouest"],
-        "intervention_img": "/secteur-nord-est.jpg",
-        "competences": [
-            "Spécialiste dans la climatisation",
-            "Installation climatiseur",
-            "Réparation et nettoyage de clim",
-            "Climatisation murale, console, gainable, cassette",
-            "Mono-split, multi-splits"
-        ],
-        "presentation": "La société Elite Climatisation est spécialisée dans l’installation et l’entretien de climatiseurs pour les particuliers et les professionnels. Grâce à son expertise, elle propose des solutions adaptées à vos besoins, garantissant un confort thermique optimal tout au long de l’année. Qu’il s’agisse d’installer un système de climatisation performant ou d’assurer son entretien régulier pour maximiser sa durée de vie, l’équipe d’Elite Climatisation met un point d’honneur à offrir un service de qualité, rapide et fiable. Faites confiance à Elite Climatisation pour bénéficier d’un air frais et sain, avec des prestations sur-mesure qui allient efficacité énergétique et respect de l’environnement.",
-        "qualifications_assurances": [
-            "Assurance décennale et RC Pro en attente de vérification"
-        ],
-        "logo": "/photo/223462/logo.jpg",
-        "photo": [
-            "/photo/223462/photography_1.jpg", 
-            "/photo/223462/photography_2.jpg", 
-            "/photo/223462/photography_3.jpg", 
-            "/photo/223462/photography_4.jpg", 
-            "/photo/223462/photography_5.jpg", 
-            "/photo/223462/photography_6.jpg"
-        ],
-        "note": "??",
-        "avis": []
-    },
-    {
-        "_id": 223469,
-        "name": "Shaya Conception Coordination",
-        "domaine_artisan": "Maitre Oeuvre",
-        "phone": "0692791560",
-        "mail": "shayaconception@gmail.com",
-        "location": "Saint André",
-        "secteur": ["Nord", "Est"],
-        "intervention_img": "/secteur-nord-est.jpg",
-        "competences": [
-            "Maitrise d'oeuvre",
-            "Mission partielle ou complète",
-            "Devis, appel d'offre artisans, suivi de chantier",
-            "Etude et conception",
-            "Relevé et plan 2D/3D",
-            "Permis de construire et dossier administratif"
-        ],
-        "presentation": "Shaya Conception & Coordination est votre partenaire idéal pour coordonner l’ensemble des corps de métier intervenant sur votre chantier de construction. Grâce à une organisation rigoureuse et une communication efficace, Shaya Conception & Coordination garantit le bon déroulement de votre projet, dans le respect des délais et du budget prévus. Qu’il s’agisse de sélectionner les artisans les plus compétents ou de gérer les éventuels imprévus, l’équipe de Shaya Conception & Coordination met tout en œuvre pour vous offrir une construction sans stress.",
-        "qualifications_assurances": [
-            "Assurance décennale et RC Pro en attente de vérification"
-        ],
-        "logo": "/photo/223469/logo.jpg",
-        "photo": [
-            "/photo/223469/photography_1.jpg", 
-            "/photo/223469/photography_2.jpg", 
-            "/photo/223469/photography_3.jpg", 
-            "/photo/223469/photography_4.jpg", 
-            "/photo/223469/photography_5.jpg", 
-            "/photo/223469/photography_6.jpg"
-        ],
-        "note": "??",
-        "avis": []
-    },
-    {
-        "_id": 223463,
-        "name": "Layemard-e",
-        "domaine_artisan": "Maison individuelle",
-        "phone": "0692956520",
-        "mail": "mickael@layemard-e.fr",
-        "location": "Saint Benoit",
-        "secteur": ["Nord", "Est"],
-        "intervention_img": "/secteur-nord-est.jpg",
-        "competences": [
-            "Projet clé en main",
-            "Construction de maison individuelle clé en main",
-            "Conseil et accompagnement jusqu'à la reception du chantier"
-        ],
-        "presentation": "Avec plus de 20 ans d’expérience et plus de 10 ans d'activité au sein de Layemard-e, nos clients sont au centre de nos préoccupations et nous nous y engageons quotidiennement. En effet, avant chaque début de chantier, nous organisons une rencontre entre le client et l'ensemble de l’équipe afin de discuter et de travailler ensemble dans des conditions propices à la réussite du chantier. Sachez que l'ensemble de nos clients apprécient la qualité de nos chantiers et des suivis. Layemard-e, constructeur de maisons de vos rêves sur l’île La Réunion, vous propose un service au meilleur rapport qualité-prix.",
-        "qualifications_assurances": [
-            "Assurance décennale et RC Pro en attente de vérification"
-        ],
-        "logo": "/photo/223463/logo.jpg",
-        "photo": [
-            "/photo/223463/photography_1.jpg", 
-            "/photo/223463/photography_2.jpg", 
-            "/photo/223463/photography_3.jpg", 
-            "/photo/223463/photography_4.jpg", 
-            "/photo/223463/photography_5.jpg", 
-            "/photo/223463/photography_6.jpg"
-        ],
-        "note": "??",
-        "avis": []
-    },
-    {
-        "_id": 223464,
-        "name": "CGBO Maillot Alexandre",
-        "domaine_artisan": "Maçonnerie",
-        "phone": "0692886253",
-        "mail": "",
-        "location": "Saint Leu",
-        "secteur": ["Sud", "Ouest"],
-        "intervention_img": "/secteur-sud-ouest.jpg",
-        "competences": [
-            "Spécialiste dans la maçonnerie",
-            "Construction maison, terrasse en béton",
-            "Mur de soutènement"
-        ],
-        "presentation": "La société CGBO Maillot Alexandre est spécialisée dans la maçonnerie et le gros œuvre en bâtiment. Forte de son expertise, elle intervient pour tous types de projets, qu’il s’agisse de constructions neuves, de rénovations ou d’extensions. Avec un savoir-faire solide et une maîtrise des techniques de construction, CGBO Maillot Alexandre assure des réalisations robustes et conformes aux normes en vigueur, garantissant la pérennité de vos ouvrages. L’entreprise met un point d’honneur à respecter vos attentes en termes de qualité, de délais, et de budget. Faites confiance à CGBO Maillot Alexandre pour concrétiser vos projets avec professionnalisme et rigueur, en apportant des solutions adaptées à vos besoins.",
-        "qualifications_assurances": [
-            "Assurance décennale et RC Pro en attente de vérification"
-        ],
-        "logo": "/photo/223464/logo.jpg",
-        "photo": [
-            "/photo/223464/photography_1.jpg", 
-            "/photo/223464/photography_2.jpg", 
-            "/photo/223464/photography_3.jpg", 
-            "/photo/223464/photography_4.jpg", 
-            "/photo/223464/photography_5.jpg", 
-            "/photo/223464/photography_6.jpg"
-        ],
-        "note": "??",
-        "avis": []
-    },
-    {
-        "_id": 223465,
-        "name": "Rob Renov",
-        "domaine_artisan": "Rénovation",
-        "phone": "0692862135",
-        "mail": "rob.renov@orange.fr",
-        "location": "Salazie",
-        "secteur": ["Nord", "Est"],
-        "intervention_img": "/secteur-nord-est.jpg",
-        "competences": [
-            "Rénovation complète",
-            "Démolition, évacuation",
-            "Cloisonnement, électricité, plomberie, carrelage",
-            "Appartement et maison",
-            "Salle de bain clé en main"
-        ],
-        "presentation": "Avec notre designers d’intérieur, Rob Renov peut vous fournir la solution exacte que vous recherchez dans une maison, un bureau ou espace quotidien. Des petits travaux jusqu'à des réalisations extrêmes, nous pouvons rendre votre environnement parfait. Rob Renov à l’expérience dont vous avez besoin dans le domaine de la peinture, l'étanchéité, maçonnerie, carrelage, plomberie, et de l'électricité. Imaginez, pensez et nous réalisons votre rêve. La société ROB RENOV est gérée par Monsieur ROBERT Cyril.",
-        "qualifications_assurances": [
-            "Assurance décennale et RC Pro en attente de vérification"
-        ],
-        "logo": "/photo/223465/logo.jpg",
-        "photo": [
-            "/photo/223465/photography_1.jpg", 
-            "/photo/223465/photography_2.jpg", 
-            "/photo/223465/photography_3.jpg", 
-            "/photo/223465/photography_4.jpg", 
-            "/photo/223465/photography_5.jpg", 
-            "/photo/223465/photography_6.jpg"
-        ],
-        "note": "??",
-        "avis": []
-    },
-    {
-        "_id": 223466,
-        "name": "Soud'Alu' Automatisme",
-        "domaine_artisan": "Portail/Automatisme",
-        "phone": "0262238609",
-        "mail": "soudalu.jg@gmail.com",
-        "location": "Saint André",
-        "secteur": ["Nord", "Est"],
-        "intervention_img": "/secteur-nord-est.jpg",
-        "competences": [
-            "Spécialiste dans l'installation de portail",
-            "Installation de portail automatique",
-            "Réparation ou remplacement de moteur"
-        ],
-        "presentation": "La société Soud’Alu fût créée en 2008 par M. GRONDIN. La société dispose d’un atelier de fabrication des portails situé à Saint-André. Tous les produits sortant de nos ateliers sont réalisés par du personnel qualifié, ils sont traités par métallisation des soudures ou galvanisés selon la demande du client pour les portails en acier/alu puis thermolaquage pour la finition. Soud’Alu est un installateur agréé GENIUS et FAAC pour les automatismes de portails. Coulissants ou battants à usage particulier et professionnel. La gérance actuelle est assurée par M. Julien GRONDIN.",
-        "qualifications_assurances": [
-            "Assurance décennale et RC Pro en attente de vérification"
-        ],
-        "logo": "/photo/223466/logo.jpg",
-        "photo": [
-            "/photo/223466/photography_1.jpg", 
-            "/photo/223466/photography_2.jpg", 
-            "/photo/223466/photography_3.jpg", 
-            "/photo/223466/photography_4.jpg", 
-            "/photo/223466/photography_5.jpg", 
-            "/photo/223466/photography_6.jpg"
-        ],
-        "note": "??",
-        "avis": []
-    },
-    {
-        "_id": 223467,
-        "name": "Protège-toit",
-        "domaine_artisan": "Charpente/Couverture",
-        "phone": "0262185403",
-        "mail": "protegetoit974@gmail.com",
-        "location": "Saint André",
-        "secteur": ["Nord", "Est"],
-        "intervention_img": "/secteur-nord-est.jpg",
-        "competences": [
-            "Spécialiste de la toiture",
-            "Conception et montage de charpente et couverture métallique",
-            "Réparation et rénovation de toiture",
-            "Isolation thermique et étanchéité des toits"
-        ],
-        "presentation": "Nous sommes spécialisés dans la construction et rénovation des toitures et l’étanchéité liquide, offrant des solutions efficaces pour garantir la protection et la durabilité de vos bâtiments. L’inspection minutieuse, la réparation et le remplacement des matériaux endommagés sont primordiales. Notre équipe de professionnels dévoués et expérimentés s’engage à fournir des solutions innovantes et durables, assurant ainsi la réussite de chaque projet entreprise. La Société Protège-toit a été créée par M. Johnny.",
-        "qualifications_assurances": [
-            "Assurance décennale et RC Pro en attente de vérification"
-        ],
-        "logo": "/photo/223467/logo.jpg",
-        "photo": [
-            "/photo/223467/photography_1.jpg", 
-            "/photo/223467/photography_2.jpg", 
-            "/photo/223467/photography_3.jpg", 
-            "/photo/223467/photography_4.jpg", 
-            "/photo/223467/photography_5.jpg", 
-            "/photo/223467/photography_6.jpg"
-        ],
-        "note": "??",
-        "avis": []
-    },
-    {
-        "_id": 223468,
-        "name": "Thomas Carrelage",
-        "domaine_artisan": "Carrelage",
-        "phone": "0693138637",
-        "mail": "thomas.carrelage974@gmail.com",
-        "location": "Salazie",
-        "secteur": ["Nord", "Est"],
-        "intervention_img": "/secteur-nord-est.jpg",
-        "competences": [
-            "Spécialiste dans la pose de carrelage",
-            "Carrelage intérieur et extérieur, rénovation et neuf",
-            "Tout type de carrelage",
-            "Crédence de cuisine, pierre naturelle, chape"
-        ],
-        "presentation": "L’entreprise Thomas Carrelage est experte dans la pose de carrelage, aussi bien en intérieur qu’en extérieur, pour des projets de construction neuve ou de rénovation. Grâce à son savoir-faire, elle transforme vos espaces avec des finitions soignées et des matériaux de qualité. Qu’il s’agisse de créer un sol élégant pour votre intérieur, d’aménager une terrasse ou une plage de piscine, Thomas Carrelage propose des solutions sur-mesure, adaptées à vos goûts et à vos besoins. L’entreprise s’engage à fournir un travail précis et durable, respectant vos attentes et les délais impartis. Faites confiance à Thomas Carrelage pour sublimer vos espaces avec un carrelage impeccable, alliant esthétisme et robustesse.",
-        "qualifications_assurances": [
-            "Assurance décennale et RC Pro en attente de vérification"
-        ],
-        "logo": "/photo/223468/logo.jpg",
-        "photo": [
-            "/photo/223468/photography_1.jpg", 
-            "/photo/223468/photography_2.jpg", 
-            "/photo/223468/photography_3.jpg", 
-            "/photo/223468/photography_4.jpg", 
-            "/photo/223468/photography_5.jpg", 
-            "/photo/223468/photography_6.jpg"
-        ],
-        "note": "??",
-        "avis": []
-    },
-    {
-        "_id": 223470,
-        "name": "MES - Malet Electric System",
+        "logo": "/photo/223456/logo.jpg"
+      },
+      {
+        "_id": 1,
+        "client": "Jean Louis R.",
+        "secteur": "Saint Gilles les hauts",
+        "avis": "Du très bon travail.",
+        "artisan": "Elec 974",
         "domaine_artisan": "Electricité",
-        "phone": "0693500009",
-        "mail": "malet.electric.system@gmail.com",
-        "location": "Saint Louis",
-        "secteur": ["Sud", "Ouest"],
-        "intervention_img": "/secteur-sud-ouest.jpg",
-        "competences": [
-            "Electricité Générale",
-            "Rénovation, mise en conformité/sécurité",
-            "Remplacement de tableau élétrique",
-            "Courant fort et courant faible",
-            "Particulier, petit commerce, petite entreprise"
-        ],
-        "presentation": "La société MES - Malet Electric System est spécialisée dans les travaux électriques et l’installation de systèmes d’alarme. Forte de son expertise, elle propose des solutions adaptées aux besoins des particuliers et des professionnels, garantissant sécurité et performance. Qu’il s’agisse d’installer ou de rénover vos équipements électriques, ou encore de sécuriser vos espaces avec des alarmes performantes, MES - Malet Electric System met un point d’honneur à offrir un service de qualité, respectant les normes en vigueur. Faites confiance à MES - Malet Electric System pour vos projets électriques et de sécurité, avec des prestations sur-mesure qui allient fiabilité, innovation et satisfaction client.",
-        "qualifications_assurances": [
-            "Assurance décennale et RC Pro en attente de vérification"
-        ],
-        "logo": "/photo/223470/logo.jpg",
-        "photo": [
-            "/photo/223470/photography_1.jpg", 
-            "/photo/223470/photography_2.jpg", 
-            "/photo/223470/photography_3.jpg", 
-            "/photo/223470/photography_4.jpg", 
-            "/photo/223470/photography_5.jpg", 
-            "/photo/223470/photography_6.jpg"
-        ],
-        "note": "??",
-        "avis": []
-    },
-    {
-        "_id": 223471,
-        "name": "BGPMC",
-        "domaine_artisan": "Plomberie",
-        "phone": "0692300188",
-        "mail": "secreteriat.bgpmc@gmail.com",
-        "location": "Saint Pierre",
-        "secteur": ["Sud", "Ouest"],
-        "intervention_img": "/secteur-sud-ouest.jpg",
-        "competences": [
-            "Spécialiste dans la plomberie",
-            "Installation neuf, réparation",
-            "Raccordement et dérivation de la plomberie",
-            "Remplacement baignoire, receveur/paroi de douche, WC"
-        ],
-        "presentation": "La société BGPMC est spécialisée dans les travaux de plomberie et la rénovation. Que ce soit pour une installation ou une réparation de votre plomberie, l’entreprise propose des solutions adaptées à vos besoins pour améliorer votre confort au quotidien. Grâce à son savoir-faire et à son sens du détail, BGPMC intervient avec professionnalisme pour garantir des prestations de qualité, qu’il s’agisse de travaux de plomberie, d’aménagement intérieur ou de petites rénovations. Faites confiance à BGPMC pour transformer votre habitat avec des interventions rapides, fiables et soignées, tout en respectant vos attentes et votre budget.",
-        "qualifications_assurances": [
-            "Assurance décennale et RC Pro en attente de vérification"
-        ],
-        "logo": "/photo/223471/logo.jpg",
-        "photo": [
-            "/photo/223471/photography_1.jpg", 
-            "/photo/223471/photography_2.jpg", 
-            "/photo/223471/photography_3.jpg", 
-            "/photo/223471/photography_4.jpg", 
-            "/photo/223471/photography_5.jpg", 
-            "/photo/223471/photography_6.jpg"
-        ],
-        "note": "??",
-        "avis": []
-    }
+        "logo": "/photo/223456/logo.jpg"
+      },
+      {
+        "_id": 2,
+        "client": "Kévin N.",
+        "secteur": "Saint Leu",
+        "avis": "Qu'il continue comme ça.",
+        "artisan": "Elec 974",
+        "domaine_artisan": "Electricité",
+        "logo": "/photo/223456/logo.jpg"
+      },
+      {
+        "_id": 3,
+        "client": "Sébastien D.",
+        "secteur": "Saint Denis",
+        "avis": "Disponible, efficace. Quelqu'un de consciencieux, je referrai appel à lui.",
+        "artisan": "Elec 974",
+        "domaine_artisan": "Electricité",
+        "logo": "/photo/223456/logo.jpg"
+      },
+      {
+        "_id": 4,
+        "client": "Cédric V.",
+        "secteur": "Saint Benoit",
+        "avis": "Gérant réactif à l'écoute, et de bon conseils. Travail de qualité.",
+        "artisan": "Elec 974",
+        "domaine_artisan": "Electricité",
+        "logo": "/photo/223456/logo.jpg"
+      }
+    ]
+  },
+
+  {
+    "_id": 223457,
+    "name": "Intérieurs Privés - La Réunion",
+    "domaine_artisan": "Cuisine/Dressing",
+    "phone": "0693050501",
+    "mail": "saintandre@interieurs-prives.com",
+    "location": "Saint André",
+    "secteur": ["Nord", "Est"],
+    "intervention_img": "/secteur-nord-est.jpg",
+    "competences": [
+      "Agencement intérieur sur mesure",
+      "Cuisnie de qualité sur-mesure: neuf et rénovation",
+      "Etude personnalisée",
+      "Conception, projection 3D, coordination et suivi chantier"
+    ],
+    "presentation": "La société Intérieur Privé est spécialisée dans l'aménagement intérieur, avec une expertise particulière dans la conception et l'installation de cuisines sur-mesure. Chaque projet est pensé pour allier esthétisme, fonctionnalité et ergonomie, en s’adaptant aux envies et aux besoins spécifiques de chaque client. Avec un souci du détail et un savoir-faire éprouvé, Intérieur Privé vous accompagne à chaque étape, du choix des matériaux et équipements jusqu’à la réalisation finale. L’objectif : transformer vos espaces de vie en lieux uniques, chaleureux et parfaitement adaptés à votre style de vie. Faites confiance à Intérieur Privé pour donner vie à vos projets d’aménagement intérieur et sublimer votre cuisine avec des solutions innovantes et élégantes.",
+    "qualifications_assurances": [
+      "Assurance décennale et RC Pro en attente de vérification"
+    ],
+    "logo": "/photo/223457/logo.jpg",
+    "photo": [
+      "/photo/223457/photography_1.jpg",
+      "/photo/223457/photography_2.jpg",
+      "/photo/223457/photography_3.jpg",
+      "/photo/223457/photography_4.jpg",
+      "/photo/223457/photography_5.jpg",
+      "/photo/223457/photography_6.jpg"
+    ],
+    "note": "??",
+    "avis": []
+  },
+  {
+    "_id": 223459,
+    "name": "Création Alu Réunion",
+    "domaine_artisan": "Menuiserie aluminium",
+    "phone": "0692361937",
+    "mail": "contact.car974@gmail.com",
+    "location": "Le Tampon",
+    "secteur": ["Sud", "Ouest"],
+    "intervention_img": "/secteur-sud-ouest.jpg",
+    "competences": [
+      "Menuiserie aluminium d'extérieure",
+      "Installation et dépannage",
+      "Fenêtre, porte d'entrée, baie vitrée, porte de service",
+      "Portail, portail de garage et clôture"
+    ],
+    "presentation": "La société Création Alu Réunion est experte dans la fabrication et la pose de menuiseries en aluminium. Forte de son expertise, elle propose une large gamme de produits sur-mesure : fenêtres, baies vitrées, portes, vérandas, garde-corps et autres structures en aluminium, alliant design moderne et robustesse. L’équipe de Création Alu Réunion s’engage à offrir des solutions adaptées à vos besoins, en mettant l’accent sur la qualité des matériaux, la précision des finitions, et le respect des délais. Que ce soit pour des projets résidentiels, commerciaux ou industriels, la société garantit des réalisations esthétiques, fonctionnelles et durables. Faites confiance à Création Alu Réunion pour sublimer vos espaces avec des menuiseries aluminium qui répondent à vos attentes en termes de style et de performance.",
+    "qualifications_assurances": [
+      "Assurance décennale et RC Pro en attente de vérification"
+    ],
+    "logo": "/photo/223459/logo.jpg",
+    "photo": [
+      "/photo/223459/photography_1.jpg",
+      "/photo/223459/photography_2.jpg",
+      "/photo/223459/photography_3.jpg",
+      "/photo/223459/photography_4.jpg",
+      "/photo/223459/photography_5.jpg",
+      "/photo/223459/photography_6.jpg"
+    ],
+    "note": "??",
+    "avis": []
+  },
+  {
+    "_id": 223458,
+    "name": "Deslandes Création Maçonnerie",
+    "domaine_artisan": "Maçonnerie",
+    "phone": "0692644977",
+    "mail": "dcm.97430@gmail.com",
+    "location": "Le Tampon",
+    "secteur": ["Sud", "Ouest"],
+    "intervention_img": "/secteur-sud-ouest.jpg",
+    "competences": [
+      "Maçonnerie générale, rénovation",
+      "Extension et construction de maison individuelle",
+      "Rénovation d'habitation, aménagement extérieur",
+      "Piscine, clôture, muret, maçonnerie pour portail"
+    ],
+    "presentation": "La société Deslandes Création Maçonnerie est spécialisée dans l'aménagement extérieur et tous les travaux de maçonnerie. Forte d’un savoir-faire reconnu, elle propose des prestations sur-mesure pour valoriser vos espaces : création de terrasses, allées, maison, piscines, et bien plus encore. L’équipe de Deslandes Création Maçonnerie met un point d’honneur à combiner esthétisme, robustesse et durabilité dans chacune de ses réalisations, en utilisant des matériaux de qualité et en respectant les normes en vigueur. Faites confiance à Deslandes Création Maçonnerie pour donner vie à vos projets d’aménagement extérieur, en transformant vos idées en espaces harmonieux et fonctionnels.",
+    "qualifications_assurances": [
+      "Assurance décennale et RC Pro en attente de vérification"
+    ],
+    "logo": "/photo/223458/logo.jpg",
+    "photo": [
+      "/photo/223458/photography_1.jpg",
+      "/photo/223458/photography_2.jpg",
+      "/photo/223458/photography_3.jpg",
+      "/photo/223458/photography_4.jpg",
+      "/photo/223458/photography_5.jpg",
+      "/photo/223458/photography_6.jpg"
+    ],
+    "note": "??",
+    "avis": []
+  }
 ]
