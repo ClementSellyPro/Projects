@@ -1,21 +1,22 @@
-import ContactEmail  from '@/components/email-template/ContactEmail';
-import { Resend } from 'resend';
+import ContactEmail from "@/components/email-template/ContactEmail";
+import { Resend } from "resend";
 
-require('dotenv').config();
+require("dotenv").config();
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
-  const {prenom, nom, commune, email, phone, message} = await request.json();
+  const { prenom, nom, commune, email, phone, message } = await request.json();
 
-  try {    
+  try {
     const { data, error } = await resend.emails.send({
-      from: 'KALIPRO Réunion <direction@kalipro.re>',
-      to: 'clement.selly@gmail.com',
-      subject: 'Nouveau message pour KALIPRO',
+      from: "KALIPRO Réunion <direction@kalipro.re>",
+      to: "clement.selly@gmail.com",
+      cc: "direction@kalipro.re",
+      subject: "Nouveau message pour KALIPRO",
       react: ContactEmail({ nom, prenom, email, phone, commune, message }),
     });
-    
+
     if (error) {
       return Response.json({ error }, { status: 500 });
     }

@@ -29,6 +29,7 @@ export async function POST(req: NextRequest) {
     const { data, error } = await resend.emails.send({
       from: "KALIPRO Réunion <direction@kalipro.re>",
       to: "clement.selly@gmail.com",
+      cc: "direction@kalipro.re",
       subject: "Nouvelle avis",
       react: AvisEmail({
         prenom,
