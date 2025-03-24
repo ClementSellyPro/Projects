@@ -1,94 +1,5 @@
 [
   {
-    "_id": 525252,
-    "name": "Architectura (entreprise fictive)",
-    "domaine_artisan": "Architecture",
-    "phone": "0692000000",
-    "mail": "clement.selly@gmail.com",
-    "location": "Saint Denis",
-    "secteur": ["Est", "Nord", "Ouest", "Sud"],
-    "intervention_img": "/secteur-ile.jpg",
-    "disponibilite": true,
-    "temps_disponibilite": 0,
-    "competences": [
-      "Spécialiste dans l'architecture de maison",
-      "Plan de maison",
-      "Design sur mesure"
-    ],
-    "presentation": "Notre cabinet d'architecture conçoit des projets innovants et sur mesure, alliant esthétisme, fonctionnalité et respect de l'environnement. Nous accompagnons nos clients de la conception à la réalisation, pour donner vie à leurs espaces.",
-    "qualifications_assurances": [
-      "Certification AAA",
-      "Assurance RCP et décennale"
-    ],
-    "photo": [
-      "/photo_example/photography_1.jpg",
-      "/photo_example/photography_2.jpg",
-      "/photo_example/photography_3.jpg",
-      "/photo_example/photography_4.jpg",
-      "/photo_example/photography_5.jpg",
-      "/photo_example/photography_6.jpg"
-    ],
-    "logo": "/logo_example/logo_5.jpg",
-    "note": "4,8",
-    "avis": [
-      {
-        "_id": 0,
-        "client": "Nicolas Lefevre",
-        "secteur": "Saint Denis",
-        "avis": "Un travail remarquable du début à la fin, le cabinet a parfaitement compris mes attentes et a su les transformer en un projet architectural unique.",
-        "artisan": "Architectura",
-        "domaine_artisan": "Architecture",
-        "logo": "/logo_example/logo_5.jpg"
-      },
-      {
-        "_id": 1,
-        "client": "Jean Dupuis",
-        "secteur": "Sainte Marie",
-        "avis": "Excellente collaboration, les architectes ont su allier créativité et respect des contraintes techniques. Le résultat est tout simplement magnifique.",
-        "artisan": "Architectura",
-        "domaine_artisan": "Architecture",
-        "logo": "/logo_example/logo_5.jpg"
-      },
-      {
-        "_id": 2,
-        "client": "Claire Martin",
-        "secteur": "Saint Suzanne",
-        "avis": "Je suis très satisfait du projet réalisé, le cabinet a été à l'écoute tout au long du processus et le résultat final est à la hauteur de mes espérances.",
-        "artisan": "Architectura",
-        "domaine_artisan": "Architecture",
-        "logo": "/logo_example/logo_5.jpg"
-      },
-      {
-        "_id": 3,
-        "client": "Sophie Bernard",
-        "secteur": "Saint Denis",
-        "avis": "Une équipe professionnelle et réactive. Leurs idées innovantes ont complètement transformé mon espace, je recommande sans hésitation.",
-        "artisan": "Architectura",
-        "domaine_artisan": "Architecture",
-        "logo": "/logo_example/logo_5.jpg"
-      },
-      {
-        "_id": 4,
-        "client": "Thomas Girault",
-        "secteur": "Sainte Marie",
-        "avis": "Le cabinet d'architecture a su créer un design fonctionnel et esthétique, tout en respectant mon budget. Je ne pouvais pas espérer mieux !",
-        "artisan": "Architectura",
-        "domaine_artisan": "Architecture",
-        "logo": "/logo_example/logo_5.jpg"
-      },
-      {
-        "_id": 5,
-        "client": "Martine",
-        "secteur": "Sainte Pierre",
-        "avis": "Le cabinet d'architecture Architectura a su créer un design fonctionnel et esthétique, tout en respectant mon budget. Je ne pouvais pas espérer mieux de leur part !",
-        "artisan": "Architectura",
-        "domaine_artisan": "Architecture",
-        "logo": "/logo_example/logo_5.jpg"
-      }
-    ]
-  },
-
-  {
     "_id": 223456,
     "name": "Elec 974",
     "domaine_artisan": "Electricité",
@@ -194,8 +105,63 @@
       "/photo/223457/photography_5.jpg",
       "/photo/223457/photography_6.jpg"
     ],
-    "note": "??",
-    "avis": []
+    "note": "5",
+    "avis": [
+      {
+        "_id": 0,
+        "client": "Sabine J.",
+        "secteur": "Saint André",
+        "avis": "Je suis très satisfaite du travail. La cuisine est de très bonne qualité et je recommande Interieurs Privés à mon entourage.",
+        "artisan": "Intérieurs Privés - La Réunion",
+        "domaine_artisan": "Cuisine/Dressing",
+        "logo": "/photo/223457/logo.jpg"
+      },
+      {
+        "_id": 1,
+        "client": "Gwenaelle B.",
+        "secteur": "Saint André",
+        "avis": "Un accueil chaleureux, tant par l'équipe que par le lieu! Un showroom élégant et inspirant, qui donne envie de concrétiser ses projets d'aménagement intérieur. Intérieurs Privés est une adresse incontournable !",
+        "artisan": "Intérieurs Privés - La Réunion",
+        "domaine_artisan": "Cuisine/Dressing",
+        "logo": "/photo/223457/logo.jpg"
+      },
+      {
+        "_id": 2,
+        "client": "Ludovic P.",
+        "secteur": "Saint André",
+        "avis": "Je recommande l'entreprise de M. Luciano à mon entourage, la cuisine est robuste et de bonne qualité. Le bureau est toujours disponible et nous rappelle pour nos interrogations.",
+        "artisan": "Intérieurs Privés - La Réunion",
+        "domaine_artisan": "Cuisine/Dressing",
+        "logo": "/photo/223457/logo.jpg"
+      },
+      {
+        "_id": 3,
+        "client": "Joseph H.",
+        "secteur": "Saint André",
+        "avis": "On a aimé l'accueil, le contact et la qualité de la cuisine. Je recommande fortement l'entreprise Intérieurs Privés.",
+        "artisan": "Intérieurs Privés - La Réunion",
+        "domaine_artisan": "Cuisine/Dressing",
+        "logo": "/photo/223457/logo.jpg"
+      },
+      {
+        "_id": 4,
+        "client": "Angélique R.",
+        "secteur": "Saint André",
+        "avis": "Accueil chaleureux, super conseils, produits de qualités et surtout est magnifique.",
+        "artisan": "Intérieurs Privés - La Réunion",
+        "domaine_artisan": "Cuisine/Dressing",
+        "logo": "/photo/223457/logo.jpg"
+      },
+      {
+        "_id": 5,
+        "client": "Stéphane A.",
+        "secteur": "Saint André",
+        "avis": "Conseillère très professionnelle, des materiaux et des meubles de qualité. J'ai adoré les idées d'aménagements pour l'intérieur de ma maison. Je le recommande.",
+        "artisan": "Intérieurs Privés - La Réunion",
+        "domaine_artisan": "Cuisine/Dressing",
+        "logo": "/photo/223457/logo.jpg"
+      }
+    ]
   },
   {
     "_id": 223459,
