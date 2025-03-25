@@ -1,62 +1,62 @@
 [
-    {
-        "_id": 0,
-        "client": "Martine",
-        "secteur": "Saint Philipe",
-        "avis": "Très contente du service. L'électricien a installé notre système de domotique parfaitement et nous a bien expliqué son fonctionnement. Travail soigné et propre.",
-        "artisan": "Electrika",
-        "id_artisan": 123456,
-        "domaine_artisan": "Electricité",
-        "logo": "/logo_example/logo_3.jpg"
-    },
-    {
-        "_id": 1,
-        "client": "Jean Paul",
-        "secteur": "Saint Denis",
-        "avis": "Je suis ravi de la qualité de la maçonnerie, tout a été réalisé avec précision et attention aux détails. Le chantier s'est déroulé sans accroc et le résultat final est impeccable.",
-        "artisan": "Maison Réunionnaise",
-        "id_artisan": 223456,
-        "domaine_artisan": "Maison individuelle",
-        "logo": "/logo_example/logo_1.jpg"
-    },
-    {
-        "_id": 2,
-        "client": "Gerard",
-        "secteur": "Saint Philipe",
-        "avis": "Le travail realise est d’une grande qualitée. Kalipro m’a permis de trouver un artisan de qualité à proximité de chez moi. C’était la première fois que je passais par kalipro, je ne regrette pas mon choix.",
-        "artisan": "Architectura",
-        "id_artisan": 523456,
-        "domaine_artisan": "Design intérieur",
-        "logo": "/logo_example/logo_5.jpg"
-    },
-    {
-        "_id": 3,
-        "client": "Marcus",
-        "secteur": "Sainte Marie",
-        "avis": "Un travail de menuiserie sur mesure impeccable, réalisé avec soin et professionnalisme. Le résultat dépasse mes attentes, je recommande vivement cette entreprise.",
-        "artisan": "La Menuiserie",
-        "id_artisan": 323456,
-        "domaine_artisan": "Menuiserie",
-        "logo": "/logo_example/logo_15.jpg"
-    },
-    {
-        "_id": 4,
-        "client": "Marcel",
-        "secteur": "Sainte André",
-        "avis": " Service impeccable de la part de aPlomb. Le problème de fuite a été réparé rapidement et efficacement. Très satisfait du travail réalisé.",
-        "artisan": "Plomberie Excellence",
-        "id_artisan": 433456,
-        "domaine_artisan": "Plomberie",
-        "logo": "/logo_example/logo_11.jpg"
-    },
-    {
-        "_id": 5,
-        "client": "Josiane",
-        "secteur": "Saint Pierre",
-        "avis": "Le travail realise est d’une grande qualitée. Kalipro m’a permis de trouver un artisan de qualite. Je ne regrette pas mon choix.",
-        "artisan": "Electrika",
-        "id_artisan": 123456,
-        "domaine_artisan": "Electricité",
-        "logo": "/logo_example/logo_3.jpg"
-    }
+  {
+    "_id": 0,
+    "client": "Gwenaelle B.",
+    "secteur": "Saint André",
+    "avis": "Un accueil chaleureux, tant par l'équipe que par le lieu! Un showroom élégant et inspirant, qui donne envie de concrétiser ses projets d'aménagement intérieur. Intérieurs Privés est une adresse incontournable !",
+    "artisan": "Intérieurs Privés - La Réunion",
+    "id_artisan": 223457,
+    "domaine_artisan": "Cuisine/Dressing",
+    "logo": "/photo/223457/logo.jpg"
+  },
+  {
+    "_id": 1,
+    "client": "Ludovic P.",
+    "secteur": "Saint André",
+    "avis": "Je recommande l'entreprise de M. Luciano à mon entourage, la cuisine est robuste et de bonne qualité. Le bureau est toujours disponible et nous rappelle pour nos interrogations.",
+    "artisan": "Intérieurs Privés - La Réunion",
+    "id_artisan": 223457,
+    "domaine_artisan": "Cuisine/Dressing",
+    "logo": "/photo/223457/logo.jpg"
+  },
+  {
+    "_id": 2,
+    "client": "Cédric V.",
+    "secteur": "Saint Benoit",
+    "avis": "Gérant réactif à l'écoute, et de bon conseils. Travail de qualité.",
+    "artisan": "Elec 974",
+    "id_artisan": 223456,
+    "domaine_artisan": "Electricité",
+    "logo": "/photo/223456/logo.jpg"
+  },
+  {
+    "_id": 3,
+    "client": "Angélique R.",
+    "secteur": "Saint André",
+    "avis": "Accueil chaleureux, super conseils, produits de qualités et surtout est magnifique.",
+    "artisan": "Intérieurs Privés - La Réunion",
+    "id_artisan": 223457,
+    "domaine_artisan": "Cuisine/Dressing",
+    "logo": "/photo/223457/logo.jpg"
+  },
+  {
+    "_id": 4,
+    "client": "Sébastien D.",
+    "secteur": "Saint Denis",
+    "avis": " Disponible, efficace. Quelqu'un de consciencieux, je referrai appel à lui.",
+    "artisan": "Elec 974",
+    "id_artisan": 223456,
+    "domaine_artisan": "Electricité",
+    "logo": "/photo/223456/logo.jpg"
+  },
+  {
+    "_id": 5,
+    "client": "Jean Louis R.",
+    "secteur": "Saint Gilles les hauts",
+    "avis": "Du très bon travail.  Je recommande.",
+    "artisan": "Elec 974",
+    "id_artisan": 223456,
+    "domaine_artisan": "Electricité",
+    "logo": "/photo/223456/logo.jpg"
+  }
 ]

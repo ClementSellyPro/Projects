@@ -15,9 +15,7 @@
       "Dépannage, câblage, prise, interrupteur, luminaire"
     ],
     "presentation": "La société Elec974 met son expertise au service de vos besoins en électricité. Spécialisée dans l’installation, la rénovation, et le dépannage électrique, elle intervient avec professionnalisme pour garantir votre sécurité et assurer le bon fonctionnement de vos équipements électriques. Que ce soit pour des installations domestiques, commerciales ou industrielles, Elec974 propose des solutions sur-mesure, conformes aux normes en vigueur. Réactive et à l’écoute de vos attentes, l’équipe veille à fournir un service de qualité avec des délais maîtrisés et des tarifs compétitifs. Faites confiance à Elec974, une entreprise passionnée par son métier, pour tous vos projets électriques.",
-    "qualifications_assurances": [
-      "Assurance décennale et RC Pro en attente de vérification"
-    ],
+    "qualifications_assurances": ["Assurance décennale et RC Pro valide."],
     "logo": "/photo/223456/logo.jpg",
     "photo": [
       "/photo/223456/photography_1.jpg",
@@ -27,7 +25,7 @@
       "/photo/223456/photography_5.jpg",
       "/photo/223456/photography_6.jpg"
     ],
-    "note": "4.9",
+    "note": "4.8",
     "avis": [
       {
         "_id": 0,
@@ -42,7 +40,7 @@
         "_id": 1,
         "client": "Jean Louis R.",
         "secteur": "Saint Gilles les hauts",
-        "avis": "Du très bon travail.",
+        "avis": "Du très bon travail.  Je recommande.",
         "artisan": "Elec 974",
         "domaine_artisan": "Electricité",
         "logo": "/photo/223456/logo.jpg"
@@ -93,9 +91,7 @@
       "Conception, projection 3D, coordination et suivi chantier"
     ],
     "presentation": "La société Intérieur Privé est spécialisée dans l'aménagement intérieur, avec une expertise particulière dans la conception et l'installation de cuisines sur-mesure. Chaque projet est pensé pour allier esthétisme, fonctionnalité et ergonomie, en s’adaptant aux envies et aux besoins spécifiques de chaque client. Avec un souci du détail et un savoir-faire éprouvé, Intérieur Privé vous accompagne à chaque étape, du choix des matériaux et équipements jusqu’à la réalisation finale. L’objectif : transformer vos espaces de vie en lieux uniques, chaleureux et parfaitement adaptés à votre style de vie. Faites confiance à Intérieur Privé pour donner vie à vos projets d’aménagement intérieur et sublimer votre cuisine avec des solutions innovantes et élégantes.",
-    "qualifications_assurances": [
-      "Assurance décennale et RC Pro en attente de vérification"
-    ],
+    "qualifications_assurances": ["RC Pro valide."],
     "logo": "/photo/223457/logo.jpg",
     "photo": [
       "/photo/223457/photography_1.jpg",
@@ -105,7 +101,7 @@
       "/photo/223457/photography_5.jpg",
       "/photo/223457/photography_6.jpg"
     ],
-    "note": "5",
+    "note": "4.9",
     "avis": [
       {
         "_id": 0,
@@ -179,9 +175,7 @@
       "Portail, portail de garage et clôture"
     ],
     "presentation": "La société Création Alu Réunion est experte dans la fabrication et la pose de menuiseries en aluminium. Forte de son expertise, elle propose une large gamme de produits sur-mesure : fenêtres, baies vitrées, portes, vérandas, garde-corps et autres structures en aluminium, alliant design moderne et robustesse. L’équipe de Création Alu Réunion s’engage à offrir des solutions adaptées à vos besoins, en mettant l’accent sur la qualité des matériaux, la précision des finitions, et le respect des délais. Que ce soit pour des projets résidentiels, commerciaux ou industriels, la société garantit des réalisations esthétiques, fonctionnelles et durables. Faites confiance à Création Alu Réunion pour sublimer vos espaces avec des menuiseries aluminium qui répondent à vos attentes en termes de style et de performance.",
-    "qualifications_assurances": [
-      "Assurance décennale et RC Pro en attente de vérification"
-    ],
+    "qualifications_assurances": ["Assurance décennale et RC Pro valide."],
     "logo": "/photo/223459/logo.jpg",
     "photo": [
       "/photo/223459/photography_1.jpg",
@@ -210,9 +204,7 @@
       "Piscine, clôture, muret, maçonnerie pour portail"
     ],
     "presentation": "La société Deslandes Création Maçonnerie est spécialisée dans l'aménagement extérieur et tous les travaux de maçonnerie. Forte d’un savoir-faire reconnu, elle propose des prestations sur-mesure pour valoriser vos espaces : création de terrasses, allées, maison, piscines, et bien plus encore. L’équipe de Deslandes Création Maçonnerie met un point d’honneur à combiner esthétisme, robustesse et durabilité dans chacune de ses réalisations, en utilisant des matériaux de qualité et en respectant les normes en vigueur. Faites confiance à Deslandes Création Maçonnerie pour donner vie à vos projets d’aménagement extérieur, en transformant vos idées en espaces harmonieux et fonctionnels.",
-    "qualifications_assurances": [
-      "Assurance décennale et RC Pro en attente de vérification"
-    ],
+    "qualifications_assurances": ["Assurance décennale et RC Pro valide."],
     "logo": "/photo/223458/logo.jpg",
     "photo": [
       "/photo/223458/photography_1.jpg",
