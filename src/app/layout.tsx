@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import "./globals.css";
 import Header from "../components/Header";
@@ -10,49 +10,46 @@ import { Toaster } from "react-hot-toast";
 import RGPD from "@/components/RGPD";
 import { useEffect, useContext } from "react";
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-  const {setData} = useContext(DataContext);
+  const { setData } = useContext(DataContext);
 
   useEffect(() => {
-    const fetchData = async () =>{
-      try{
-        const res = await fetch('/artisans.json');
-        if (!res.ok){
-          throw new Error(`HTTP error! status: ${res.status}`)
+    const fetchData = async () => {
+      try {
+        const res = await fetch("/artisans.json");
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
         }
         const dataFetch = await res.json();
         setData(dataFetch);
-      } catch(error) {
-        console.error("Error fetching data : ", error)
+      } catch (error) {
+        console.error("Error fetching data : ", error);
       }
-        
-    }
+    };
     fetchData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[]);
-
+  }, []);
 
   return (
     <html lang="fr">
       <body>
         {/* <Beta /> */}
         <DataContextProvider>
-        <FilterContextProvider>
-          {/* toaster affiche un message pour confirmer l'envoi du mail pour les contacts */}
-          <Toaster position="bottom-right" toastOptions={{ duration: 3000 }} />
-          <Header />
-          <main>
-            {children}
-          </main>
-          <Footer />
-          {/* <RGPD /> */}
-        </FilterContextProvider>
+          <FilterContextProvider>
+            {/* toaster affiche un message pour confirmer l'envoi du mail pour les contacts */}
+            <Toaster
+              position="bottom-right"
+              toastOptions={{ duration: 3000 }}
+            />
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <RGPD />
+          </FilterContextProvider>
         </DataContextProvider>
       </body>
     </html>

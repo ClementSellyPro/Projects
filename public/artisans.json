@@ -216,5 +216,30 @@
     ],
     "note": "??",
     "avis": []
+  },
+  {
+    "_id": 223473,
+    "name": "SCP - Steven Couvert Plomberie",
+    "domaine_artisan": "Plomberie",
+    "phone": "0693639144",
+    "mail": "s.c.plomberie974@gmail.com",
+    "location": "Saint Pierre",
+    "secteur": ["Est", "Nord", "Sud", "Ouest"],
+    "intervention_img": "/secteur-nord-est-sud-ouest.jpg",
+    "competences": [
+      "Spécialiste de la plomberie",
+      "Poser des canalisations, sanitaires, robinetteries",
+      "Détecter les fuites, pannes ou dysfonctionnements et trouver des solutions adaptées",
+      "Respecter les normes de sécurité et de conformité (gaz, eau, assainissement)"
+    ],
+    "presentation": "SCP plomberie accompagne ses clients dans l’installation, la réparation et l’entretien de leurs systèmes d’eau et de chauffage. Nous posons vos équipements sanitaires, intervenons rapidement en cas de fuite et assurons le débouchage de vos canalisations. Nous mettons un point d’honneur à garantir des installations fiables, conformes et durables, que ce soit pour votre maison ou vos locaux professionnels.",
+    "qualifications_assurances": ["Assurance décennale et RC Pro valide."],
+    "logo": "/photo/223473/logo.jpg",
+    "photo": [
+      "/photo/223473/photography_1.jpg",
+      "/photo/223473/photography_2.jpg"
+    ],
+    "note": "??",
+    "avis": []
   }
 ]
